@@ -1,0 +1,30 @@
+CLASS Sexy <>
+
+CLASS Sexy::RtObject 0x8
+  FIELD 0x0 RtObjectVTable * vtable
+  VAR 0x031c5290 undefined * instance
+  VTABLE 0x03047ea8 <> RtObjectVTable 0x38
+    VFUNC 0 0x0272aed4 undefined GetType
+      LOCAL <> <> self
+      LOCAL <> undefined8 local_10
+      LOCAL <> undefined8 local_20
+    VFUNC 1 0x0272af98 undefined IsAbsolute
+    VFUNC 2 0x0272bf08 undefined ~RtObject
+    VFUNC 3 0x0272ae54 void Destroy
+      PARAM 0 void * param_1
+    VFUNC 4 0x0272afa0 bool IsType
+      PARAM 0 RtObject * self
+      PARAM 1 RtObject * target
+      LOCAL <> undefined8 local_10
+      LOCAL <> undefined8 local_20
+    VFUNC 5 0x0272afd4 undefined FUN_0282afd4
+    VFUNC 6 0x0272afdc undefined Serialize
+      PARAM 0 undefined8 * param_1
+      PARAM 1 long param_2
+      LOCAL <> undefined8 local_10
+      LOCAL <> undefined8 local_20
+  FUNC 0x0272ae5c undefined SGetType
+    LOCAL <> <> self
+    LOCAL <> undefined8 local_10
+    LOCAL <> undefined8 local_20
+

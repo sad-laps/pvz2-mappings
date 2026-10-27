@@ -5,18 +5,20 @@
 ### Structure & Class Definitions
 
 ```
-CLASS    <OFFSET>       <new IDENT>
+CLASS    <IDENT> <SIZE>
   FIELD  <STARTING OFFSET> <TYPED_IDENT>
-  VFUNC  <INDEX> <OFFSET> <TYPED_IDENT>
-    <Function Context>
+  VAR    <OFFSET> <TYPED_IDENT>
+  VTABLE <OFFSET> <(parent vtable)IDENT> <IDENT> <SIZE>
+    VFUNC <INDEX> <OFFSET> <TYPED_IDENT>
+      <Function Context>
   FUNC   <OFFSET> <TYPED_IDENT>
     <Function Context>
 ```
 
 ### Global Definitions
 ```
-DAT   <OFFSET> <TYPED_IDENT>
-PTR   <OFFSET> <TYPED_IDENT>
+PTR   <OFFSET> <TYPE>
+SVAR  <OFFSET> <TYPED_IDENT>
 SFUNC <OFFSET> <TYPED_IDENT>
   <Function Context>
 ```
@@ -25,16 +27,20 @@ SFUNC <OFFSET> <TYPED_IDENT>
 
 ```
   PARAM  <INDEX> <TYPED_IDENT>
-  LOCAL  <old IDENT> <TYPED_IDENT>
+  LOCAL  <(old)IDENT> <TYPED_IDENT>
 ```
 
-### Primitives & Tokens
+### Tokens
 
 ```
-<TYPED_IDENT>      = <TYPE> <new IDENT>
+<TYPED_IDENT>      = <TYPE> <IDENT>
 <TYPE>             = <CLASS> | <GHIDRA BUILTIN TYPE>
 <IDENT>            = [a-zA-Z0-9_]+
 <OFFSET>           = [0-9a-fA-F]{8}  (or hex offset representation)
 <STARTING OFFSET>  = 0x[0-9a-fA-F]+
-<INDEX>            = [0-9]+
+<INDEX> / <SIZE>   = [0-9]+
+
+# EXTRAS
+
+<WILDCARD>    = <> # Unmapped, skip if used in place of a token
 ```
