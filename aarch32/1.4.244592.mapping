@@ -2,4 +2,22 @@ CLASS Sexy <>
 
 CLASS Sexy::RtObject 0x4
   FIELD 0x0 RtObjectVTable * vtable
+  VAR 0x00d284bc undefined4 instance
+  VTABLE 0x00c34e88 <> RtObjectVTable 0x1c
+    VFUNC 0 0x001e7698 undefined GetType
+    VFUNC 1 0x001e76a4 bool IsAbstract
+    VFUNC 2 0x001e76ac undefined ~RtObject
+    VFUNC 3 0x001e76b0 undefined FUN_001f76b0
+      PARAM 0 void * param_1
+    VFUNC 4 0x008037c4 undefined FUN_008137c4
+      PARAM 0 undefined4 * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 5 0x0012fd98 undefined FUN_0013fd98
+      PARAM 0 int * param_1
+    VFUNC 6 0x008037ec undefined FUN_008137ec
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+  FUNC 0x0080364c undefined GetType
+    LOCAL piVar3 undefined4 this
+  FUNC 0x008037bc RtObject * new
 
