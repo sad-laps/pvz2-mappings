@@ -5,11 +5,11 @@ CLASS Sexy::RtObject 0x8
   VAR 0x031c5290 undefined * instance
   VTABLE 0x03047ea8 <> RtObjectVTable 0x38
     VFUNC 0 0x0272aed4 undefined GetType
-      LOCAL <> <> self
+      LOCAL <> undefined8 self
     VFUNC 1 0x0272af98 undefined IsAbsolute
     VFUNC 2 0x0272bf08 undefined ~RtObject
     VFUNC 3 0x0272ae54 void Destroy
-      PARAM 0 void * param_1
+      PARAM 0 RtObject * self
     VFUNC 4 0x0272afa0 bool IsType
       PARAM 0 RtObject * self
       PARAM 1 RtObject * target
@@ -17,6 +17,8 @@ CLASS Sexy::RtObject 0x8
     VFUNC 6 0x0272afdc undefined Serialize
       PARAM 0 undefined8 * param_1
       PARAM 1 long param_2
+      LOCAL lVar1 undefined * this
   FUNC 0x0272ae5c undefined SGetType
     LOCAL <> <> self
+  FUNC 0x0272af90 RtObject * new
 
