@@ -25,16 +25,16 @@ CLASS Sexy::RtObject 0x4
   FUNC 0x008037bc RtObject * new
 
 CLASS Sexy::RtClass 0x28
-  FIELD 0x00 RtClassVTable * vtable
-  FIELD 0x04 char * className
-  FIELD 0x08 RtClass * super
-  FIELD 0x0c void * factory
-  FIELD 0x10 undefined4 <>
-  FIELD 0x14 undefined4 <>
-  FIELD 0x18 undefined4 <>
-  FIELD 0x1c undefined4 <>
-  FIELD 0x20 undefined4 <>
-  FIELD 0x24 undefined4 <>
+  FIELD 0x0 RtClassVTable * vtable
+  FIELD 0x4 char * className
+  FIELD 0x8 RtClass * super
+  FIELD 0xc void * factory
+  FIELD 0x10 undefined4 field_0x10
+  FIELD 0x14 undefined4 field_0x14
+  FIELD 0x18 undefined4 field_0x18
+  FIELD 0x1c undefined4 field_0x1c
+  FIELD 0x20 undefined4 field_0x20
+  FIELD 0x24 undefined4 field_0x24
   VAR 0x00d284b0 RtClass * instance
   VTABLE 0x00c34e58 Sexy::RtObject RtClassVTable 0x24
     VFUNC 0 0x0080473c RtClass * GetType
@@ -44,7 +44,9 @@ CLASS Sexy::RtClass 0x28
       PARAM 0 RtClass * this
     VFUNC 3 0x00803ad4 void Destroy
       PARAM 0 RtClass * this
-    VFUNC 6 0x008045ac undefined FUN_008145ac
+    VFUNC 6 0x008045ac undefined Serialize
+      PARAM 0 RtClass * this
+      PARAM 1 int param_2
     VFUNC 7 0x008041cc bool IsDerivedFrom
       PARAM 0 RtClass * this
       PARAM 1 RtClass * super
@@ -61,4 +63,100 @@ CLASS Sexy::RtClass 0x28
     LOCAL pRVar1 RtClass * this
   FUNC 0x00803910 RtClass * RtClass
     PARAM 0 RtClass * this
+
+CLASS CrazyNPCManager 0x17c
+  FIELD 0x0 CrazyNPCManagerVTable * vtable
+  FIELD 0x4 undefined * field_0x4
+  VAR 0x00cb2414 RtClass * instance
+  VTABLE 0x00c3ddf8 Sexy::RtObject CrazyNPCManagerVTable 0x9c
+    VFUNC 0 0x001e7404 undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x001e7488 bool IsAbstract
+    VFUNC 2 0x001e2ee4 CrazyNPCManager * ~CrazyNPCManager
+      PARAM 0 CrazyNPCManager * this
+    VFUNC 3 0x001e2eb0 void Destroy
+      PARAM 0 CrazyNPCManager * this
+    VFUNC 7 0x001e343c undefined FUN_001f343c
+      PARAM 0 int param_1
+    VFUNC 8 0x001e3750 undefined FUN_001f3750
+    VFUNC 9 0x001e3c40 undefined FUN_001f3c40
+      PARAM 0 undefined4 param_1
+    VFUNC 10 0x001e3774 undefined FUN_001f3774
+      PARAM 0 int param_1
+    VFUNC 11 0x001e3308 undefined FUN_001f3308
+      PARAM 0 int param_1
+    VFUNC 12 0x001e3dfc undefined FUN_001f3dfc
+    VFUNC 13 0x001e3e00 undefined FUN_001f3e00
+    VFUNC 14 0x001e611c undefined FUN_001f611c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 15 0x001e658c undefined FUN_001f658c
+      PARAM 0 int param_1
+    VFUNC 16 0x001e65fc undefined FUN_001f65fc
+      PARAM 0 int * param_1
+    VFUNC 17 0x001e6754 undefined FUN_001f6754
+    VFUNC 18 0x001e6acc undefined FUN_001f6acc
+    VFUNC 19 0x001e6ad0 undefined FUN_001f6ad0
+      PARAM 0 int * param_1
+    VFUNC 20 0x001e6b48 undefined FUN_001f6b48
+    VFUNC 21 0x001e6b4c undefined FUN_001f6b4c
+      PARAM 0 int param_1
+    VFUNC 22 0x001e6b64 undefined FUN_001f6b64
+      PARAM 0 int * param_1
+    VFUNC 23 0x001e6d7c undefined FUN_001f6d7c
+    VFUNC 24 0x001e72c0 undefined FUN_001f72c0
+    VFUNC 25 0x001e72c4 undefined FUN_001f72c4
+    VFUNC 26 0x001e72c8 undefined FUN_001f72c8
+    VFUNC 27 0x001e72cc undefined FUN_001f72cc
+      PARAM 0 int param_1
+    VFUNC 28 0x001e7370 undefined FUN_001f7370
+      PARAM 0 int param_1
+    VFUNC 29 0x001e7400 undefined FUN_001f7400
+    VFUNC 30 0x001e6758 undefined FUN_001f6758
+      PARAM 0 int param_1
+    VFUNC 31 0x001e67c8 undefined FUN_001f67c8
+      PARAM 0 int * param_1
+    VFUNC 32 0x001e6ac8 undefined FUN_001f6ac8
+    VFUNC 33 0x001e6d80 undefined FUN_001f6d80
+    VFUNC 34 0x001e6d84 undefined FUN_001f6d84
+      PARAM 0 int param_1
+    VFUNC 35 0x001e6f64 undefined FUN_001f6f64
+    VFUNC 36 0x001e6f68 undefined FUN_001f6f68
+    VFUNC 37 0x001e6f6c undefined FUN_001f6f6c
+      PARAM 0 int * param_1
+    VFUNC 38 0x001e72bc undefined FUN_001f72bc
+  FUNC 0x00157fcc undefined new
+    LOCAL <> CrazyNPCManager * this
+  FUNC 0x001e7404 undefined GetType
+    LOCAL <> undefined4 factory
+  FUNC 0x001e285c CrazyNPCManager * CrazyNPCManager
+    PARAM 0 CrazyNPCManager * this
+  FUNC 0x001e7490 undefined GetType2
+
+CLASS CrazyOlafTest 0x70
+  VAR 0x00cb24d0 undefined4 instance
+  VTABLE 0x00c3e028 Sexy::RtObject CrazyOlafTestVTable 0x3c
+    VFUNC 0 0x001ec314 undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x001ec39c bool IsAbstract
+    VFUNC 2 0x001ec3a4 undefined FUN_001fc3a4
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x001ec3b8 undefined FUN_001fc3b8
+      PARAM 0 void * param_1
+    VFUNC 6 0x00249880 undefined FUN_00259880
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 7 0x001ea828 undefined FUN_001fa828
+      PARAM 0 int param_1
+    VFUNC 8 0x00132028 undefined FUN_00142028
+    VFUNC 9 0x0012fdbc undefined FUN_0013fdbc
+    VFUNC 10 0x0012fdc0 undefined FUN_0013fdc0
+    VFUNC 11 0x0013202c undefined FUN_0014202c
+    VFUNC 12 0x0012fdc8 undefined FUN_0013fdc8
+    VFUNC 13 0x002a5f34 undefined FUN_002b5f34
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x001e93d4 undefined FUN_001f93d4
+      PARAM 0 int param_1
+  FUNC 0x001e7950 undefined new
 
