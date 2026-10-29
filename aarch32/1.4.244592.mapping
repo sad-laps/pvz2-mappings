@@ -4,17 +4,19 @@ CLASS Sexy::RtObject 0x4
   FIELD 0x0 RtObjectVTable * vtable
   VAR 0x00d284bc RtClass * instance
   VTABLE 0x00c34e88 <> RtObjectVTable 0x1c
-    VFUNC 0 0x001e7698 undefined GetType
+    VFUNC 0 0x001e7698 RtClass * GetType
+      LOCAL pRVar1 RtClass * this
     VFUNC 1 0x001e76a4 bool IsAbstract
     VFUNC 2 0x001e76ac undefined ~RtObject
-    VFUNC 3 0x001e76b0 undefined Destroy
+    VFUNC 3 0x001e76b0 void Destroy
       PARAM 0 RtObject * this
-    VFUNC 4 0x008037c4 undefined IsType
-      PARAM 0 undefined4 * this
-      PARAM 1 undefined4 target
-      LOCAL piVar1 undefined4 type
-    VFUNC 5 0x0012fd98 undefined FUN_0013fd98
-      PARAM 0 int * this
+    VFUNC 4 0x008037c4 bool IsType
+      PARAM 0 RtClass * this
+      PARAM 1 RtClass * target
+      LOCAL bVar1 RtClass * type
+      LOCAL <> bool check
+    VFUNC 5 0x0012fd98 void SafeDestroy
+      PARAM 0 RtObject * this
     VFUNC 6 0x008037ec undefined Serialize
       PARAM 0 undefined4 * param_1
       PARAM 1 int param_2
@@ -23,21 +25,40 @@ CLASS Sexy::RtObject 0x4
   FUNC 0x008037bc RtObject * new
 
 CLASS Sexy::RtClass 0x28
-  FIELD 0x0 RtClassVTable * vtable
+  FIELD 0x00 RtClassVTable * vtable
+  FIELD 0x04 char * className
+  FIELD 0x08 RtClass * super
+  FIELD 0x0c void * factory
+  FIELD 0x10 undefined4 <>
+  FIELD 0x14 undefined4 <>
+  FIELD 0x18 undefined4 <>
+  FIELD 0x1c undefined4 <>
+  FIELD 0x20 undefined4 <>
+  FIELD 0x24 undefined4 <>
   VAR 0x00d284b0 RtClass * instance
   VTABLE 0x00c34e58 Sexy::RtObject RtClassVTable 0x24
-    VFUNC 0 0x0080473c undefined GetType
+    VFUNC 0 0x0080473c RtClass * GetType
+      LOCAL <> undefined4 this
     VFUNC 1 0x00804748 bool IsAbstract
-    VFUNC 2 0x00803aec undefined ~RtClass
+    VFUNC 2 0x00803aec RtClass * ~RtClass
       PARAM 0 RtClass * this
-    VFUNC 3 0x00803ad4 undefined Destroy
+    VFUNC 3 0x00803ad4 void Destroy
       PARAM 0 RtClass * this
     VFUNC 6 0x008045ac undefined FUN_008145ac
-    VFUNC 7 0x008041cc undefined FUN_008141cc
-    VFUNC 8 0x00804278 undefined FUN_00814278
+    VFUNC 7 0x008041cc bool IsDerivedFrom
+      PARAM 0 RtClass * this
+      PARAM 1 RtClass * super
+    VFUNC 8 0x00804278 undefined RegisterClass
+      PARAM 0 RtClass * this
+      PARAM 1 char * className
+      PARAM 2 RtClass * super
+      PARAM 3 void * factory
   FUNC 0x001191c8 RtClass * SGetType
-    LOCAL uVar3 undefined4 super
+    LOCAL <> RegisterClass * registerPtr
+    LOCAL uVar3 RtClass * super
     LOCAL piVar2 RtClass * this
   FUNC 0x00119258 RtClass * new
     LOCAL pRVar1 RtClass * this
+  FUNC 0x00803910 RtClass * RtClass
+    PARAM 0 RtClass * this
 
