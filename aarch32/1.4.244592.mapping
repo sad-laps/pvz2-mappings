@@ -64,6 +64,19 @@ CLASS Sexy::RtClass 0x28
   FUNC 0x00803910 RtClass * RtClass
     PARAM 0 RtClass * this
 
+CLASS Sexy::BaseResource 0x1
+  VAR 0x00d28464 RtClass * instance
+  VTABLE 0x00c3acd8 Sexy::RtObject BaseResourceVTable 0x1c
+    VFUNC 0 0x0013fc30 RtClass * GetType
+      LOCAL <> ResourceClass * this
+    VFUNC 1 0x0013fcd4 bool IsAbstract
+    VFUNC 2 0x0013fcdc undefined ~BaseResource
+      PARAM 0 int * this
+    VFUNC 3 0x0013fd30 undefined Destroy
+      PARAM 0 int * this
+  FUNC 0x00119804 undefined new
+  FUNC 0x00119760 RtClass * SGetType
+
 CLASS Sexy::RtProtocol 0x1
   VAR 0x00d284b8 RtClass * instance
   FUNC 0x001193c0 RtClass * SGetType
@@ -71,18 +84,69 @@ CLASS Sexy::RtProtocol 0x1
 
 CLASS Sexy::RtProtocolClass 0x28
   FIELD 0x0 GameObjectVTable * vtable
-  VAR 0x00d284b4 undefined4 instance
+  VAR 0x00d284b4 RtClass * instance
   VTABLE 0x00c3ad68 Sexy::RtClass RtProtocolClassVTable 0x24
     VFUNC 0 0x0013fecc RtClass * GetType
       LOCAL <> undefined4 self
     VFUNC 1 0x0013fed8 bool IsAbstract
     VFUNC 2 0x0013fee0 undefined ~RtProtocolClass
-      PARAM 0 RtClass * self
+      PARAM 0 RtClass * this
     VFUNC 3 0x0013fef4 undefined Destroy
-      PARAM 0 RtClass * self
+      PARAM 0 RtClass * this
   FUNC 0x00119274 RtClass * SGetType
     LOCAL <> undefined4 factory_00
   FUNC 0x00119384 undefined new
+
+CLASS Sexy::ResourceGroup 0x68
+  FIELD 0x0 ResourceGroupVTable * vtable
+  VAR 0x00d2840c RtClass * instance
+  VTABLE 0x00c58c28 Sexy::RtClass ResourceGroupVTable 0x1c
+    VFUNC 0 0x007eb4b4 RtClass * GetType
+      LOCAL <> RegisterClass * factory
+    VFUNC 1 0x007eb538 bool IsAbstract
+    VFUNC 2 0x007dcb4c undefined ~ResourceGroup
+      PARAM 0 int * param_1
+    VFUNC 3 0x007dcb34 void Destroy
+      PARAM 0 ResourceGroup * this
+  FUNC 0x0011a2e8 RtClass * SGetType
+    LOCAL <> RegisterClass * factory
+  FUNC 0x0011a374 undefined new
+    LOCAL <> undefined4 this
+
+CLASS Sexy::ResourceInfoClass 0x50
+  FIELD 0x0 ResourceInfoClassVTable * vtable
+  VAR 0x00d28404 RtClass * instance
+  VTABLE 0x00c3ac78 Sexy::RtClass ResourceInfoClassVTable 0x24
+    VFUNC 0 0x0013f930 RtClass * GetType
+      LOCAL <> undefined4 this
+    VFUNC 1 0x0013f93c bool IsAbstract
+    VFUNC 2 0x0013f944 undefined ~ResourceInfoClass
+      PARAM 0 RtClass * this
+    VFUNC 3 0x0013f9a4 void Destroy
+      PARAM 0 RtClass * this
+  FUNC 0x0011a07c RtClass * SGetType
+    LOCAL <> RegisterClass * factory_00
+  FUNC 0x0011a18c undefined new
+
+CLASS Sexy::ResourceClass 0x30
+  VAR 0x00d28460 RtClass * instance
+  VTABLE 0x00c3ad08 Sexy::RtClass ResourceClassVTable 0x24
+    VFUNC 0 0x0013fd88 RtClass * GetType
+      LOCAL <> undefined4 this
+    VFUNC 1 0x0013fd94 bool IsAbstract
+    VFUNC 2 0x0013fd9c undefined ~ResourceClass
+      PARAM 0 RtClass * this
+    VFUNC 3 0x0013fdb0 void Destroy
+      PARAM 0 RtClass * this
+  FUNC 0x0011971c undefined new
+  FUNC 0x0011960c RtClass * SGetType
+    LOCAL <> undefined4 factory_00
+
+CLASS PropertySheetBase 0x1
+  VAR 0x00cbedc0 RtClass * instance
+  FUNC 0x0011d32c undefined new
+  FUNC 0x0011d218 RtClass * SGetType
+    LOCAL <> RegisterClass * factory_00
 
 CLASS GameObject 0x10
   FIELD 0x0 GameObjectVTable * vtable
@@ -95,10 +159,10 @@ CLASS GameObject 0x10
       LOCAL <> RegisterClass * factory
     VFUNC 1 0x0012fe5c bool IsAbstract
     VFUNC 2 0x0024968c undefined ~GameObject
-      PARAM 0 GameObject * self
+      PARAM 0 GameObject * this
     VFUNC 3 0x00249648 void Destroy
-      PARAM 0 GameObject * self
-    VFUNC 6 0x00249880 undefined FUN_00259880
+      PARAM 0 GameObject * this
+    VFUNC 6 0x00249880 undefined Serialize
       PARAM 0 undefined4 * param_1
       PARAM 1 int param_2
     VFUNC 7 0x0012fdb4 undefined FUN_0013fdb4
@@ -111,6 +175,12 @@ CLASS GameObject 0x10
     LOCAL <> GameObject * self
   FUNC 0x0011d14c RtClass * SGetType
     LOCAL <> RegisterClass * factory
+
+CLASS BoardEntity 0x1
+  VAR 0x00cb1210 RtClass * instance
+  FUNC 0x0011d3e0 undefined SGetType
+    LOCAL <> undefined4 factory_00
+  FUNC 0x0011d4f4 BoardEntity * new
 
 CLASS CrazyNPCManager 0x17c
   FIELD 0x0 CrazyNPCManagerVTable * vtable
@@ -182,7 +252,7 @@ CLASS CrazyNPCManager 0x17c
   FUNC 0x001e7490 undefined GetType2
 
 CLASS CrazyOlafTest 0x70
-  VAR 0x00cb24d0 undefined4 instance
+  VAR 0x00cb24d0 RtClass * instance
   VTABLE 0x00c3e028 GameObject CrazyOlafTestVTable 0x3c
     VFUNC 0 0x001ec314 undefined GetType
       LOCAL <> undefined4 factory
