@@ -101,7 +101,7 @@ CLASS Sexy::GenericResFile 0x20
 CLASS ObjectTypeDescriptor 0x8
   FIELD 0x0 ObjectTypeDescriptorVTable * vtable
   FIELD 0x4 undefined4 field_0x4
-  VAR 0x00cb75c0 undefined4 instance
+  VAR 0x00cb75c0 RtClass * instance
   VTABLE 0x00c39ea8 Sexy::RtObject ObjectTypeDescriptorVTable 0x1c
     VFUNC 0 0x0013a278 RtClass * GetType
       LOCAL <> undefined4 factory
@@ -112,6 +112,78 @@ CLASS ObjectTypeDescriptor 0x8
       PARAM 0 int * this
   FUNC 0x0011cec0 ObjectTypeDescriptor * new
     LOCAL <> ObjectTypeDescriptor * this
+
+CLASS PowerupType 0x34
+  FIELD 0x0 PowerupTypeVTable * vtable
+  VAR 0x00cbe340 RtClass * instance
+  VTABLE 0x00c39ed8 ObjectTypeDescriptor PowerupTypeVTable 0x1c
+    VFUNC 0 0x0013a404 RtClass * GetType
+    VFUNC 1 0x0013a410 bool IsAbstract
+    VFUNC 2 0x0013a418 undefined ~PowerupType
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013a42c void Destroy
+      PARAM 0 void * this
+  FUNC 0x00123958 RtClass * SGetType
+    LOCAL <> undefined4 factory_00
+  FUNC 0x00123a6c PowerupType * new
+    LOCAL <> undefined4 this
+
+CLASS PresentType 0x18
+  FIELD 0x0 PresentTypeVTable * vtable
+  VAR 0x00cbe580 RtClass * instance
+  VTABLE 0x00c39f08 ObjectTypeDescriptor PresentTypeVTable 0x20
+    VFUNC 0 0x0013a678 RtClass * GetType
+    VFUNC 1 0x0013a684 bool IsAbstract
+    VFUNC 2 0x0013a68c undefined ~PresentType
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013a6a0 void Destroy
+      PARAM 0 void * this
+    VFUNC 7 0x0013a6b8 undefined FUN_0014a6b8
+  FUNC 0x00123614 undefined SGetType
+    LOCAL <> undefined4 factory_00
+  FUNC 0x00123728 PresentType * new
+    LOCAL <> undefined4 this
+
+CLASS PresentTable 0x18
+  VAR 0x00cbe550 RtClass * instance
+  VTABLE 0x00c39f38 ObjectTypeDescriptor PresentTableVTable 0x1c
+    VFUNC 0 0x0013a8ac RtClass * GetType
+    VFUNC 1 0x0013a8b8 bool IsAbstract
+    VFUNC 2 0x0013a8c0 undefined ~PresentTable
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013a8d4 undefined Destroy
+      PARAM 0 void * this
+  FUNC 0x001234a8 undefined SGetType
+  FUNC 0x001235bc PresentTable * new
+    LOCAL <> undefined4 this
+
+CLASS CollectableType 0x5c
+  FIELD 0x0 CollectableTypeVTable * vtable
+  VTABLE 0x00c39f68 ObjectTypeDescriptor CollectableTypeVTable 0x1c
+    VFUNC 0 0x0013aa04 RtClass * GetType
+    VFUNC 1 0x0013aa10 bool IsAbstract
+    VFUNC 2 0x0013aa18 undefined ~CollectableType
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013aa2c void Destroy
+      PARAM 0 void * this
+  FUNC 0x001232c4 undefined SGetType
+    LOCAL <> undefined4 factory_00
+  FUNC 0x001233d8 CollectableType * new
+    LOCAL <> undefined4 this
+
+CLASS GridItemType 0x20
+  VAR 0x00cb5710 RtClass * instance
+  VTABLE 0x00c39f98 ObjectTypeDescriptor GridItemTypeVTable 0x1c
+    VFUNC 0 0x0013ad78 RtClass * GetType
+    VFUNC 1 0x0013ad84 bool IsAbstract
+    VFUNC 2 0x0013ad8c undefined ~GridItemType
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013ada0 void Destroy
+      PARAM 0 void * this
+  FUNC 0x00123154 undefined SGetType
+    LOCAL <> undefined4 factory
+  FUNC 0x00123268 GridItemType * new
+    LOCAL <> undefined4 this
 
 CLASS Sexy::RtProtocol 0x1
   VAR 0x00d284b8 RtClass * instance
@@ -213,9 +285,9 @@ CLASS GameObject 0x10
     LOCAL <> RegisterClass * factory
 
 CLASS GamePropertySheet 0x28
-  VAR 0x00cb46f0 undefined4 instance
+  VAR 0x00cb46f0 RtClass * instance
   VTABLE 0x00c3b808 GameObject GamePropertySheetVTable 0x34
-    VFUNC 0 0x001482bc undefined GetType
+    VFUNC 0 0x001482bc RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x0014834c bool IsAbstract
     VFUNC 2 0x00148354 undefined ~GamePropertySheet
@@ -225,10 +297,50 @@ CLASS GamePropertySheet 0x28
   FUNC 0x0013ff9c undefined new
     LOCAL <> undefined4 this
 
+CLASS GridItemPropertySheet 0x1
+  VAR 0x00cb5420 RtClass * instance
+  VTABLE 0x00c3a048 GameObject GridItemPropertySheetVTable 0x34
+    VFUNC 0 0x0013b130 RtClass * GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0013b1c0 bool IsAbstract
+    VFUNC 2 0x0013b1c8 undefined ~GridItemPropertySheet
+      PARAM 0 GameObject * this
+    VFUNC 3 0x0013b1dc void Destroy
+      PARAM 0 GameObject * this
+  FUNC 0x0012243c undefined SGetType
+    LOCAL <> undefined4 factory
+  FUNC 0x001224cc undefined new
+
+CLASS GridItemGravestonePropertySheet 0x48
+  VAR 0x00cb542c RtClass * instance
+  VTABLE 0x00c3a008 GridItemPropertySheet GridItemGravestonePropertySheetVTable 0x34
+    VFUNC 0 0x0013b0f0 RtClass * GetType
+    VFUNC 1 0x0013b0fc bool IsAbstract
+    VFUNC 2 0x0013b104 undefined ~GridItemGravestonePropertySheet
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013b118 void Destroy
+      PARAM 0 void * this
+  FUNC 0x001228a0 undefined SGetType
+    LOCAL <> undefined4 factory
+  FUNC 0x001229b4 GridItemGravestonePropertySheet * new
+    LOCAL <> undefined4 this
+
+CLASS GridItemBarricadePropertySheet 0x50
+  VAR 0x00cb543c RtClass * instance
+  VTABLE 0x00c39fc8 GridItemGravestonePropertySheet GridItemBarricadePropertySheetVTable 0x34
+    VFUNC 0 0x0013af24 RtClass * GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0013afb4 bool IsAbstract
+    VFUNC 2 0x0013afbc undefined ~GridItemBarricadePropertySheet
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0013afd0 void Destroy
+      PARAM 0 void * this
+  FUNC 0x00123044 undefined new
+
 CLASS AnimationMgr 0x28
-  VAR 0x00cb0e38 undefined4 instance
+  VAR 0x00cb0e38 RtClass * instance
   VTABLE 0x00c3b9e8 GameObject AnimationMgrVTable 0x34
-    VFUNC 0 0x00136e74 undefined GetType
+    VFUNC 0 0x00136e74 RtClass * GetType
     VFUNC 1 0x00136e80 bool IsAbstract
     VFUNC 2 0x0014d770 undefined ~AnimationMgr
       PARAM 0 GameObject * this
@@ -247,7 +359,7 @@ CLASS AnimationMgr 0x28
     LOCAL <> undefined4 this
 
 CLASS AnimationController 0x28
-  VAR 0x00cb0e30 undefined4 instance
+  VAR 0x00cb0e30 RtClass * instance
   VTABLE 0x00c3b998 GameObject AnimationControllerVTable 0x40
     VFUNC 0 0x00131078 RtClass * GetType
       LOCAL <> RtClass * this
@@ -269,9 +381,9 @@ CLASS AnimationController 0x28
 
 CLASS AnimMgrSendAudioEvent 0x28
   FIELD 0x0 AnimMgrSendAudioEventVTable * vtable
-  VAR 0x00cb0d40 undefined4 instance
+  VAR 0x00cb0d40 RtClass * instance
   VTABLE 0x00c3b848 AnimationController AnimMgrSendAudioEventVTable 0x40
-    VFUNC 0 0x0014a400 undefined GetType
+    VFUNC 0 0x0014a400 RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x0014a488 bool IsAbstract
     VFUNC 2 0x0014a490 undefined ~AnimMgrSendAudioEvent
@@ -285,11 +397,11 @@ CLASS AnimMgrSendAudioEvent 0x28
 
 CLASS PlayPAM 0x60
   FIELD 0x0 PlayPAMVTable * vtable
-  VAR 0x00cb0d44 undefined4 instance
+  VAR 0x00cb0d44 RtClass * instance
   VTABLE 0x00c3b898 AnimationController PlayPAMVTable 0x40
     VFUNC 0 0x0014a644 RtClass * GetType
       LOCAL <> undefined4 factory
-    VFUNC 1 0x0014a6cc undefined IsAbstract
+    VFUNC 1 0x0014a6cc bool IsAbstract
     VFUNC 2 0x0014a6d4 undefined ~PlayPAM
       PARAM 0 undefined4 this
     VFUNC 3 0x0014a6e8 void Destroy
@@ -308,9 +420,9 @@ CLASS PlayPAM 0x60
 
 CLASS AnimateLawnMowers 0x28
   FIELD 0x0 AnimateLawnMowersVTable * vtable
-  VAR 0x00cb0d48 undefined4 instance
+  VAR 0x00cb0d48 RtClass * instance
   VTABLE 0x00c3b8e8 AnimationController AnimateLawnMowersVTable 0x40
-    VFUNC 0 0x0014ad14 undefined GetType
+    VFUNC 0 0x0014ad14 RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x0014ad9c bool IsAbstract
     VFUNC 2 0x0014ada4 undefined ~AnimateLawnMowers
@@ -322,13 +434,11 @@ CLASS AnimateLawnMowers 0x28
       PARAM 1 float param_2
   FUNC 0x00148cac AnimateLawnMowers * new
     LOCAL <> AnimateLawnMowers * this
-  FUNC 0x0014ad14 undefined GetType
-    LOCAL <> undefined4 factory
 
 CLASS ShowAdvice 0x450
   VAR 0x00cb0d4c undefined4 instance
   VTABLE 0x00c3b938 AnimationController ShowAdviceVTable 0x44
-    VFUNC 0 0x0014aea8 undefined GetType
+    VFUNC 0 0x0014aea8 RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x0014af30 bool IsAbstract
     VFUNC 2 0x0014af38 undefined ~ShowAdvice
@@ -359,7 +469,7 @@ CLASS CrazyNPCManager 0x17c
   FIELD 0x4 undefined * field_0x4
   VAR 0x00cb2414 RtClass * instance
   VTABLE 0x00c3ddf8 Sexy::RtObject CrazyNPCManagerVTable 0x9c
-    VFUNC 0 0x001e7404 undefined GetType
+    VFUNC 0 0x001e7404 RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x001e7488 bool IsAbstract
     VFUNC 2 0x001e2ee4 CrazyNPCManager * ~CrazyNPCManager
@@ -417,16 +527,16 @@ CLASS CrazyNPCManager 0x17c
     VFUNC 38 0x001e72bc undefined FUN_001f72bc
   FUNC 0x00157fcc undefined new
     LOCAL <> CrazyNPCManager * this
-  FUNC 0x001e7404 undefined GetType
+  FUNC 0x001e7404 RtClass * GetType
     LOCAL <> undefined4 factory
   FUNC 0x001e285c CrazyNPCManager * CrazyNPCManager
     PARAM 0 CrazyNPCManager * this
-  FUNC 0x001e7490 undefined GetType2
+  FUNC 0x001e7490 RtClass * GetType2
 
 CLASS CrazyOlafTest 0x70
   VAR 0x00cb24d0 RtClass * instance
   VTABLE 0x00c3e028 GameObject CrazyOlafTestVTable 0x3c
-    VFUNC 0 0x001ec314 undefined GetType
+    VFUNC 0 0x001ec314 RtClass * GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x001ec39c bool IsAbstract
     VFUNC 2 0x001ec3a4 undefined FUN_001fc3a4
