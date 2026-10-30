@@ -77,6 +77,42 @@ CLASS Sexy::BaseResource 0x1
   FUNC 0x00119804 undefined new
   FUNC 0x00119760 RtClass * SGetType
 
+CLASS Sexy::GenericResFile 0x20
+  FIELD 0x0 GenericResFileVTable * vtable
+  FIELD 0x4 undefined4 field_0x4
+  FIELD 0x8 undefined4 field_0x8
+  FIELD 0xc undefined4 field_0xc
+  FIELD 0x10 undefined4 field_0x10
+  FIELD 0x14 undefined4 field_0x14
+  FIELD 0x18 undefined4 field_0x18
+  VAR 0x00d28400 RtClass * instance
+  VTABLE 0x00c3aca8 Sexy::RtObject GenericResFileVTable 0x1c
+    VFUNC 0 0x0013faa0 RtClass * GetType
+      LOCAL <> undefined4 self
+    VFUNC 1 0x0013faac bool IsAbstract
+    VFUNC 2 0x0013fab4 undefined ~GenericResFile
+      PARAM 0 int * this
+    VFUNC 3 0x0013fb70 undefined Destroy
+      PARAM 0 int * this
+  FUNC 0x00119efc RtClass * SGetType
+  FUNC 0x0011a024 GenericResFile * new
+    LOCAL <> GenericResFile * this
+
+CLASS ObjectTypeDescriptor 0x8
+  FIELD 0x0 ObjectTypeDescriptorVTable * vtable
+  FIELD 0x4 undefined4 field_0x4
+  VAR 0x00cb75c0 undefined4 instance
+  VTABLE 0x00c39ea8 Sexy::RtObject ObjectTypeDescriptorVTable 0x1c
+    VFUNC 0 0x0013a278 RtClass * GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0013a308 bool IsAbstract
+    VFUNC 2 0x0013a310 undefined ~ObjectTypeDescriptor
+      PARAM 0 int * this
+    VFUNC 3 0x0013a388 void Destroy
+      PARAM 0 int * this
+  FUNC 0x0011cec0 ObjectTypeDescriptor * new
+    LOCAL <> ObjectTypeDescriptor * this
+
 CLASS Sexy::RtProtocol 0x1
   VAR 0x00d284b8 RtClass * instance
   FUNC 0x001193c0 RtClass * SGetType
@@ -175,6 +211,142 @@ CLASS GameObject 0x10
     LOCAL <> GameObject * self
   FUNC 0x0011d14c RtClass * SGetType
     LOCAL <> RegisterClass * factory
+
+CLASS GamePropertySheet 0x28
+  VAR 0x00cb46f0 undefined4 instance
+  VTABLE 0x00c3b808 GameObject GamePropertySheetVTable 0x34
+    VFUNC 0 0x001482bc undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0014834c bool IsAbstract
+    VFUNC 2 0x00148354 undefined ~GamePropertySheet
+      PARAM 0 undefined4 this
+    VFUNC 3 0x00148368 undefined Destroy
+      PARAM 0 void * this
+  FUNC 0x0013ff9c undefined new
+    LOCAL <> undefined4 this
+
+CLASS AnimationMgr 0x28
+  VAR 0x00cb0e38 undefined4 instance
+  VTABLE 0x00c3b9e8 GameObject AnimationMgrVTable 0x34
+    VFUNC 0 0x00136e74 undefined GetType
+    VFUNC 1 0x00136e80 bool IsAbstract
+    VFUNC 2 0x0014d770 undefined ~AnimationMgr
+      PARAM 0 GameObject * this
+    VFUNC 3 0x0014d7e8 void Destroy
+      PARAM 0 GameObject * this
+    VFUNC 6 0x0014ce98 undefined FUN_0015ce98
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 9 0x0014cea4 undefined FUN_0015cea4
+      PARAM 0 int param_1
+    VFUNC 11 0x0014ceb8 undefined FUN_0015ceb8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x00126e7c undefined SGetType
+  FUNC 0x00126f90 undefined new
+    LOCAL <> undefined4 this
+
+CLASS AnimationController 0x28
+  VAR 0x00cb0e30 undefined4 instance
+  VTABLE 0x00c3b998 GameObject AnimationControllerVTable 0x40
+    VFUNC 0 0x00131078 RtClass * GetType
+      LOCAL <> RtClass * this
+    VFUNC 1 0x00131084 undefined FUN_00141084
+    VFUNC 2 0x0013108c undefined FUN_0014108c
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0013110c undefined FUN_0014110c
+      PARAM 0 GameObject * param_1
+    VFUNC 12 0x0014c728 undefined FUN_0015c728
+    VFUNC 13 0x0013067c undefined FUN_0014067c
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+    VFUNC 14 0x00131190 undefined FUN_00141190
+    VFUNC 15 0x0013070c undefined FUN_0014070c
+  FUNC 0x00126bd8 RtClass * SGetType
+    LOCAL <> RegisterClass * factory_00
+  FUNC 0x00126cec undefined new
+    LOCAL <> undefined4 this
+
+CLASS AnimMgrSendAudioEvent 0x28
+  FIELD 0x0 AnimMgrSendAudioEventVTable * vtable
+  VAR 0x00cb0d40 undefined4 instance
+  VTABLE 0x00c3b848 AnimationController AnimMgrSendAudioEventVTable 0x40
+    VFUNC 0 0x0014a400 undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0014a488 bool IsAbstract
+    VFUNC 2 0x0014a490 undefined ~AnimMgrSendAudioEvent
+      PARAM 0 GameObject * this
+    VFUNC 3 0x0014a568 undefined Destroy
+      PARAM 0 GameObject * this
+    VFUNC 14 0x00149270 undefined FUN_00159270
+      PARAM 0 int param_1
+  FUNC 0x001488d8 AnimMgrSendAudioEvent * new
+    LOCAL <> AnimMgrSendAudioEvent * this
+
+CLASS PlayPAM 0x60
+  FIELD 0x0 PlayPAMVTable * vtable
+  VAR 0x00cb0d44 undefined4 instance
+  VTABLE 0x00c3b898 AnimationController PlayPAMVTable 0x40
+    VFUNC 0 0x0014a644 RtClass * GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0014a6cc undefined IsAbstract
+    VFUNC 2 0x0014a6d4 undefined ~PlayPAM
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0014a6e8 void Destroy
+      PARAM 0 void * this
+    VFUNC 12 0x0014a700 undefined FUN_0015a700
+      PARAM 0 int param_1
+    VFUNC 14 0x0014a86c undefined FUN_0015a86c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 15 0x00149ad8 undefined FUN_00159ad8
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+  FUNC 0x00148a78 PlayPAM * new
+    LOCAL <> PlayPAM * this
+
+CLASS AnimateLawnMowers 0x28
+  FIELD 0x0 AnimateLawnMowersVTable * vtable
+  VAR 0x00cb0d48 undefined4 instance
+  VTABLE 0x00c3b8e8 AnimationController AnimateLawnMowersVTable 0x40
+    VFUNC 0 0x0014ad14 undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0014ad9c bool IsAbstract
+    VFUNC 2 0x0014ada4 undefined ~AnimateLawnMowers
+      PARAM 0 GameObject * this
+    VFUNC 3 0x0014ae24 undefined Destroy
+      PARAM 0 GameObject * this
+    VFUNC 14 0x00149e80 undefined FUN_00159e80
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+  FUNC 0x00148cac AnimateLawnMowers * new
+    LOCAL <> AnimateLawnMowers * this
+  FUNC 0x0014ad14 undefined GetType
+    LOCAL <> undefined4 factory
+
+CLASS ShowAdvice 0x450
+  VAR 0x00cb0d4c undefined4 instance
+  VTABLE 0x00c3b938 AnimationController ShowAdviceVTable 0x44
+    VFUNC 0 0x0014aea8 undefined GetType
+      LOCAL <> undefined4 factory
+    VFUNC 1 0x0014af30 bool IsAbstract
+    VFUNC 2 0x0014af38 undefined ~ShowAdvice
+      PARAM 0 undefined4 this
+    VFUNC 3 0x0014af4c undefined Destroy
+      PARAM 0 void * this
+    VFUNC 11 0x0014af64 undefined FUN_0015af64
+      PARAM 0 int param_1
+    VFUNC 14 0x0014af78 undefined FUN_0015af78
+    VFUNC 15 0x0014a3cc undefined FUN_0015a3cc
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 16 0x0014af7c undefined FUN_0015af7c
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x00148e38 undefined new
+    LOCAL <> undefined4 this
 
 CLASS BoardEntity 0x1
   VAR 0x00cb1210 RtClass * instance
