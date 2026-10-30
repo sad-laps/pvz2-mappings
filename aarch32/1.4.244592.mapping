@@ -56,13 +56,61 @@ CLASS Sexy::RtClass 0x28
       PARAM 2 RtClass * super
       PARAM 3 void * factory
   FUNC 0x001191c8 RtClass * SGetType
-    LOCAL <> RegisterClass * registerPtr
+    LOCAL <> RegisterClass * factory
     LOCAL uVar3 RtClass * super
     LOCAL piVar2 RtClass * this
   FUNC 0x00119258 RtClass * new
     LOCAL pRVar1 RtClass * this
   FUNC 0x00803910 RtClass * RtClass
     PARAM 0 RtClass * this
+
+CLASS Sexy::RtProtocol 0x1
+  VAR 0x00d284b8 RtClass * instance
+  FUNC 0x001193c0 RtClass * SGetType
+  FUNC 0x00119458 RtProtocol * new
+
+CLASS Sexy::RtProtocolClass 0x28
+  FIELD 0x0 GameObjectVTable * vtable
+  VAR 0x00d284b4 undefined4 instance
+  VTABLE 0x00c3ad68 Sexy::RtClass RtProtocolClassVTable 0x24
+    VFUNC 0 0x0013fecc RtClass * GetType
+      LOCAL <> undefined4 self
+    VFUNC 1 0x0013fed8 bool IsAbstract
+    VFUNC 2 0x0013fee0 undefined ~RtProtocolClass
+      PARAM 0 RtClass * self
+    VFUNC 3 0x0013fef4 undefined Destroy
+      PARAM 0 RtClass * self
+  FUNC 0x00119274 RtClass * SGetType
+    LOCAL <> undefined4 factory_00
+  FUNC 0x00119384 undefined new
+
+CLASS GameObject 0x10
+  FIELD 0x0 GameObjectVTable * vtable
+  FIELD 0x4 undefined4 field_0x4
+  FIELD 0x8 undefined4 field_0x8
+  FIELD 0xc undefined4 field_0xc
+  VAR 0x00cb4560 RtClass * instance
+  VTABLE 0x00c40b78 Sexy::RtObject GameObjectVTable 0x34
+    VFUNC 0 0x0012fdcc RtClass * GetType
+      LOCAL <> RegisterClass * factory
+    VFUNC 1 0x0012fe5c bool IsAbstract
+    VFUNC 2 0x0024968c undefined ~GameObject
+      PARAM 0 GameObject * self
+    VFUNC 3 0x00249648 void Destroy
+      PARAM 0 GameObject * self
+    VFUNC 6 0x00249880 undefined FUN_00259880
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 7 0x0012fdb4 undefined FUN_0013fdb4
+    VFUNC 8 0x0012fdb8 undefined FUN_0013fdb8
+    VFUNC 9 0x0012fdbc undefined FUN_0013fdbc
+    VFUNC 10 0x0012fdc0 undefined FUN_0013fdc0
+    VFUNC 11 0x0012fdc4 undefined FUN_0013fdc4
+    VFUNC 12 0x0012fdc8 undefined FUN_0013fdc8
+  FUNC 0x0011d1dc GameObject * new
+    LOCAL <> GameObject * self
+  FUNC 0x0011d14c RtClass * SGetType
+    LOCAL <> RegisterClass * factory
 
 CLASS CrazyNPCManager 0x17c
   FIELD 0x0 CrazyNPCManagerVTable * vtable
@@ -135,7 +183,7 @@ CLASS CrazyNPCManager 0x17c
 
 CLASS CrazyOlafTest 0x70
   VAR 0x00cb24d0 undefined4 instance
-  VTABLE 0x00c3e028 Sexy::RtObject CrazyOlafTestVTable 0x3c
+  VTABLE 0x00c3e028 GameObject CrazyOlafTestVTable 0x3c
     VFUNC 0 0x001ec314 undefined GetType
       LOCAL <> undefined4 factory
     VFUNC 1 0x001ec39c bool IsAbstract
@@ -143,16 +191,10 @@ CLASS CrazyOlafTest 0x70
       PARAM 0 undefined4 param_1
     VFUNC 3 0x001ec3b8 undefined FUN_001fc3b8
       PARAM 0 void * param_1
-    VFUNC 6 0x00249880 undefined FUN_00259880
-      PARAM 0 undefined4 * param_1
-      PARAM 1 int param_2
     VFUNC 7 0x001ea828 undefined FUN_001fa828
       PARAM 0 int param_1
     VFUNC 8 0x00132028 undefined FUN_00142028
-    VFUNC 9 0x0012fdbc undefined FUN_0013fdbc
-    VFUNC 10 0x0012fdc0 undefined FUN_0013fdc0
     VFUNC 11 0x0013202c undefined FUN_0014202c
-    VFUNC 12 0x0012fdc8 undefined FUN_0013fdc8
     VFUNC 13 0x002a5f34 undefined FUN_002b5f34
       PARAM 0 int param_1
       PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
