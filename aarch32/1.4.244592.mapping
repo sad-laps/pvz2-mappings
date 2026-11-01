@@ -5274,3 +5274,406 @@ CLASS PlantBonkchoy 0x10
   FUNC 0x0037de2c undefined SGetType
   FUNC 0x0037df34 undefined new
 
+CLASS PlantCabbagepult 0x4
+  FIELD 0x0 PlantCabbagepultVTable * vtable
+  VAR 0x00cbae90 undefined4 instance
+  VTABLE 0x00c48ac8 PlantFramework PlantCabbagepultVTable 0xf0
+    VFUNC 0 0x00380720 undefined GetType
+    VFUNC 1 0x0038072c bool IsAbstract
+    VFUNC 2 0x00380734 undefined ~PlantCabbagepult
+    VFUNC 3 0x00380738 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 16 0x00380264 undefined FUN_00390264
+      PARAM 0 int param_1
+    VFUNC 17 0x0037fd18 undefined FUN_0038fd18
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 35 0x0037fd10 undefined FUN_0038fd10
+  FUNC 0x0037fbd4 undefined SGetType
+
+CLASS PlantCherryBomb 0x4
+  FIELD 0x0 PlantCherryBombVTable * vtable
+  VAR 0x00cbaf50 undefined4 instance
+  VTABLE 0x00c48bc8 PlantFramework PlantCherryBombVTable 0xf0
+    VFUNC 0 0x003811fc undefined GetType
+    VFUNC 1 0x00381208 bool IsAbstract
+    VFUNC 2 0x00381210 undefined ~PlantCherryBomb
+    VFUNC 3 0x00381214 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x00380a8c undefined FUN_00390a8c
+      PARAM 0 int param_1
+    VFUNC 25 0x00380c20 undefined FUN_00390c20
+      PARAM 0 int param_1
+    VFUNC 29 0x003811f4 undefined FUN_003911f4
+    VFUNC 32 0x00381220 undefined FUN_00391220
+    VFUNC 33 0x00381228 undefined FUN_00391228
+    VFUNC 48 0x00381230 undefined FUN_00391230
+  FUNC 0x00380950 undefined SGetType
+
+CLASS PlantChilibean 0x4
+  FIELD 0x0 PlantChilibeanVTable * vtable
+  VAR 0x00cbb010 undefined4 instance
+  VTABLE 0x00c48cc8 PlantFramework PlantChilibeanVTable 0xf0
+    VFUNC 0 0x0038205c undefined GetType
+    VFUNC 1 0x00382068 bool IsAbstract
+    VFUNC 2 0x00382070 undefined ~PlantChilibean
+    VFUNC 3 0x00382074 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 29 0x00381658 undefined FUN_00391658
+    VFUNC 35 0x00381f58 undefined FUN_00391f58
+    VFUNC 36 0x00381f60 undefined FUN_00391f60
+      PARAM 0 int param_1
+    VFUNC 43 0x00381660 undefined FUN_00391660
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 47 0x00381ff8 undefined FUN_00391ff8
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 51 0x00381a28 undefined FUN_00391a28
+      PARAM 0 int param_1
+  FUNC 0x00381444 undefined SGetType
+
+CLASS PlantChilibeanSubSystem 0x20
+  FIELD 0x0 PlantChilibeanSubSystemVTable * vtable
+  VAR 0x00cbb0d0 undefined4 instance
+  VTABLE 0x00c48dc8 GameSubSystem PlantChilibeanSubSystemVTable 0x38
+    VFUNC 0 0x00382080 undefined GetType
+    VFUNC 1 0x00382110 bool IsAbstract
+    VFUNC 2 0x003841c0 undefined ~PlantChilibeanSubSystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00384248 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x00383728 undefined FUN_00393728
+    VFUNC 12 0x0038372c undefined FUN_0039372c
+    VFUNC 13 0x00382d94 undefined FUN_00392d94
+      PARAM 0 int param_1
+  FUNC 0x00381610 undefined new
+
+CLASS PlantCitron 0x8
+  FIELD 0x0 PlantCitronVTable * vtable
+  VAR 0x00cbb190 undefined4 instance
+  VTABLE 0x00c48e08 PlantFramework PlantCitronVTable 0xf4
+    VFUNC 0 0x00386290 undefined GetType
+    VFUNC 1 0x0038629c bool IsAbstract
+    VFUNC 2 0x003862a4 undefined ~PlantCitron
+    VFUNC 3 0x003862a8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x00385bbc undefined FUN_00395bbc
+      PARAM 0 int param_1
+    VFUNC 25 0x0038609c undefined FUN_0039609c
+      PARAM 0 int param_1
+    VFUNC 35 0x00385eb4 undefined FUN_00395eb4
+    VFUNC 60 0x00385ebc undefined FUN_00395ebc
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x003858ec undefined SGetType
+  FUNC 0x003859f4 undefined new
+
+CLASS CoconutCannonProjectile 0xc0
+  FIELD 0x0 CoconutCannonProjectileVTable * vtable
+  VAR 0x00cbb250 undefined4 instance
+  VTABLE 0x00c48f08 Projectile CoconutCannonProjectileVTable 0x54
+    VFUNC 0 0x001a9378 undefined GetType
+    VFUNC 1 0x001a9408 bool IsAbstract
+    VFUNC 2 0x003895b0 undefined ~CoconutCannonProjectile
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00389628 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x003888bc undefined FUN_003988bc
+      PARAM 0 int param_1
+    VFUNC 13 0x00389244 undefined FUN_00399244
+      PARAM 0 int * param_1
+      PARAM 1 int * param_2
+    VFUNC 18 0x003888cc undefined FUN_003988cc
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x00199328 undefined new
+
+CLASS PlantCoconutCannon 0x10
+  FIELD 0x0 PlantCoconutCannonVTable * vtable
+  VAR 0x00cbb254 undefined4 instance
+  VTABLE 0x00c48f68 PlantFramework PlantCoconutCannonVTable 0xf0
+    VFUNC 0 0x001a9364 undefined GetType
+    VFUNC 1 0x001a9370 bool IsAbstract
+    VFUNC 2 0x0038743c undefined ~PlantCoconutCannon
+    VFUNC 3 0x00387430 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x00387b4c undefined FUN_00397b4c
+      PARAM 0 int param_1
+    VFUNC 14 0x00387e78 undefined FUN_00397e78
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 35 0x003887f0 undefined FUN_003987f0
+    VFUNC 36 0x003887f8 undefined FUN_003987f8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003888a0 undefined FUN_003988a0
+      PARAM 0 int param_1
+    VFUNC 56 0x00387440 undefined FUN_00397440
+      PARAM 0 int param_1
+    VFUNC 57 0x00387a9c undefined FUN_00397a9c
+      PARAM 0 int param_1
+  FUNC 0x00199374 undefined SGetType
+  FUNC 0x00199488 undefined new
+
+CLASS PlantEMPea 0x14
+  FIELD 0x0 PlantEMPeaVTable * vtable
+  VAR 0x00cbb350 undefined4 instance
+  VTABLE 0x00c49068 PlantFramework PlantEMPeaVTable 0xf0
+    VFUNC 0 0x0038ae38 undefined GetType
+    VFUNC 1 0x0038ae44 bool IsAbstract
+    VFUNC 2 0x0038ae4c undefined ~PlantEMPea
+      PARAM 0 int * param_1
+    VFUNC 3 0x0038aebc undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0038a0c0 undefined FUN_0039a0c0
+      PARAM 0 int param_1
+    VFUNC 25 0x0038acac undefined FUN_0039acac
+      PARAM 0 int * param_1
+    VFUNC 29 0x0038a4f8 undefined FUN_0039a4f8
+    VFUNC 33 0x0038a518 undefined FUN_0039a518
+      PARAM 0 int param_1
+    VFUNC 47 0x0038a630 undefined FUN_0039a630
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x0038a500 undefined FUN_0039a500
+      PARAM 0 int param_1
+    VFUNC 58 0x0038a530 undefined FUN_0039a530
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x00389a78 undefined SGetType
+  FUNC 0x00389b80 undefined new
+
+CLASS PlantGraveBuster 0x1c
+  FIELD 0x0 PlantGraveBusterVTable * vtable
+  VAR 0x00cbb410 undefined4 instance
+  VTABLE 0x00c49168 PlantFramework PlantGraveBusterVTable 0xf0
+    VFUNC 0 0x0038c960 undefined GetType
+    VFUNC 1 0x0038c96c bool IsAbstract
+    VFUNC 2 0x0038c974 undefined ~PlantGraveBuster
+    VFUNC 3 0x0038c978 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0038b918 undefined FUN_0039b918
+      PARAM 0 int param_1
+    VFUNC 9 0x0038c278 undefined FUN_0039c278
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 11 0x0038c744 undefined FUN_0039c744
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 13 0x0038bc38 undefined FUN_0039bc38
+      PARAM 0 int param_1
+    VFUNC 22 0x0038bd14 undefined FUN_0039bd14
+      PARAM 0 int param_1
+    VFUNC 25 0x0038b97c undefined FUN_0039b97c
+    VFUNC 32 0x0038bb60 undefined FUN_0039bb60
+    VFUNC 41 0x0038c984 undefined FUN_0039c984
+    VFUNC 48 0x0038be20 undefined FUN_0039be20
+      PARAM 0 int param_1
+  FUNC 0x0038b22c undefined SGetType
+  FUNC 0x0038b334 undefined new
+
+CLASS PlantHolonut 0x10
+  FIELD 0x0 PlantHolonutVTable * vtable
+  VAR 0x00cbb4d0 undefined4 instance
+  VTABLE 0x00c49268 PlantFramework PlantHolonutVTable 0xf0
+    VFUNC 0 0x0038da28 undefined GetType
+    VFUNC 1 0x0038da34 bool IsAbstract
+    VFUNC 2 0x0038da3c undefined ~PlantHolonut
+    VFUNC 3 0x0038da40 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0038d05c undefined FUN_0039d05c
+      PARAM 0 int param_1
+    VFUNC 25 0x0038d440 undefined FUN_0039d440
+      PARAM 0 int param_1
+    VFUNC 33 0x0038d148 undefined FUN_0039d148
+      PARAM 0 int param_1
+    VFUNC 35 0x0038d140 undefined FUN_0039d140
+    VFUNC 36 0x0038d788 undefined FUN_0039d788
+      PARAM 0 int param_1
+    VFUNC 37 0x0038d808 undefined FUN_0039d808
+      PARAM 0 int param_1
+    VFUNC 43 0x0038d178 undefined FUN_0039d178
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 * param_3
+  FUNC 0x0038cb98 undefined SGetType
+  FUNC 0x0038cca0 undefined new
+
+CLASS PlantIceburg 0xc
+  FIELD 0x0 PlantIceburgVTable * vtable
+  VAR 0x00cbb590 undefined4 instance
+  VTABLE 0x00c49368 PlantFramework PlantIceburgVTable 0xf0
+    VFUNC 0 0x0038e9f4 undefined GetType
+    VFUNC 1 0x0038ea00 bool IsAbstract
+    VFUNC 2 0x0038ea08 undefined ~PlantIceburg
+    VFUNC 3 0x0038ea0c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0038e0e4 undefined FUN_0039e0e4
+      PARAM 0 int param_1
+    VFUNC 25 0x0038e0f0 undefined FUN_0039e0f0
+      PARAM 0 int param_1
+    VFUNC 29 0x0038e318 undefined FUN_0039e318
+    VFUNC 35 0x0038e7b4 undefined FUN_0039e7b4
+      PARAM 0 int param_1
+    VFUNC 36 0x0038e7cc undefined FUN_0039e7cc
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x0038e9d8 undefined FUN_0039e9d8
+      PARAM 0 int param_1
+    VFUNC 39 0x0038ea18 undefined FUN_0039ea18
+    VFUNC 41 0x0038e304 undefined FUN_0039e304
+      PARAM 0 int param_1
+    VFUNC 47 0x0038e338 undefined FUN_0039e338
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x0038e2ec undefined FUN_0039e2ec
+      PARAM 0 int param_1
+    VFUNC 58 0x0038e320 undefined FUN_0039e320
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x0038dd18 undefined SGetType
+  FUNC 0x0038de20 undefined new
+
+CLASS PlantImitater 0x18
+  FIELD 0x0 PlantImitaterVTable * vtable
+  VAR 0x00cbb680 undefined4 instance
+  VTABLE 0x00c49468 PlantFramework PlantImitaterVTable 0xf0
+    VFUNC 0 0x0018658c undefined GetType
+    VFUNC 1 0x00186598 bool IsAbstract
+    VFUNC 2 0x0038f494 undefined ~PlantImitater
+      PARAM 0 int * param_1
+    VFUNC 3 0x0038f4d4 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0038efb0 undefined FUN_0039efb0
+      PARAM 0 int param_1
+    VFUNC 32 0x0038f22c undefined FUN_0039f22c
+      PARAM 0 int param_1
+    VFUNC 41 0x0038f240 undefined FUN_0039f240
+      PARAM 0 int param_1
+    VFUNC 47 0x0038f264 undefined FUN_0039f264
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x0038f224 undefined FUN_0039f224
+      PARAM 0 int param_1
+    VFUNC 52 0x0038f254 undefined FUN_0039f254
+      PARAM 0 int param_1
+  FUNC 0x00157768 undefined SGetType
+  FUNC 0x0015787c undefined new
+
+CLASS PlantJalapeno 0x1c
+  FIELD 0x0 PlantJalapenoVTable * vtable
+  VAR 0x00cbb740 undefined4 instance
+  VTABLE 0x00c49568 PlantFramework PlantJalapenoVTable 0xf0
+    VFUNC 0 0x00390b5c undefined GetType
+    VFUNC 1 0x00390b68 bool IsAbstract
+    VFUNC 2 0x00390b70 undefined ~PlantJalapeno
+      PARAM 0 int * param_1
+    VFUNC 3 0x00390bb0 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0038fbf8 undefined FUN_0039fbf8
+      PARAM 0 int param_1
+    VFUNC 9 0x003905f8 undefined FUN_003a05f8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 25 0x003906a4 undefined FUN_003a06a4
+      PARAM 0 int param_1
+    VFUNC 32 0x00390bf4 undefined FUN_003a0bf4
+    VFUNC 33 0x00390bfc undefined FUN_003a0bfc
+    VFUNC 41 0x00390558 undefined FUN_003a0558
+      PARAM 0 int param_1
+    VFUNC 48 0x00390c04 undefined FUN_003a0c04
+    VFUNC 52 0x0038fe8c undefined FUN_0039fe8c
+  FUNC 0x0038f724 undefined SGetType
+  FUNC 0x0038f82c undefined new
+
+CLASS PlantKernelpult 0xc
+  FIELD 0x0 PlantKernelpultVTable * vtable
+  VAR 0x00cbb810 undefined4 instance
+  VTABLE 0x00c49668 PlantFramework PlantKernelpultVTable 0xf0
+    VFUNC 0 0x003927c0 undefined GetType
+    VFUNC 1 0x003927cc bool IsAbstract
+    VFUNC 2 0x003927d4 undefined ~PlantKernelpult
+    VFUNC 3 0x003927d8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003912a4 undefined FUN_003a12a4
+      PARAM 0 int param_1
+    VFUNC 16 0x00391980 undefined FUN_003a1980
+    VFUNC 17 0x00391568 undefined FUN_003a1568
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 31 0x003912b0 undefined FUN_003a12b0
+      PARAM 0 int param_1
+    VFUNC 35 0x00391940 undefined FUN_003a1940
+    VFUNC 36 0x00391948 undefined FUN_003a1948
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x00391954 undefined FUN_003a1954
+      PARAM 0 int param_1
+  FUNC 0x00390ed8 undefined SGetType
+  FUNC 0x00390fe0 undefined new
+
+CLASS PlantLaserBean 0x1c
+  FIELD 0x0 PlantLaserBeanVTable * vtable
+  VAR 0x00cbb8e0 undefined4 instance
+  VTABLE 0x00c49768 PlantFramework PlantLaserBeanVTable 0xf0
+    VFUNC 0 0x00393cd4 undefined GetType
+    VFUNC 1 0x00393ce0 bool IsAbstract
+    VFUNC 2 0x00393ce8 undefined ~PlantLaserBean
+      PARAM 0 int * param_1
+    VFUNC 3 0x00393d58 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x00392fb8 undefined FUN_003a2fb8
+      PARAM 0 int param_1
+    VFUNC 12 0x00393004 undefined FUN_003a3004
+      PARAM 0 int * param_1
+    VFUNC 17 0x003937d0 undefined FUN_003a37d0
+      PARAM 0 int * param_1
+    VFUNC 25 0x00392fd0 undefined FUN_003a2fd0
+      PARAM 0 int param_1
+    VFUNC 26 0x003931a8 undefined FUN_003a31a8
+      PARAM 0 int * param_1
+    VFUNC 31 0x003937b4 undefined FUN_003a37b4
+      PARAM 0 int param_1
+    VFUNC 35 0x0039304c undefined FUN_003a304c
+    VFUNC 36 0x00393054 undefined FUN_003a3054
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x00393770 undefined FUN_003a3770
+      PARAM 0 int param_1
+  FUNC 0x003929f0 undefined SGetType
+  FUNC 0x00392af8 undefined new
+
+CLASS PlantLightningReed 0x4
+  FIELD 0x0 PlantLightningReedVTable * vtable
+  VAR 0x00cbb9a0 undefined4 instance
+  VTABLE 0x00c49868 PlantFramework PlantLightningReedVTable 0xf0
+    VFUNC 0 0x002b0c48 undefined GetType
+    VFUNC 1 0x002b0c54 bool IsAbstract
+    VFUNC 2 0x00394964 undefined ~PlantLightningReed
+    VFUNC 3 0x00394968 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 17 0x00394410 undefined FUN_003a4410
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 19 0x00394194 undefined FUN_003a4194
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 20 0x00394020 undefined FUN_003a4020
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 30 0x00393fd8 undefined FUN_003a3fd8
+    VFUNC 35 0x00393fe0 undefined FUN_003a3fe0
+    VFUNC 37 0x00393fe8 undefined FUN_003a3fe8
+      PARAM 0 int param_1
+    VFUNC 39 0x00394018 undefined FUN_003a4018
+    VFUNC 44 0x003948f4 undefined FUN_003a48f4
+      PARAM 0 undefined4 param_1
+      PARAM 1 int * param_2
+  FUNC 0x002ab9ac undefined SGetType
+
