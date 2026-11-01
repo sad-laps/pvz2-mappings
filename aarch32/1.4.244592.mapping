@@ -185,6 +185,19 @@ CLASS GridItemType 0x20
   FUNC 0x00123268 GridItemType * new
     LOCAL <> undefined4 this
 
+CLASS ZombieType 0x38
+  FIELD 0x0 ZombieTypeVTable * vtable
+  VAR 0x00cc8370 undefined4 instance
+  VTABLE 0x00c3a1c8 ObjectTypeDescriptor ZombieTypeVTable 0x1c
+    VFUNC 0 0x0013b894 undefined GetType
+    VFUNC 1 0x0013b8a0 bool IsAbstract
+    VFUNC 2 0x0013b8a8 undefined ~ZombieType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013b8bc undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x001222b4 undefined SGetType
+  FUNC 0x001223c8 undefined new
+
 CLASS Sexy::RtProtocol 0x1
   VAR 0x00d284b8 RtClass * instance
   FUNC 0x001193c0 RtClass * SGetType
@@ -255,6 +268,56 @@ CLASS PropertySheetBase 0x1
   FUNC 0x0011d32c undefined new
   FUNC 0x0011d218 RtClass * SGetType
     LOCAL <> RegisterClass * factory_00
+
+CLASS ZombiePropertySheet 0xd0
+  FIELD 0x0 ZombiePropertySheetVTable * vtable
+  VAR 0x00cc7b40 undefined4 instance
+  VTABLE 0x00c3a278 GameObject ZombiePropertySheetVTable 0x34
+    VFUNC 0 0x0013c10c undefined GetType
+    VFUNC 1 0x0013c19c bool IsAbstract
+    VFUNC 2 0x0013c1a4 undefined ~ZombiePropertySheet
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c1b8 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011d58c undefined new
+
+CLASS ZombieTreasureYetiProps 0xd0
+  FIELD 0x0 ZombieTreasureYetiPropsVTable * vtable
+  VAR 0x00cc7bb4 undefined4 instance
+  VTABLE 0x00c3a2b8 ZombiePropertySheet ZombieTreasureYetiPropsVTable 0x34
+    VFUNC 0 0x0013c1d0 undefined GetType
+    VFUNC 1 0x0013c1dc bool IsAbstract
+    VFUNC 2 0x0013c1e4 undefined ~ZombieTreasureYetiProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c1f8 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00121dfc undefined SGetType
+  FUNC 0x00121f10 undefined new
+
+CLASS ZombieHelmDroppedSprinterProps 0xe0f
+  FIELD 0x0 ZombieHelmDroppedSprinterPropsVTable * vtable
+  VAR 0x00cc7bb8 undefined4 instance
+  VTABLE 0x00c3a238 ZombiePropertySheet ZombieHelmDroppedSprinterPropsVTable 0x34
+    VFUNC 0 0x0013c0cc undefined GetType
+    VFUNC 1 0x0013c0d8 bool IsAbstract
+    VFUNC 2 0x0013c0e0 undefined ~ZombieHelmDroppedSprinterProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c0f4 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0012209c undefined SGetType
+  FUNC 0x001221b0 undefined new
+
+CLASS ZombieDarkGraveDropperProps 0xf0
+  FIELD 0x0 ZombieDarkGraveDropperPropsVTable * vtable
+  VAR 0x00cc7bbc undefined4 instance
+  VTABLE 0x00c3a1f8 ZombieHelmDroppedSprinterProps ZombieDarkGraveDropperPropsVTable 0x34
+    VFUNC 0 0x0013bcf8 undefined GetType
+    VFUNC 1 0x0013bd88 bool IsAbstract
+    VFUNC 2 0x0013bd90 undefined ~ZombieDarkGraveDropperProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013bdd8 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0012225c undefined new
 
 CLASS GameObject 0x10
   FIELD 0x0 GameObjectVTable * vtable
@@ -336,6 +399,68 @@ CLASS GridItemBarricadePropertySheet 0x50
     VFUNC 3 0x0013afd0 void Destroy
       PARAM 0 void * this
   FUNC 0x00123044 undefined new
+
+CLASS GridItemGravestonePlantOnDestructionPropertySheet 0x50
+  FIELD 0x0 GridItemGravestonePlantOnDestructionPropertySheetVTable * vtable
+  VAR 0x00cb5438 undefined4 instance
+  VTABLE 0x00c3a088 GridItemGravestonePropertySheet GridItemGravestonePlantOnDestructionPropertySheetVTable 0x34
+    VFUNC 0 0x0013b1f4 undefined GetType
+    VFUNC 1 0x0013b284 bool IsAbstract
+    VFUNC 2 0x0013b28c undefined ~GridItemGravestonePlantOnDestructionPropertySheet
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013b30c undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x00122e90 undefined new
+
+CLASS GridItemGravestoneZombieTimeSpawnerPropertySheet 0x60
+  FIELD 0x0 GridItemGravestoneZombieTimeSpawnerPropertySheetVTable * vtable
+  VAR 0x00cb5434 undefined4 instance
+  VTABLE 0x00c3a0c8 GridItemGravestonePropertySheet GridItemGravestoneZombieTimeSpawnerPropertySheetVTable 0x34
+    VFUNC 0 0x0013b390 undefined GetType
+    VFUNC 1 0x0013b420 bool IsAbstract
+    VFUNC 2 0x0013b428 undefined ~GridItemGravestoneZombieTimeSpawnerPropertySheet
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013b4a8 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x00122cd4 undefined new
+
+CLASS GridItemGravestoneSunOnDestructionPropertySheet 0x50
+  FIELD 0x0 GridItemGravestoneSunOnDestructionPropertySheetVTable * vtable
+  VAR 0x00cb5430 undefined4 instance
+  VTABLE 0x00c3a108 GridItemGravestonePropertySheet GridItemGravestoneSunOnDestructionPropertySheetVTable 0x34
+    VFUNC 0 0x0013b52c undefined GetType
+    VFUNC 1 0x0013b5bc bool IsAbstract
+    VFUNC 2 0x0013b5c4 undefined ~GridItemGravestoneSunOnDestructionPropertySheet
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013b5d8 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00122b38 undefined new
+
+CLASS GridItemRailcartPropertySheet 0x28
+  FIELD 0x0 GridItemRailcartPropertySheetVTable * vtable
+  VAR 0x00cb5428 undefined4 instance
+  VTABLE 0x00c3a148 GridItemGravestonePropertySheet GridItemRailcartPropertySheetVTable 0x34
+    VFUNC 0 0x0013b5f0 undefined GetType
+    VFUNC 1 0x0013b5fc bool IsAbstract
+    VFUNC 2 0x0013b604 undefined ~GridItemRailcartPropertySheet
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0013b684 undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x00122700 undefined SGetType
+  FUNC 0x00122814 undefined new
+
+CLASS GridItemPlantShieldProps 0x48
+  FIELD 0x0 GridItemPlantShieldPropsVTable * vtable
+  VAR 0x00cb5424 undefined4 instance
+  VTABLE 0x00c3a188 GridItemGravestonePropertySheet GridItemPlantShieldPropsVTable 0x34
+    VFUNC 0 0x0013b708 undefined GetType
+    VFUNC 1 0x0013b714 bool IsAbstract
+    VFUNC 2 0x0013b71c undefined ~GridItemPlantShieldProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013b730 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00122524 undefined SGetType
+  FUNC 0x00122638 undefined new
 
 CLASS AnimationMgr 0x28
   VAR 0x00cb0e38 RtClass * instance
@@ -459,7 +584,43 @@ CLASS ShowAdvice 0x450
     LOCAL <> undefined4 this
 
 CLASS BoardEntity 0x1
+  FIELD 0x0 BoardEntityVTable * vtable
   VAR 0x00cb1210 RtClass * instance
+  VTABLE 0x00c3c7f8 GameObject BoardEntityVTable 0x6c
+    VFUNC 0 0x0018eb04 undefined GetType
+    VFUNC 1 0x0018eb10 bool IsAbstract
+    VFUNC 2 0x0018e2e4 undefined ~BoardEntity
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0018e248 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x00187dc0 undefined FUN_00197dc0
+    VFUNC 11 0x00187dc4 undefined FUN_00197dc4
+    VFUNC 12 0x00187dc8 undefined FUN_00197dc8
+    VFUNC 13 0x001894a0 undefined FUN_001994a0
+    VFUNC 14 0x001894a4 undefined FUN_001994a4
+    VFUNC 15 0x001894a8 undefined FUN_001994a8
+    VFUNC 16 0x0018ea78 undefined FUN_0019ea78
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 17 0x0018e620 undefined FUN_0019e620
+      PARAM 0 int param_1
+    VFUNC 18 0x0018e444 undefined FUN_0019e444
+      PARAM 0 int * param_1
+      PARAM 1 int * param_2
+    VFUNC 19 0x0018e868 undefined FUN_0019e868
+      PARAM 0 undefined4 * param_1
+    VFUNC 20 0x0018e878 undefined FUN_0019e878
+    VFUNC 21 0x0018e3cc undefined FUN_0019e3cc
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 22 0x0018e5f0 undefined FUN_0019e5f0
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 23 0x00187dd4 undefined FUN_00197dd4
+    VFUNC 24 0x0018eb18 undefined FUN_0019eb18
+    VFUNC 25 0x001894b0 undefined FUN_001994b0
+    VFUNC 26 0x00187dd8 undefined FUN_00197dd8
   FUNC 0x0011d3e0 undefined SGetType
     LOCAL <> undefined4 factory_00
   FUNC 0x0011d4f4 BoardEntity * new
@@ -553,4 +714,651 @@ CLASS CrazyOlafTest 0x70
     VFUNC 14 0x001e93d4 undefined FUN_001f93d4
       PARAM 0 int param_1
   FUNC 0x001e7950 undefined new
+
+CLASS ZombieHeroProps 0xd8
+  FIELD 0x0 ZombieHeroPropsVTable * vtable
+  VAR 0x00cc7bb0 undefined4 instance
+  VTABLE 0x00c3a2f8 ZombiePropertySheet ZombieHeroPropsVTable 0x34
+    VFUNC 0 0x0013c210 undefined GetType
+    VFUNC 1 0x0013c21c bool IsAbstract
+    VFUNC 2 0x0013c224 undefined ~ZombieHeroProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013c26c undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x00121b54 undefined SGetType
+  FUNC 0x00121c68 undefined new
+
+CLASS ZombieHeroBehaviorProps 0x20
+  FIELD 0x0 ZombieHeroBehaviorPropsVTable * vtable
+  VAR 0x00cc7ba8 undefined4 instance
+  VTABLE 0x00c3a378 GameObject ZombieHeroBehaviorPropsVTable 0x34
+    VFUNC 0 0x0013c3d0 undefined GetType
+    VFUNC 1 0x0013c460 bool IsAbstract
+    VFUNC 2 0x0013c468 undefined ~ZombieHeroBehaviorProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0013c47c undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x00121988 undefined new
+
+CLASS ZombieHeroSpawnerProps 0x28
+  FIELD 0x0 ZombieHeroSpawnerPropsVTable * vtable
+  VAR 0x00cc7bac undefined4 instance
+  VTABLE 0x00c3a338 ZombieHeroBehaviorProps ZombieHeroSpawnerPropsVTable 0x34
+    VFUNC 0 0x0013c2b8 undefined GetType
+    VFUNC 1 0x0013c2c4 bool IsAbstract
+    VFUNC 2 0x0013c2cc undefined ~ZombieHeroSpawnerProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0013c34c undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x001219d8 undefined SGetType
+  FUNC 0x00121aec undefined new
+
+CLASS ZombieFutureProtectorProps 0xf0
+  FIELD 0x0 ZombieFutureProtectorPropsVTable * vtable
+  VAR 0x00cc7ba4 undefined4 instance
+  VTABLE 0x00c3a3b8 ZombiePropertySheet ZombieFutureProtectorPropsVTable 0x34
+    VFUNC 0 0x0013c494 undefined GetType
+    VFUNC 1 0x0013c4a0 bool IsAbstract
+    VFUNC 2 0x0013c4a8 undefined ~ZombieFutureProtectorProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013c56c undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x00121620 undefined SGetType
+  FUNC 0x00121734 undefined new
+
+CLASS ZombieExplorerProps 0xd0
+  FIELD 0x0 ZombieExplorerPropsVTable * vtable
+  VAR 0x00cc7ba0 undefined4 instance
+  VTABLE 0x00c3a3f8 ZombiePropertySheet ZombieExplorerPropsVTable 0x34
+    VFUNC 0 0x0013c634 undefined GetType
+    VFUNC 1 0x0013c640 bool IsAbstract
+    VFUNC 2 0x0013c648 undefined ~ZombieExplorerProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c65c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00121378 undefined SGetType
+  FUNC 0x0012148c undefined new
+
+CLASS ZombiePianoProps 0xd0
+  FIELD 0x0 ZombiePianoPropsVTable * vtable
+  VAR 0x00cc7b9c undefined4 instance
+  VTABLE 0x00c3a438 ZombiePropertySheet ZombiePianoPropsVTable 0x34
+    VFUNC 0 0x0013c674 undefined GetType
+    VFUNC 1 0x0013c680 bool IsAbstract
+    VFUNC 2 0x0013c688 undefined ~ZombiePianoProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c69c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x001210d0 undefined SGetType
+  FUNC 0x001211e4 undefined new
+
+CLASS ZombieBarrelProps 0xd0
+  FIELD 0x0 ZombieBarrelPropsVTable * vtable
+  VAR 0x00cc7b98 undefined4 instance
+  VTABLE 0x00c3a478 ZombiePropertySheet ZombieBarrelPropsVTable 0x34
+    VFUNC 0 0x0013c6b4 undefined GetType
+    VFUNC 1 0x0013c6c0 bool IsAbstract
+    VFUNC 2 0x0013c6c8 undefined ~ZombieBarrelProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c6dc undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00120e28 undefined SGetType
+  FUNC 0x00120f3c undefined new
+
+CLASS ZombieChickenProps 0xd0
+  FIELD 0x0 ZombieChickenPropsVTable * vtable
+  VAR 0x00cc7b94 undefined4 instance
+  VTABLE 0x00c3a4b8 ZombiePropertySheet ZombieChickenPropsVTable 0x34
+    VFUNC 0 0x0013c6f4 undefined GetType
+    VFUNC 1 0x0013c700 bool IsAbstract
+    VFUNC 2 0x0013c708 undefined ~ZombieChickenProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c71c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00120b84 undefined SGetType
+  FUNC 0x00120c98 undefined new
+
+CLASS ZombieChickenFarmerProps 0xd0
+  FIELD 0x0 ZombieChickenFarmerPropsVTable * vtable
+  VAR 0x00cc7b90 undefined4 instance
+  VTABLE 0x00c3a4f8 ZombiePropertySheet ZombieChickenFarmerPropsVTable 0x34
+    VFUNC 0 0x0013c734 undefined GetType
+    VFUNC 1 0x0013c740 bool IsAbstract
+    VFUNC 2 0x0013c748 undefined ~ZombieChickenFarmerProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c75c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x001208dc undefined SGetType
+  FUNC 0x001209f0 undefined new
+
+CLASS ZombiePonchoProps 0xd8
+  FIELD 0x0 ZombiePonchoPropsVTable * vtable
+  VAR 0x00cc7b8c undefined4 instance
+  VTABLE 0x00c3a538 ZombiePropertySheet ZombiePonchoPropsVTable 0x34
+    VFUNC 0 0x0013c774 undefined GetType
+    VFUNC 1 0x0013c780 bool IsAbstract
+    VFUNC 2 0x0013c788 undefined ~ZombiePonchoProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c79c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00120624 undefined SGetType
+  FUNC 0x00120738 undefined new
+
+CLASS ZombieBullRiderProps 0xd8
+  FIELD 0x0 ZombieBullRiderPropsVTable * vtable
+  VAR 0x00cc7b88 undefined4 instance
+  VTABLE 0x00c3a578 ZombiePropertySheet ZombieBullRiderPropsVTable 0x34
+    VFUNC 0 0x0013c7b4 undefined GetType
+    VFUNC 1 0x0013c7c0 bool IsAbstract
+    VFUNC 2 0x0013c7c8 undefined ~ZombieBullRiderProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c7dc undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00120370 undefined SGetType
+  FUNC 0x00120484 undefined new
+
+CLASS ZombieBullProps 0xe8
+  FIELD 0x0 ZombieBullPropsVTable * vtable
+  VAR 0x00cc7b84 undefined4 instance
+  VTABLE 0x00c3a5b8 ZombiePropertySheet ZombieBullPropsVTable 0x34
+    VFUNC 0 0x0013c7f4 undefined GetType
+    VFUNC 1 0x0013c800 bool IsAbstract
+    VFUNC 2 0x0013c808 undefined ~ZombieBullProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c81c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x001200ac undefined SGetType
+  FUNC 0x001201c0 undefined new
+
+CLASS ZombieProspectorProps 0xe0
+  FIELD 0x0 ZombieProspectorPropsVTable * vtable
+  VAR 0x00cc7b80 undefined4 instance
+  VTABLE 0x00c3a5f8 ZombiePropertySheet ZombieProspectorPropsVTable 0x34
+    VFUNC 0 0x0013c834 undefined GetType
+    VFUNC 1 0x0013c840 bool IsAbstract
+    VFUNC 2 0x0013c848 undefined ~ZombieProspectorProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c85c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011fdec undefined SGetType
+  FUNC 0x0011ff00 undefined new
+
+CLASS ZombiePirateCaptainParrotProps 0xd8
+  FIELD 0x0 ZombiePirateCaptainParrotPropsVTable * vtable
+  VAR 0x00cc7b7c undefined4 instance
+  VTABLE 0x00c3a638 ZombiePropertySheet ZombiePirateCaptainParrotPropsVTable 0x34
+    VFUNC 0 0x0013c874 undefined GetType
+    VFUNC 1 0x0013c880 bool IsAbstract
+    VFUNC 2 0x0013c888 undefined ~ZombiePirateCaptainParrotProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c89c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011fb3c undefined SGetType
+  FUNC 0x0011fc50 undefined new
+
+CLASS ZombiePirateCaptainProps 0xd8
+  FIELD 0x0 ZombiePirateCaptainPropsVTable * vtable
+  VAR 0x00cc7b78 undefined4 instance
+  VTABLE 0x00c3a678 ZombiePropertySheet ZombiePirateCaptainPropsVTable 0x34
+    VFUNC 0 0x0013c8b4 undefined GetType
+    VFUNC 1 0x0013c8c0 bool IsAbstract
+    VFUNC 2 0x0013c8c8 undefined ~ZombiePirateCaptainProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c8dc undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011f894 undefined SGetType
+  FUNC 0x0011f9a8 undefined new
+
+CLASS ZombiePirateCannonProps 0x100
+  FIELD 0x0 ZombiePirateCannonPropsVTable * vtable
+  VAR 0x00cc7b74 undefined4 instance
+  VTABLE 0x00c3a6b8 ZombiePropertySheet ZombiePirateCannonPropsVTable 0x34
+    VFUNC 0 0x0013c8f4 undefined GetType
+    VFUNC 1 0x0013c900 bool IsAbstract
+    VFUNC 2 0x0013c908 undefined ~ZombiePirateCannonProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c91c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011f5a0 undefined SGetType
+  FUNC 0x0011f6b4 undefined new
+
+CLASS ZombieSwashbucklerProps 0xd8
+  FIELD 0x0 ZombieSwashbucklerPropsVTable * vtable
+  VAR 0x00cc7b70 undefined4 instance
+  VTABLE 0x00c3a6f8 ZombiePropertySheet ZombieSwashbucklerPropsVTable 0x34
+    VFUNC 0 0x0013c934 undefined GetType
+    VFUNC 1 0x0013c940 bool IsAbstract
+    VFUNC 2 0x0013c948 undefined ~ZombieSwashbucklerProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c95c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011f2f0 undefined SGetType
+  FUNC 0x0011f404 undefined new
+
+CLASS ZombieSarcophagusProps 0xd0
+  FIELD 0x0 ZombieSarcophagusPropsVTable * vtable
+  VAR 0x00cc7b6c undefined4 instance
+  VTABLE 0x00c3a738 ZombiePropertySheet ZombieSarcophagusPropsVTable 0x34
+    VFUNC 0 0x0013c974 undefined GetType
+    VFUNC 1 0x0013c980 bool IsAbstract
+    VFUNC 2 0x0013c988 undefined ~ZombieSarcophagusProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013c99c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011f04c undefined SGetType
+  FUNC 0x0011f160 undefined new
+
+CLASS ZombieTombRaiserProps 0xe0
+  FIELD 0x0 ZombieTombRaiserPropsVTable * vtable
+  VAR 0x00cc7b68 undefined4 instance
+  VTABLE 0x00c3a778 ZombiePropertySheet ZombieTombRaiserPropsVTable 0x34
+    VFUNC 0 0x0013c9b4 undefined GetType
+    VFUNC 1 0x0013c9c0 bool IsAbstract
+    VFUNC 2 0x0013c9c8 undefined ~ZombieTombRaiserProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013ca10 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011ed94 undefined SGetType
+  FUNC 0x0011eea8 undefined new
+
+CLASS ZombieRaProps 0xd0
+  FIELD 0x0 ZombieRaPropsVTable * vtable
+  VAR 0x00cc7b64 undefined4 instance
+  VTABLE 0x00c3a7b8 ZombiePropertySheet ZombieRaPropsVTable 0x34
+    VFUNC 0 0x0013ca5c undefined GetType
+    VFUNC 1 0x0013ca68 bool IsAbstract
+    VFUNC 2 0x0013ca70 undefined ~ZombieRaProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013ca84 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011eaf0 undefined SGetType
+  FUNC 0x0011ec04 undefined new
+
+CLASS ZombieCamelProps 0x100
+  FIELD 0x0 ZombieCamelPropsVTable * vtable
+  VAR 0x00cc7b5c undefined4 instance
+  VTABLE 0x00c3a838 ZombiePropertySheet ZombieCamelPropsVTable 0x34
+    VFUNC 0 0x0013cb60 undefined GetType
+    VFUNC 1 0x0013cb6c bool IsAbstract
+    VFUNC 2 0x0013cb74 undefined ~ZombieCamelProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013cb88 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011e56c undefined SGetType
+  FUNC 0x0011e680 undefined new
+
+CLASS ZombieCamelTouchProps 0x108
+  FIELD 0x0 ZombieCamelTouchPropsVTable * vtable
+  VAR 0x00cc7b60 undefined4 instance
+  VTABLE 0x00c3a7f8 ZombieCamelProps ZombieCamelTouchPropsVTable 0x34
+    VFUNC 0 0x0013ca9c undefined GetType
+    VFUNC 1 0x0013cb2c bool IsAbstract
+    VFUNC 2 0x0013cb34 undefined ~ZombieCamelTouchProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013cb48 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011e8fc undefined new
+
+CLASS ZombieGargantuarProps 0xf0
+  FIELD 0x0 ZombieGargantuarPropsVTable * vtable
+  VAR 0x00cc7b54 undefined4 instance
+  VTABLE 0x00c3a8b8 ZombiePropertySheet ZombieGargantuarPropsVTable 0x34
+    VFUNC 0 0x0013cdc4 undefined GetType
+    VFUNC 1 0x0013cdd0 bool IsAbstract
+    VFUNC 2 0x0013cdd8 undefined ~ZombieGargantuarProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013ce9c undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011e0a0 undefined SGetType
+  FUNC 0x0011e1b4 undefined new
+
+CLASS ZombieGargantuarMechProps 0x118
+  FIELD 0x0 ZombieGargantuarMechPropsVTable * vtable
+  VAR 0x00cc7b58 undefined4 instance
+  VTABLE 0x00c3a878 ZombieGargantuarProps ZombieGargantuarMechPropsVTable 0x34
+    VFUNC 0 0x0013cba0 undefined GetType
+    VFUNC 1 0x0013cc30 bool IsAbstract
+    VFUNC 2 0x0013cc38 undefined ~ZombieGargantuarMechProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013cc4c undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0011e3d4 undefined new
+
+CLASS ZombieMechProps 0xd8
+  FIELD 0x0 ZombieMechPropsVTable * vtable
+  VAR 0x00cc7b48 undefined4 instance
+  VTABLE 0x00c3a938 ZombiePropertySheet ZombieMechPropsVTable 0x34
+    VFUNC 0 0x0013d260 undefined GetType
+    VFUNC 1 0x0013d26c bool IsAbstract
+    VFUNC 2 0x0013d274 undefined ~ZombieMechProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013d338 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011d9b4 undefined SGetType
+  FUNC 0x0011dac8 undefined new
+
+CLASS ZombieMechDiscoProps 0xe8
+  FIELD 0x0 ZombieMechDiscoPropsVTable * vtable
+  VAR 0x00cc7b50 undefined4 instance
+  VTABLE 0x00c3a8f8 ZombieMechProps ZombieMechDiscoPropsVTable 0x34
+    VFUNC 0 0x0013cf64 undefined GetType
+    VFUNC 1 0x0013cff4 bool IsAbstract
+    VFUNC 2 0x0013cffc undefined ~ZombieMechDiscoProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013d07c undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011df0c undefined new
+
+CLASS ZombieMechFootballProps 0xd8
+  FIELD 0x0 ZombieMechFootballPropsVTable * vtable
+  VAR 0x00cc7b4c undefined4 instance
+  VTABLE 0x00c3a978 ZombieMechProps ZombieMechFootballPropsVTable 0x34
+    VFUNC 0 0x0013d400 undefined GetType
+    VFUNC 1 0x0013d490 bool IsAbstract
+    VFUNC 2 0x0013d498 undefined ~ZombieMechFootballProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013d518 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011dce8 undefined new
+
+CLASS ZombiePrototypeProps 0xd8
+  FIELD 0x0 ZombiePrototypePropsVTable * vtable
+  VAR 0x00cc7b44 undefined4 instance
+  VTABLE 0x00c3a9b8 ZombiePropertySheet ZombiePrototypePropsVTable 0x34
+    VFUNC 0 0x0013d638 undefined GetType
+    VFUNC 1 0x0013d644 bool IsAbstract
+    VFUNC 2 0x0013d64c undefined ~ZombiePrototypeProps
+      PARAM 0 int * param_1
+    VFUNC 3 0x0013d6cc undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0011d714 undefined SGetType
+  FUNC 0x0011d828 undefined new
+
+CLASS ProjectilePropertySheet 0x28
+  FIELD 0x0 ProjectilePropertySheetVTable * vtable
+  VAR 0x00cbece0 undefined4 instance
+  VTABLE 0x00c3a9f8 GameObject ProjectilePropertySheetVTable 0x34
+    VFUNC 0 0x0013da54 undefined GetType
+    VFUNC 1 0x0013dae4 bool IsAbstract
+    VFUNC 2 0x0013daec undefined ~ProjectilePropertySheet
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0013db00 undefined Destroy
+      PARAM 0 void * param_1
+
+CLASS StreamingMusicList 0x14
+  FIELD 0x0 StreamingMusicListVTable * vtable
+  VAR 0x00cc1680 undefined4 instance
+  VTABLE 0x00c3ba28 ObjectTypeDescriptor StreamingMusicListVTable 0x1c
+    VFUNC 0 0x0014fed0 undefined GetType
+    VFUNC 1 0x0014fedc bool IsAbstract
+    VFUNC 2 0x0014fee4 undefined ~StreamingMusicList
+      PARAM 0 int * param_1
+    VFUNC 3 0x0014ffb4 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x0014ed24 undefined SGetType
+  FUNC 0x0014ee38 undefined new
+
+CLASS BaseCursor 0x4
+  FIELD 0x0 BaseCursorVTable * vtable
+  VAR 0x00cb0f10 undefined4 instance
+  VTABLE 0x00c3ba58 Sexy::RtObject BaseCursorVTable 0x2c
+    VFUNC 0 0x001509a8 undefined GetType
+    VFUNC 1 0x00150a2c bool IsAbstract
+    VFUNC 2 0x0015069c undefined ~BaseCursor
+      PARAM 0 int * param_1
+    VFUNC 3 0x0015064c undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x00150a34 undefined FUN_00160a34
+    VFUNC 8 0x00150a38 undefined FUN_00160a38
+    VFUNC 9 0x00aa3738 void __cxa_pure_virtual
+    VFUNC 10 0x00150a3c undefined FUN_00160a3c
+
+CLASS BasePowerup 0x4
+  FIELD 0x0 BasePowerupVTable * vtable
+  VAR 0x00cb0fd0 undefined4 instance
+  VTABLE 0x00c3ba98 GameObject BasePowerupVTable 0x5c
+    VFUNC 0 0x00152be4 undefined GetType
+    VFUNC 1 0x00152bf0 bool IsAbstract
+    VFUNC 2 0x00152bf8 undefined ~BasePowerup
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00152c40 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x0015239c undefined FUN_0016239c
+      PARAM 0 undefined4 param_1
+    VFUNC 13 0x00152c8c undefined FUN_00162c8c
+    VFUNC 14 0x00152848 undefined FUN_00162848
+      PARAM 0 int param_1
+    VFUNC 15 0x00152854 undefined FUN_00162854
+    VFUNC 16 0x00152858 undefined FUN_00162858
+    VFUNC 17 0x0015285c undefined FUN_0016285c
+    VFUNC 18 0x001528f8 undefined FUN_001628f8
+    VFUNC 19 0x001528fc undefined FUN_001628fc
+    VFUNC 20 0x00152900 undefined FUN_00162900
+    VFUNC 21 0x0015298c undefined FUN_0016298c
+      PARAM 0 int param_1
+    VFUNC 22 0x00152ae4 undefined FUN_00162ae4
+  FUNC 0x00150fa4 undefined SGetType
+
+CLASS BoardSaveState 0xd0
+  FIELD 0x0 BoardSaveStateVTable * vtable
+  VAR 0x00cb10e0 undefined4 instance
+  VTABLE 0x00c3bcb8 GameObject BoardSaveStateVTable 0x34
+    VFUNC 0 0x001318d8 undefined GetType
+    VFUNC 1 0x001318e4 bool IsAbstract
+    VFUNC 2 0x0017d3a4 undefined ~BoardSaveState
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0017d3b8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 6 0x0015c2dc undefined FUN_0016c2dc
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 11 0x0015c634 undefined FUN_0016c634
+  FUNC 0x0012bbb8 undefined SGetType
+  FUNC 0x0012bccc undefined new
+
+CLASS GlobalSaveData 0x34
+  FIELD 0x0 GlobalSaveDataVTable * vtable
+  VAR 0x00cbd594 undefined4 instance
+  VTABLE 0x00c3bcf8 Sexy::RtObject GlobalSaveDataVTable 0x1c
+    VFUNC 0 0x0018496c undefined GetType
+    VFUNC 1 0x001849fc bool IsAbstract
+    VFUNC 2 0x00184a04 undefined ~GlobalSaveData
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00184a18 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00158dd0 undefined new
+
+CLASS PlayerInfoLocalSaveData 0x24
+  FIELD 0x0 PlayerInfoLocalSaveDataVTable * vtable
+  VAR 0x00cbd590 undefined4 instance
+  VTABLE 0x00c3bd28 Sexy::RtObject PlayerInfoLocalSaveDataVTable 0x1c
+    VFUNC 0 0x00184b8c undefined GetType
+    VFUNC 1 0x00184c1c bool IsAbstract
+    VFUNC 2 0x00184c24 undefined ~PlayerInfoLocalSaveData
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00184c38 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00158cdc undefined new
+
+CLASS NPCDataSheet 0x28
+  FIELD 0x0 NPCDataSheetVTable * vtable
+  VAR 0x00cb2410 undefined4 instance
+  VTABLE 0x00c3be98 Sexy::RtObject NPCDataSheetVTable 0x1c
+    VFUNC 0 0x00185cb8 undefined GetType
+    VFUNC 1 0x00185d48 bool IsAbstract
+    VFUNC 2 0x00185d50 undefined ~NPCDataSheet
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00185d64 undefined Destroy
+      PARAM 0 void * param_1
+
+CLASS HeroZombieLevelProperties 0x28
+  FIELD 0x0 HeroZombieLevelPropertiesVTable * vtable
+  VAR 0x00cc3064 undefined4 instance
+  VTABLE 0x00c3c008 GameObject HeroZombieLevelPropertiesVTable 0x34
+    VFUNC 0 0x00186d18 undefined GetType
+    VFUNC 1 0x00186da8 bool IsAbstract
+    VFUNC 2 0x00186db0 undefined ~HeroZombieLevelProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00186df8 undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x00157318 undefined new
+
+CLASS WaveActionProperties 0x28
+  FIELD 0x0 WaveActionPropertiesVTable * vtable
+  VAR 0x00cc2ec0 undefined4 instance
+  VTABLE 0x00c3c048 GameObject WaveActionPropertiesVTable 0x38
+    VFUNC 0 0x00186f80 undefined GetType
+    VFUNC 1 0x00187010 bool IsAbstract
+    VFUNC 2 0x00187018 undefined ~WaveActionProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x001870dc undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00aa3738 void __cxa_pure_virtual
+
+CLASS SaveGameHeader 0x68
+  FIELD 0x0 SaveGameHeaderVTable * vtable
+  VAR 0x00cbf530 undefined4 instance
+  VTABLE 0x00c3c128 Sexy::RtObject SaveGameHeaderVTable 0x1c
+    VFUNC 0 0x00187adc undefined GetType
+    VFUNC 1 0x00187b6c bool IsAbstract
+    VFUNC 2 0x00187b74 undefined ~SaveGameHeader
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00187b88 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00156ae0 undefined new
+
+CLASS PVZVersion 0x20
+  FIELD 0x0 PVZVersionVTable * vtable
+  VAR 0x00cb9680 undefined4 instance
+  VTABLE 0x00c3c158 GameObject PVZVersionVTable 0x34
+    VFUNC 0 0x00187cfc undefined GetType
+    VFUNC 1 0x00187d8c bool IsAbstract
+    VFUNC 2 0x00187ce8 undefined ~PVZVersion
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00187d94 undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x00156a04 undefined new
+
+CLASS ModifyConveyorWaveActionProps 0x38
+  FIELD 0x0 ModifyConveyorWaveActionPropsVTable * vtable
+  VAR 0x00cb2148 undefined4 instance
+  VTABLE 0x00c3c288 WaveActionProperties ModifyConveyorWaveActionPropsVTable 0x38
+    VFUNC 0 0x001887d0 undefined GetType
+    VFUNC 1 0x001887dc bool IsAbstract
+    VFUNC 2 0x001887e4 undefined ~ModifyConveyorWaveActionProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x001887f8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x00188810 undefined FUN_00198810
+  FUNC 0x00155cf4 undefined SGetType
+  FUNC 0x00155e08 undefined new
+
+CLASS GameSubSystem 0x10
+  FIELD 0x0 GameSubSystemVTable * vtable
+  VAR 0x00cb48c0 undefined4 instance
+  VTABLE 0x00c3c2c8 GameObject GameSubSystemVTable 0x38
+    VFUNC 0 0x00188a9c undefined GetType
+    VFUNC 1 0x00188aa8 bool IsAbstract
+    VFUNC 2 0x00188ab0 undefined ~GameSubSystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00188ac4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00188adc undefined FUN_00198adc
+  FUNC 0x00155a24 undefined SGetType
+  FUNC 0x00155b38 undefined new
+
+CLASS DangerRoomPropertySheet 0x28
+  FIELD 0x0 DangerRoomPropertySheetVTable * vtable
+  VAR 0x00cc2fa0 undefined4 instance
+  VTABLE 0x00c3c308 GameObject DangerRoomPropertySheetVTable 0x34
+    VFUNC 0 0x00188cd0 undefined GetType
+    VFUNC 1 0x00188d60 bool IsAbstract
+    VFUNC 2 0x00188d68 undefined ~DangerRoomPropertySheet
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00188d7c undefined Destroy
+      PARAM 0 void * param_1
+
+CLASS CollectableMoneyBagType 0x64
+  FIELD 0x0 CollectableMoneyBagTypeVTable * vtable
+  VAR 0x00cb1d80 undefined4 instance
+  VTABLE 0x00c3c348 CollectableType CollectableMoneyBagTypeVTable 0x1c
+    VFUNC 0 0x00189200 undefined GetType
+    VFUNC 1 0x00189290 bool IsAbstract
+    VFUNC 2 0x00189298 undefined ~CollectableMoneyBagType
+      PARAM 0 int * param_1
+    VFUNC 3 0x00189318 undefined Destroy
+      PARAM 0 int * param_1
+  FUNC 0x001556b0 undefined new
+
+CLASS CollectableKeyType 0x5c
+  FIELD 0x0 CollectableKeyTypeVTable * vtable
+  VAR 0x00cb1d50 undefined4 instance
+  VTABLE 0x00c3c378 CollectableType CollectableKeyTypeVTable 0x1c
+    VFUNC 0 0x0018939c undefined GetType
+    VFUNC 1 0x0018942c bool IsAbstract
+    VFUNC 2 0x00189434 undefined ~CollectableKeyType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00189448 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0015553c undefined new
+
+CLASS CollectablePresentType 0x5c
+  FIELD 0x0 CollectablePresentTypeVTable * vtable
+  VAR 0x00cb1e40 undefined4 instance
+  VTABLE 0x00c3c448 CollectableType CollectablePresentTypeVTable 0x1c
+    VFUNC 0 0x001894b8 undefined GetType
+    VFUNC 1 0x00189548 bool IsAbstract
+    VFUNC 2 0x00189550 undefined ~CollectablePresentType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00189564 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00155274 undefined new
+
+CLASS CollectableCoinType 0x60
+  FIELD 0x0 CollectableCoinTypeVTable * vtable
+  VAR 0x00cb1d20 undefined4 instance
+  VTABLE 0x00c3c5b8 CollectableType CollectableCoinTypeVTable 0x1c
+    VFUNC 0 0x001895fc undefined GetType
+    VFUNC 1 0x0018968c bool IsAbstract
+    VFUNC 2 0x00189694 undefined ~CollectableCoinType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x001896a8 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00154e64 undefined new
+
+CLASS CollectablePlantfoodType 0x5c
+  FIELD 0x0 CollectablePlantfoodTypeVTable * vtable
+  VAR 0x00cb1de0 undefined4 instance
+  VTABLE 0x00c3c728 CollectableType CollectablePlantfoodTypeVTable 0x1c
+    VFUNC 0 0x00189740 undefined GetType
+    VFUNC 1 0x001897d0 bool IsAbstract
+    VFUNC 2 0x001897d8 undefined ~CollectablePlantfoodType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x001897ec undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x00154a58 undefined new
+
+CLASS CollectableSunType 0x60
+  FIELD 0x0 CollectableSunTypeVTable * vtable
+  VAR 0x00cb1f60 undefined4 instance
+  VTABLE 0x00c3c758 CollectableType CollectableSunTypeVTable 0x1c
+    VFUNC 0 0x00189818 undefined GetType
+    VFUNC 1 0x001898a8 bool IsAbstract
+    VFUNC 2 0x001898b0 undefined ~CollectableSunType
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x001898c4 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0015478c undefined new
+
+CLASS BoardPropertySheet 0x18
+  FIELD 0x0 BoardPropertySheetVTable * vtable
+  VAR 0x00cb1320 undefined4 instance
+  VTABLE 0x00c3c788 GameObject BoardPropertySheetVTable 0x34
+    VFUNC 0 0x00189c68 undefined GetType
+    VFUNC 1 0x00189cf8 bool IsAbstract
+    VFUNC 2 0x00189d00 undefined ~BoardPropertySheet
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00189d14 undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x00153b6c undefined new
 
