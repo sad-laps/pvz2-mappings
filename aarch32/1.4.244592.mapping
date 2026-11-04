@@ -5179,7 +5179,6 @@ CLASS BloomerangProjectile 0x100
       PARAM 0 GameObject * param_1
     VFUNC 3 0x0037cb18 undefined Destroy
       PARAM 0 GameObject * param_1
-    VFUNC 8 0x0012fdb8 undefined FUN_0013fdb8
     VFUNC 9 0x0037b0d8 undefined FUN_0038b0d8
       PARAM 0 int param_1
     VFUNC 13 0x0037b0f8 undefined FUN_0038b0f8
@@ -5676,4 +5675,1874 @@ CLASS PlantLightningReed 0x4
       PARAM 0 undefined4 param_1
       PARAM 1 int * param_2
   FUNC 0x002ab9ac undefined SGetType
+
+CLASS PlantMagnifyingGrass 0x60
+  FIELD 0x0 PlantMagnifyingGrassVTable * vtable
+  VAR 0x00cbba60 undefined4 instance
+  VTABLE 0x00c49968 PlantFramework PlantMagnifyingGrassVTable 0xf0
+    VFUNC 0 0x00399b90 undefined GetType
+    VFUNC 1 0x00399b9c bool IsAbstract
+    VFUNC 2 0x00396fa8 undefined ~PlantMagnifyingGrass
+      PARAM 0 int * param_1
+    VFUNC 3 0x00396f90 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0039658c undefined FUN_003a658c
+      PARAM 0 int param_1
+    VFUNC 9 0x00398ab0 undefined FUN_003a8ab0
+      PARAM 0 int param_1
+    VFUNC 10 0x00398a38 undefined FUN_003a8a38
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 17 0x00398ac0 undefined FUN_003a8ac0
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 25 0x00398bf0 undefined FUN_003a8bf0
+      PARAM 0 int param_1
+    VFUNC 35 0x00399914 undefined FUN_003a9914
+    VFUNC 36 0x0039991c undefined FUN_003a991c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x00399938 undefined FUN_003a9938
+      PARAM 0 int param_1
+    VFUNC 56 0x00396910 undefined FUN_003a6910
+      PARAM 0 int param_1
+    VFUNC 57 0x00396f14 undefined FUN_003a6f14
+      PARAM 0 undefined4 param_1
+  FUNC 0x00394b80 undefined SGetType
+  FUNC 0x00394c88 undefined new
+
+CLASS PlantMarigold 0x8
+  FIELD 0x0 PlantMarigoldVTable * vtable
+  VAR 0x00cbbba0 undefined4 instance
+  VTABLE 0x00c49a68 PlantFramework PlantMarigoldVTable 0xf0
+    VFUNC 0 0x0039d3bc undefined GetType
+    VFUNC 1 0x0039d3c8 bool IsAbstract
+    VFUNC 2 0x0039d3d0 undefined ~PlantMarigold
+    VFUNC 3 0x0039d3d4 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0039c9cc undefined FUN_003ac9cc
+      PARAM 0 int param_1
+    VFUNC 25 0x0039cb30 undefined FUN_003acb30
+      PARAM 0 int param_1
+    VFUNC 34 0x0039cd78 undefined FUN_003acd78
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 35 0x0039ce8c undefined FUN_003ace8c
+    VFUNC 36 0x0039ce98 undefined FUN_003ace98
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x0039d388 undefined FUN_003ad388
+      PARAM 0 int param_1
+  FUNC 0x0039c014 undefined SGetType
+  FUNC 0x0039c11c undefined new
+
+CLASS MarigoldGameSystem 0x18
+  FIELD 0x0 MarigoldGameSystemVTable * vtable
+  VAR 0x00cbbba4 undefined4 instance
+  VTABLE 0x00c49bb8 GameSubSystem MarigoldGameSystemVTable 0x3c
+    VFUNC 0 0x0039d9c8 undefined GetType
+    VFUNC 1 0x0039da50 bool IsAbstract
+    VFUNC 2 0x0039da58 undefined ~MarigoldGameSystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0039da6c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x0039da84 undefined FUN_003ada84
+      PARAM 0 int param_1
+    VFUNC 13 0x0039da90 undefined FUN_003ada90
+    VFUNC 14 0x0039da94 undefined FUN_003ada94
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+  FUNC 0x0039c29c undefined new
+
+CLASS PlantMelonpult 0x18
+  FIELD 0x0 PlantMelonpultVTable * vtable
+  VAR 0x00cbbc60 undefined4 instance
+  VTABLE 0x00c49c08 PlantFramework PlantMelonpultVTable 0xf8
+    VFUNC 0 0x0039eeb4 undefined GetType
+    VFUNC 1 0x0039eec0 bool IsAbstract
+    VFUNC 2 0x0039eec8 undefined ~PlantMelonpult
+      PARAM 0 int * param_1
+    VFUNC 3 0x0039ef38 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0039e1d8 undefined FUN_003ae1d8
+      PARAM 0 int param_1
+    VFUNC 16 0x0039e724 undefined FUN_003ae724
+      PARAM 0 int * param_1
+    VFUNC 17 0x0039e23c undefined FUN_003ae23c
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 35 0x0039e1e4 undefined FUN_003ae1e4
+    VFUNC 36 0x0039e1ec undefined FUN_003ae1ec
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 60 0x0039e60c undefined FUN_003ae60c
+      PARAM 0 int param_1
+    VFUNC 61 0x0039e698 undefined FUN_003ae698
+      PARAM 0 int param_1
+  FUNC 0x0039dd0c undefined SGetType
+  FUNC 0x0039de14 undefined new
+
+CLASS PlantPeapod 0xc
+  FIELD 0x0 PlantPeapodVTable * vtable
+  VAR 0x00cbbd20 undefined4 instance
+  VTABLE 0x00c49d08 PlantFramework PlantPeapodVTable 0xf0
+    VFUNC 0 0x0012fe64 undefined GetType
+    VFUNC 1 0x0012fe70 bool IsAbstract
+    VFUNC 2 0x0039fcf0 undefined ~PlantPeapod
+    VFUNC 3 0x0039fcf4 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0039f448 undefined FUN_003af448
+      PARAM 0 int param_1
+    VFUNC 17 0x0039fb4c undefined FUN_003afb4c
+      PARAM 0 int * param_1
+    VFUNC 35 0x0039f454 undefined FUN_003af454
+    VFUNC 44 0x0039fc20 undefined FUN_003afc20
+      PARAM 0 undefined4 param_1
+      PARAM 1 int * param_2
+    VFUNC 47 0x0039f70c undefined FUN_003af70c
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 50 0x0039fc88 undefined FUN_003afc88
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+  FUNC 0x0012c3e4 undefined SGetType
+  FUNC 0x0012c4f8 undefined new
+
+CLASS PlantPeashooter 0x1c
+  FIELD 0x0 PlantPeashooterVTable * vtable
+  VAR 0x00cbbde0 undefined4 instance
+  VTABLE 0x00c49e08 PlantFramework PlantPeashooterVTable 0xf0
+    VFUNC 0 0x003a0ac4 undefined GetType
+    VFUNC 1 0x003a0ad0 bool IsAbstract
+    VFUNC 2 0x003a0ad8 undefined ~PlantPeashooter
+    VFUNC 3 0x003a0adc undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 17 0x003a09a4 undefined FUN_003b09a4
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 26 0x003a0a4c undefined FUN_003b0a4c
+      PARAM 0 int param_1
+    VFUNC 35 0x003a088c undefined FUN_003b088c
+    VFUNC 36 0x003a0894 undefined FUN_003b0894
+      PARAM 0 int param_1
+    VFUNC 37 0x003a0974 undefined FUN_003b0974
+      PARAM 0 int param_1
+  FUNC 0x0039ff0c undefined SGetType
+  FUNC 0x003a0014 undefined new
+
+CLASS PlantPotatomine 0x4
+  FIELD 0x0 PlantPotatomineVTable * vtable
+  VAR 0x00cbbea0 undefined4 instance
+  VTABLE 0x00c49f08 PlantFramework PlantPotatomineVTable 0xf0
+    VFUNC 0 0x003a2254 undefined GetType
+    VFUNC 1 0x003a2260 bool IsAbstract
+    VFUNC 2 0x003a2268 undefined ~PlantPotatomine
+    VFUNC 3 0x003a226c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a0e30 undefined FUN_003b0e30
+      PARAM 0 int param_1
+    VFUNC 25 0x003a1188 undefined FUN_003b1188
+      PARAM 0 int * param_1
+    VFUNC 29 0x003a2278 undefined FUN_003b2278
+    VFUNC 32 0x003a1cb4 undefined FUN_003b1cb4
+      PARAM 0 int * param_1
+    VFUNC 35 0x003a1ce4 undefined FUN_003b1ce4
+      PARAM 0 int param_1
+    VFUNC 37 0x003a21f0 undefined FUN_003b21f0
+      PARAM 0 int param_1
+    VFUNC 39 0x003a0ef4 undefined FUN_003b0ef4
+    VFUNC 41 0x003a0efc undefined FUN_003b0efc
+      PARAM 0 int param_1
+    VFUNC 47 0x003a1cfc undefined FUN_003b1cfc
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x003a1ccc undefined FUN_003b1ccc
+      PARAM 0 int param_1
+    VFUNC 51 0x003a1084 undefined FUN_003b1084
+      PARAM 0 int param_1
+    VFUNC 58 0x003a1c4c undefined FUN_003b1c4c
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 * param_2
+  FUNC 0x003a0cf4 undefined SGetType
+
+CLASS PlantPowerLily 0xc
+  FIELD 0x0 PlantPowerLilyVTable * vtable
+  VAR 0x00cbbf60 undefined4 instance
+  VTABLE 0x00c4a008 PlantFramework PlantPowerLilyVTable 0xf0
+    VFUNC 0 0x003a2d54 undefined GetType
+    VFUNC 1 0x003a2d60 bool IsAbstract
+    VFUNC 2 0x003a2d68 undefined ~PlantPowerLily
+    VFUNC 3 0x003a2d6c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a2858 undefined FUN_003b2858
+      PARAM 0 int param_1
+    VFUNC 16 0x003a2b70 undefined FUN_003b2b70
+      PARAM 0 int param_1
+    VFUNC 25 0x003a2878 undefined FUN_003b2878
+      PARAM 0 int param_1
+    VFUNC 34 0x003a2c94 undefined FUN_003b2c94
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 35 0x003a2d04 undefined FUN_003b2d04
+      PARAM 0 int param_1
+    VFUNC 36 0x003a2d18 undefined FUN_003b2d18
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003a2d24 undefined FUN_003b2d24
+      PARAM 0 int param_1
+    VFUNC 52 0x003a2d40 undefined FUN_003b2d40
+      PARAM 0 int param_1
+  FUNC 0x003a248c undefined SGetType
+  FUNC 0x003a2594 undefined new
+
+CLASS PlantPowerPlant 0xc
+  FIELD 0x0 PlantPowerPlantVTable * vtable
+  VAR 0x00cbc020 undefined4 instance
+  VTABLE 0x00c4a108 PlantFramework PlantPowerPlantVTable 0xf0
+    VFUNC 0 0x003a3ca8 undefined GetType
+    VFUNC 1 0x003a3cb4 bool IsAbstract
+    VFUNC 2 0x003a3cbc undefined ~PlantPowerPlant
+    VFUNC 3 0x003a3cc0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a3448 undefined FUN_003b3448
+      PARAM 0 int param_1
+    VFUNC 32 0x003a3644 undefined FUN_003b3644
+    VFUNC 41 0x003a364c undefined FUN_003b364c
+    VFUNC 47 0x003a3664 undefined FUN_003b3664
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x003a363c undefined FUN_003b363c
+    VFUNC 52 0x003a3654 undefined FUN_003b3654
+      PARAM 0 int param_1
+  FUNC 0x003a2f84 undefined SGetType
+  FUNC 0x003a308c undefined new
+
+CLASS PlantTypePowerPlant 0x28
+  FIELD 0x0 PlantTypePowerPlantVTable * vtable
+  VAR 0x00cbc024 undefined4 instance
+  VTABLE 0x00c4a208 PlantType PlantTypePowerPlantVTable 0x20
+    VFUNC 0 0x003a3ccc undefined GetType
+    VFUNC 1 0x003a3d50 bool IsAbstract
+    VFUNC 2 0x003a3d58 undefined ~PlantTypePowerPlant
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x003a3d6c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a37c4 undefined FUN_003b37c4
+      PARAM 0 int * param_1
+
+CLASS PlantPuffshroom 0x20
+  FIELD 0x0 PlantPuffshroomVTable * vtable
+  VAR 0x00cbc0e0 undefined4 instance
+  VTABLE 0x00c4a238 PlantFramework PlantPuffshroomVTable 0xf0
+    VFUNC 0 0x003a4c5c undefined GetType
+    VFUNC 1 0x003a4c68 bool IsAbstract
+    VFUNC 2 0x003a4c70 undefined ~PlantPuffshroom
+    VFUNC 3 0x003a4c74 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a4460 undefined FUN_003b4460
+      PARAM 0 int param_1
+    VFUNC 17 0x003a4a40 undefined FUN_003b4a40
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 20 0x003a4ae8 undefined FUN_003b4ae8
+      PARAM 0 undefined4 param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+      PARAM 4 undefined4 param_5
+    VFUNC 25 0x003a4608 undefined FUN_003b4608
+      PARAM 0 int param_1
+    VFUNC 26 0x003a4be4 undefined FUN_003b4be4
+      PARAM 0 int param_1
+    VFUNC 35 0x003a44f0 undefined FUN_003b44f0
+    VFUNC 36 0x003a44f8 undefined FUN_003b44f8
+      PARAM 0 int param_1
+    VFUNC 37 0x003a45d8 undefined FUN_003b45d8
+      PARAM 0 int param_1
+  FUNC 0x003a3f90 undefined SGetType
+  FUNC 0x003a4098 undefined new
+
+CLASS ThreepeaterProjectile 0xa8
+  FIELD 0x0 ThreepeaterProjectileVTable * vtable
+  VAR 0x00cbcb30 undefined4 instance
+  VTABLE 0x00c4b058 Projectile ThreepeaterProjectileVTable 0x54
+    VFUNC 0 0x003ba2cc undefined GetType
+    VFUNC 1 0x003ba354 bool IsAbstract
+    VFUNC 2 0x003ba35c undefined ~ThreepeaterProjectile
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x003ba370 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x003ba238 undefined FUN_003ca238
+      PARAM 0 int param_1
+    VFUNC 18 0x003ba244 undefined FUN_003ca244
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+  FUNC 0x003b8f60 undefined new
+
+CLASS PlantWinterMelon 0x28
+  FIELD 0x0 PlantWinterMelonVTable * vtable
+  VAR 0x00cbce40 undefined4 instance
+  VTABLE 0x00c4b4b8 PlantMelonpult PlantWinterMelonVTable 0xf8
+    VFUNC 0 0x003be194 undefined GetType
+    VFUNC 1 0x003be218 bool IsAbstract
+    VFUNC 2 0x003be220 undefined ~PlantWinterMelon
+      PARAM 0 int * param_1
+    VFUNC 3 0x003be290 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 60 0x003be07c undefined FUN_003ce07c
+      PARAM 0 int param_1
+    VFUNC 61 0x003be108 undefined FUN_003ce108
+      PARAM 0 int param_1
+
+CLASS PlantfoodPurchaseTutorialIntroProperties 0x38
+  FIELD 0x0 PlantfoodPurchaseTutorialIntroPropertiesVTable * vtable
+  VAR 0x00cbcf54 undefined4 instance
+  VTABLE 0x00c4b658 StandardLevelIntroProperties PlantfoodPurchaseTutorialIntroPropertiesVTable 0x40
+    VFUNC 0 0x003c1ea8 undefined GetType
+    VFUNC 1 0x003c1eb4 bool IsAbstract
+    VFUNC 2 0x003c1ebc undefined ~PlantfoodPurchaseTutorialIntroProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x003c1f80 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x003c2048 undefined FUN_003d2048
+  FUNC 0x003bf3f8 undefined SGetType
+  FUNC 0x003bf500 undefined new
+
+CLASS PlantfoodTutorialIntroProperties 0x38
+  FIELD 0x0 PlantfoodTutorialIntroPropertiesVTable * vtable
+  VAR 0x00cbd044 undefined4 instance
+  VTABLE 0x00c4b708 StandardLevelIntroProperties PlantfoodTutorialIntroPropertiesVTable 0x40
+    VFUNC 0 0x003c7858 undefined GetType
+    VFUNC 1 0x003c7864 bool IsAbstract
+    VFUNC 2 0x003c786c undefined ~PlantfoodTutorialIntroProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x003c7930 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x003c79f8 undefined FUN_003d79f8
+  FUNC 0x003c2278 undefined SGetType
+  FUNC 0x003c2380 undefined new
+
+CLASS PlayerInfo 0xcc
+  FIELD 0x0 PlayerInfoVTable * vtable
+  VAR 0x00cbd400 undefined4 instance
+  VTABLE 0x00c4b838 Sexy::RtObject PlayerInfoVTable 0x1c
+    VFUNC 0 0x003d85fc undefined GetType
+    VFUNC 1 0x003d8684 bool IsAbstract
+    VFUNC 2 0x003d868c undefined ~PlayerInfo
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x003d86a0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 6 0x003d2898 undefined FUN_003e2898
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+  FUNC 0x00126ac0 undefined new
+
+CLASS PopAnimRig 0x180
+  FIELD 0x0 PopAnimRigVTable * vtable
+  VAR 0x00cbd760 undefined4 instance
+  VTABLE 0x00c4b998 GameObject PopAnimRigVTable 0x88
+    VFUNC 0 0x00135b34 undefined GetType
+    VFUNC 1 0x00135b40 bool IsAbstract
+    VFUNC 2 0x003efcdc undefined ~PopAnimRig
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x003efcc4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 6 0x003f004c undefined FUN_0040004c
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 13 0x003f2c44 undefined FUN_00402c44
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 14 0x003f6e20 undefined FUN_00406e20
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+    VFUNC 15 0x003f6ecc undefined FUN_00406ecc
+      PARAM 0 int param_1
+      PARAM 1 undefined1 param_2
+    VFUNC 16 0x003f4730 undefined FUN_00404730
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+    VFUNC 17 0x003f4754 undefined FUN_00404754
+      PARAM 0 int param_1
+    VFUNC 18 0x003f6a2c undefined FUN_00406a2c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 19 0x003f4944 undefined FUN_00404944
+      PARAM 0 int * param_1
+    VFUNC 20 0x003f5014 undefined FUN_00405014
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 21 0x003f5174 undefined FUN_00405174
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 22 0x003f7724 undefined FUN_00407724
+    VFUNC 23 0x003f533c undefined FUN_0040533c
+      PARAM 0 int param_1
+    VFUNC 24 0x003f5348 undefined FUN_00405348
+    VFUNC 25 0x003f534c undefined FUN_0040534c
+    VFUNC 26 0x003f5350 undefined FUN_00405350
+    VFUNC 27 0x003f5354 undefined FUN_00405354
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 28 0x003f5390 undefined FUN_00405390
+    VFUNC 29 0x003f5394 undefined FUN_00405394
+    VFUNC 30 0x003f5398 undefined FUN_00405398
+    VFUNC 31 0x003f71c4 undefined FUN_004071c4
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 32 0x003f70f4 undefined FUN_004070f4
+      PARAM 0 int param_1
+    VFUNC 33 0x003f700c undefined FUN_0040700c
+      PARAM 0 int param_1
+  FUNC 0x001262b0 undefined SGetType
+  FUNC 0x001263c4 undefined new
+
+CLASS PowerupFlickZombie 0x80
+  FIELD 0x0 PowerupFlickZombieVTable * vtable
+  VAR 0x00cbdbc0 undefined4 instance
+  VTABLE 0x00c4bc88 BasePowerup PowerupFlickZombieVTable 0x5c
+    VFUNC 0 0x004020a8 undefined GetType
+    VFUNC 1 0x00402130 bool IsAbstract
+    VFUNC 2 0x00402138 undefined ~PowerupFlickZombie
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00402180 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00400ffc undefined FUN_00410ffc
+      PARAM 0 undefined4 param_1
+    VFUNC 8 0x00401310 undefined FUN_00411310
+      PARAM 0 undefined4 param_1
+    VFUNC 14 0x00401340 undefined FUN_00411340
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 17 0x00401360 undefined FUN_00411360
+  FUNC 0x00400be4 undefined new
+
+CLASS PowerupManager 0x78
+  FIELD 0x0 PowerupManagerVTable * vtable
+  VAR 0x00cbdd60 undefined4 instance
+  VTABLE 0x00c4bdc8 GameSubSystem PowerupManagerVTable 0x38
+    VFUNC 0 0x004075e4 undefined GetType
+    VFUNC 1 0x0040766c bool IsAbstract
+    VFUNC 2 0x00407674 undefined ~PowerupManager
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00407688 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x00406020 undefined FUN_00416020
+      PARAM 0 int param_1
+  FUNC 0x00158124 undefined new
+
+CLASS PowerupPinchZombie 0x28
+  FIELD 0x0 PowerupPinchZombieVTable * vtable
+  VAR 0x00cbde20 undefined4 instance
+  VTABLE 0x00c4be08 BasePowerup PowerupPinchZombieVTable 0x5c
+    VFUNC 0 0x004083f0 undefined GetType
+    VFUNC 1 0x00408474 bool IsAbstract
+    VFUNC 2 0x0040847c undefined ~PowerupPinchZombie
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x004084c4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00407c20 undefined FUN_00417c20
+      PARAM 0 undefined4 param_1
+    VFUNC 8 0x004083c0 undefined FUN_004183c0
+      PARAM 0 undefined4 param_1
+
+CLASS WizardFingerGameObject 0x40
+  FIELD 0x0 WizardFingerGameObjectVTable * vtable
+  VAR 0x00cbe490 undefined4 instance
+  VTABLE 0x00c4c178 GameObject WizardFingerGameObjectVTable 0x34
+    VFUNC 0 0x00416b34 undefined GetType
+    VFUNC 1 0x00416b40 bool IsAbstract
+    VFUNC 2 0x0041b4e8 undefined ~WizardFingerGameObject
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0041b554 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x00419600 undefined FUN_00429600
+      PARAM 0 int param_1
+    VFUNC 12 0x00419ea0 undefined FUN_00429ea0
+      PARAM 0 int param_1
+  FUNC 0x0040ac1c undefined SGetType
+  FUNC 0x0040ad30 undefined new
+
+CLASS PowerupWizardFinger 0x80
+  FIELD 0x0 PowerupWizardFingerVTable * vtable
+  VAR 0x00cbe494 undefined4 instance
+  VTABLE 0x00c4c1b8 BasePowerup PowerupWizardFingerVTable 0x5c
+    VFUNC 0 0x00416a9c undefined GetType
+    VFUNC 1 0x00416b2c bool IsAbstract
+    VFUNC 2 0x0041b5c4 undefined ~PowerupWizardFinger
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0041b630 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0041a83c undefined FUN_0042a83c
+      PARAM 0 undefined4 param_1
+    VFUNC 8 0x0041aeec undefined FUN_0042aeec
+      PARAM 0 undefined4 param_1
+    VFUNC 14 0x0041af1c undefined FUN_0042af1c
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 17 0x0041af3c undefined FUN_0042af3c
+    VFUNC 21 0x0041af48 undefined FUN_0042af48
+      PARAM 0 int param_1
+    VFUNC 22 0x0041aff8 undefined FUN_0042aff8
+      PARAM 0 int param_1
+  FUNC 0x0040ae24 undefined new
+
+CLASS PresentTypeCoin 0x1c
+  FIELD 0x0 PresentTypeCoinVTable * vtable
+  VAR 0x00cbe584 undefined4 instance
+  VTABLE 0x00c4c228 PresentType PresentTypeCoinVTable 0x20
+    VFUNC 0 0x0013a814 undefined GetType
+    VFUNC 1 0x0013a8a4 bool IsAbstract
+    VFUNC 2 0x0041e454 undefined ~PresentTypeCoin
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0041e468 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0041dffc undefined FUN_0042dffc
+      PARAM 0 int param_1
+  FUNC 0x0012380c undefined new
+
+CLASS PresentTypeKey 0x20
+  FIELD 0x0 PresentTypeKeyVTable * vtable
+  VAR 0x00cbe588 undefined4 instance
+  VTABLE 0x00c4c258 PresentType PresentTypeKeyVTable 0x20
+    VFUNC 0 0x0013a5e0 undefined GetType
+    VFUNC 1 0x0013a670 bool IsAbstract
+    VFUNC 2 0x0041e480 undefined ~PresentTypeKey
+      PARAM 0 int * param_1
+    VFUNC 3 0x0041e500 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x0041e3fc undefined FUN_0042e3fc
+      PARAM 0 int param_1
+  FUNC 0x001238f8 undefined new
+
+CLASS ProtectThePlantChallengeModule 0x30
+  FIELD 0x0 ProtectThePlantChallengeModuleVTable * vtable
+  VAR 0x00cbedf0 undefined4 instance
+  VTABLE 0x00c4c328 LevelModule ProtectThePlantChallengeModuleVTable 0x3c
+    VFUNC 0 0x0043b5f4 undefined GetType
+    VFUNC 1 0x0043b67c bool IsAbstract
+    VFUNC 2 0x0043b684 undefined ~ProtectThePlantChallengeModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0043b73c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00439e9c undefined FUN_00449e9c
+      PARAM 0 int param_1
+    VFUNC 11 0x0043b500 undefined FUN_0044b500
+      PARAM 0 int param_1
+    VFUNC 13 0x0043ad3c undefined FUN_0044ad3c
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x00439e98 undefined FUN_00449e98
+  FUNC 0x00438ba0 undefined new
+
+CLASS RailcartModule 0x28
+  FIELD 0x0 RailcartModuleVTable * vtable
+  VAR 0x00cbf240 undefined4 instance
+  VTABLE 0x00c4c588 LevelModule RailcartModuleVTable 0x3c
+    VFUNC 0 0x00447478 undefined GetType
+    VFUNC 1 0x004474fc bool IsAbstract
+    VFUNC 2 0x00447504 undefined ~RailcartModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x004475e4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x004462d0 undefined FUN_004562d0
+      PARAM 0 int param_1
+    VFUNC 11 0x0044669c undefined FUN_0045669c
+    VFUNC 13 0x00445fc4 undefined FUN_00455fc4
+      PARAM 0 undefined4 param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+
+CLASS RailcartProperties 0x38
+  FIELD 0x0 RailcartPropertiesVTable * vtable
+  VAR 0x00cbf244 undefined4 instance
+  VTABLE 0x00c4c5d8 LevelModuleProperties RailcartPropertiesVTable 0x40
+    VFUNC 0 0x00448bc0 undefined GetType
+    VFUNC 1 0x00448bcc bool IsAbstract
+    VFUNC 2 0x00448bd4 undefined ~RailcartProperties
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00448be8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x00448c00 undefined FUN_00458c00
+  FUNC 0x00445124 undefined SGetType
+  FUNC 0x0044522c undefined new
+
+CLASS RangedPlantProjectile 0xa8
+  FIELD 0x0 RangedPlantProjectileVTable * vtable
+  VAR 0x00cbf3c0 undefined4 instance
+  VTABLE 0x00c4c6d8 Projectile RangedPlantProjectileVTable 0x54
+    VFUNC 0 0x0044c740 undefined GetType
+    VFUNC 1 0x0044c7c8 bool IsAbstract
+    VFUNC 2 0x0044c7d0 undefined ~RangedPlantProjectile
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0044c7e4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 15 0x0044c5e8 undefined FUN_0045c5e8
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 17 0x0044c648 undefined FUN_0045c648
+      PARAM 0 int param_1
+    VFUNC 18 0x0044c618 undefined FUN_0045c618
+      PARAM 0 int param_1
+  FUNC 0x0044c0dc undefined new
+
+CLASS SeedBankModule 0x38
+  FIELD 0x0 SeedBankModuleVTable * vtable
+  VAR 0x00cbf6b0 undefined4 instance
+  VTABLE 0x00c4c848 LevelModule SeedBankModuleVTable 0x3c
+    VFUNC 0 0x00188738 undefined GetType
+    VFUNC 1 0x001887c8 bool IsAbstract
+    VFUNC 2 0x0045659c undefined ~SeedBankModule
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x004565b0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0045583c undefined FUN_0046583c
+      PARAM 0 int param_1
+    VFUNC 13 0x004553c4 undefined FUN_004653c4
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x00454e04 undefined FUN_00464e04
+      PARAM 0 int param_1
+  FUNC 0x00155fa4 undefined new
+
+CLASS ShovelCursor 0x28
+  FIELD 0x0 ShovelCursorVTable * vtable
+  VAR 0x00cc0120 undefined4 instance
+  VTABLE 0x00c4d308 BaseCursor ShovelCursorVTable 0x2c
+    VFUNC 0 0x001898f0 undefined GetType
+    VFUNC 1 0x001898fc bool IsAbstract
+    VFUNC 2 0x004703b0 undefined ~ShovelCursor
+      PARAM 0 int * param_1
+    VFUNC 3 0x004703c4 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 8 0x0046fd70 undefined FUN_0047fd70
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 9 0x0046fe0c undefined FUN_0047fe0c
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x001543b8 undefined SGetType
+
+CLASS SimpleZombieSpawnerModule 0x38
+  FIELD 0x0 SimpleZombieSpawnerModuleVTable * vtable
+  VAR 0x00cc0330 undefined4 instance
+  VTABLE 0x00c4d418 LevelModule SimpleZombieSpawnerModuleVTable 0x3c
+    VFUNC 0 0x0047393c undefined GetType
+    VFUNC 1 0x004739c4 bool IsAbstract
+    VFUNC 2 0x004739cc undefined ~SimpleZombieSpawnerModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00473aa4 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00472f08 undefined FUN_00482f08
+      PARAM 0 int param_1
+    VFUNC 13 0x00472c64 undefined FUN_00482c64
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x00472660 undefined FUN_00482660
+      PARAM 0 int param_1
+  FUNC 0x004712a8 undefined new
+
+CLASS StarChallenge 0x4
+  FIELD 0x0 StarChallengeVTable * vtable
+  VAR 0x00cc0b68 undefined4 instance
+  VTABLE 0x00c4da18 LevelModule StarChallengeVTable 0x54
+    VFUNC 0 0x00490568 undefined GetType
+    VFUNC 1 0x004905f0 bool IsAbstract
+    VFUNC 2 0x004905f8 undefined ~StarChallenge
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00490640 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0048fb54 undefined FUN_0049fb54
+      PARAM 0 undefined4 param_1
+    VFUNC 15 0x0018585c undefined FUN_0019585c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 16 0x00185884 undefined FUN_00195884
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 17 0x0048fbd8 undefined FUN_0049fbd8
+      PARAM 0 int * param_1
+      PARAM 1 int * param_2
+    VFUNC 18 0x00aa3738 void __cxa_pure_virtual
+    VFUNC 19 0x001858ac undefined FUN_001958ac
+    VFUNC 20 0x0048fecc undefined FUN_0049fecc
+  FUNC 0x00157e8c undefined new
+
+CLASS StarChallengeModule 0x20
+  FIELD 0x0 StarChallengeModuleVTable * vtable
+  VAR 0x00cc0b60 undefined4 instance
+  VTABLE 0x00c4d9c8 LevelModule StarChallengeModuleVTable 0x3c
+    VFUNC 0 0x0018622c undefined GetType
+    VFUNC 1 0x001862bc bool IsAbstract
+    VFUNC 2 0x004904d4 undefined ~StarChallengeModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049051c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049003c undefined FUN_004a003c
+      PARAM 0 int param_1
+    VFUNC 14 0x0048fed4 undefined FUN_0049fed4
+      PARAM 0 int param_1
+  FUNC 0x00157c4c undefined new
+
+CLASS StarChallengeKillZombiesInTimeProps 0x28
+  FIELD 0x0 StarChallengeKillZombiesInTimePropsVTable * vtable
+  VAR 0x00cc0aa4 undefined4 instance
+  VTABLE 0x00c4d978 LevelModuleProperties StarChallengeKillZombiesInTimePropsVTable 0x40
+    VFUNC 0 0x0048ec2c undefined GetType
+    VFUNC 1 0x0048ec38 bool IsAbstract
+    VFUNC 2 0x0048ec40 undefined ~StarChallengeKillZombiesInTimeProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0048ed04 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0048edcc undefined FUN_0049edcc
+    VFUNC 14 0x0048edd8 undefined FUN_0049edd8
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x0048efb0 undefined FUN_0049efb0
+      PARAM 0 undefined4 param_1
+  FUNC 0x0048d3f8 undefined SGetType
+  FUNC 0x0048d500 undefined new
+
+CLASS StarChallengeKillZombiesInTime 0x38
+  FIELD 0x0 StarChallengeKillZombiesInTimeVTable * vtable
+  VAR 0x00cc0aa0 undefined4 instance
+  VTABLE 0x00c4d918 StarChallenge StarChallengeKillZombiesInTimeVTable 0x54
+    VFUNC 0 0x0048e6c0 undefined GetType
+    VFUNC 1 0x0048e6cc bool IsAbstract
+    VFUNC 2 0x0048e6d4 undefined ~StarChallengeKillZombiesInTime
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0048e75c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0048dca0 undefined FUN_0049dca0
+      PARAM 0 int param_1
+    VFUNC 13 0x0048dc8c undefined FUN_0049dc8c
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 18 0x0048dc98 undefined FUN_0049dc98
+      PARAM 0 int param_1
+    VFUNC 20 0x0048e7e8 undefined FUN_0049e7e8
+      PARAM 0 int param_1
+  FUNC 0x0048d1c8 undefined SGetType
+  FUNC 0x0048d2d0 undefined new
+
+CLASS StarChallengeBeatTheLevelProps 0x28
+  FIELD 0x0 StarChallengeBeatTheLevelPropsVTable * vtable
+  VAR 0x00cc0a74 undefined4 instance
+  VTABLE 0x00c4d8c8 LevelModuleProperties StarChallengeBeatTheLevelPropsVTable 0x40
+    VFUNC 0 0x0048cf24 undefined GetType
+    VFUNC 1 0x0048cf30 bool IsAbstract
+    VFUNC 2 0x0048cf38 undefined ~StarChallengeBeatTheLevelProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0048cf4c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x0048cf64 undefined FUN_0049cf64
+    VFUNC 14 0x0048cf70 undefined FUN_0049cf70
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x0048cfec undefined FUN_0049cfec
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+  FUNC 0x0048c8d8 undefined SGetType
+  FUNC 0x0048c9e0 undefined new
+
+CLASS StarChallengeBeatTheLevel 0x20
+  FIELD 0x0 StarChallengeBeatTheLevelVTable * vtable
+  VAR 0x00cc0a70 undefined4 instance
+  VTABLE 0x00c4d868 StarChallenge StarChallengeBeatTheLevelVTable 0x54
+    VFUNC 0 0x0048ce7c undefined GetType
+    VFUNC 1 0x0048ce88 bool IsAbstract
+    VFUNC 2 0x0048ce90 undefined ~StarChallengeBeatTheLevel
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0048ced8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 18 0x0048ce74 undefined FUN_0049ce74
+  FUNC 0x0048c6c0 undefined SGetType
+  FUNC 0x0048c7c8 undefined new
+
+CLASS StandardLevelIntro 0x38
+  FIELD 0x0 StandardLevelIntroVTable * vtable
+  VAR 0x00cc0960 undefined4 instance
+  VTABLE 0x00c4d808 IntroModule StandardLevelIntroVTable 0x54
+    VFUNC 0 0x001854dc undefined GetType
+    VFUNC 1 0x001854e8 bool IsAbstract
+    VFUNC 2 0x00198758 undefined ~StandardLevelIntro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x001987a0 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0048a5fc undefined FUN_0049a5fc
+      PARAM 0 int param_1
+    VFUNC 14 0x0048a5e8 undefined FUN_0049a5e8
+      PARAM 0 int param_1
+    VFUNC 15 0x0048aa50 undefined FUN_0049aa50
+    VFUNC 16 0x0048aa58 undefined FUN_0049aa58
+    VFUNC 17 0x0048bd18 undefined FUN_0049bd18
+    VFUNC 18 0x0048c1dc undefined FUN_0049c1dc
+    VFUNC 19 0x0048a7b4 undefined FUN_0049a7b4
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 20 0x0048b110 undefined FUN_0049b110
+  FUNC 0x001586c4 undefined SGetType
+  FUNC 0x001587d8 undefined new
+
+CLASS StageModule 0x78
+  FIELD 0x0 StageModuleVTable * vtable
+  VAR 0x00cc07e0 undefined4 instance
+  VTABLE 0x00c4d798 LevelModule StageModuleVTable 0x68
+    VFUNC 0 0x0018782c undefined GetType
+    VFUNC 1 0x001878bc bool IsAbstract
+    VFUNC 2 0x001878c4 undefined ~StageModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0018799c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x004838a8 undefined FUN_004938a8
+      PARAM 0 int param_1
+    VFUNC 11 0x00486280 undefined FUN_00496280
+      PARAM 0 int param_1
+    VFUNC 13 0x00487564 undefined FUN_00497564
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x0048388c undefined FUN_0049388c
+      PARAM 0 int param_1
+    VFUNC 15 0x00187a78 undefined FUN_00197a78
+    VFUNC 16 0x00187a80 undefined FUN_00197a80
+    VFUNC 17 0x00187a88 undefined FUN_00197a88
+    VFUNC 18 0x0018780c undefined FUN_0019780c
+    VFUNC 19 0x00187814 undefined FUN_00197814
+    VFUNC 20 0x0018781c undefined FUN_0019781c
+    VFUNC 21 0x00187824 undefined FUN_00197824
+    VFUNC 22 0x00486f64 undefined FUN_00496f64
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 23 0x00485240 undefined FUN_00495240
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 int param_3
+      PARAM 3 int param_4
+    VFUNC 24 0x00485f88 undefined FUN_00495f88
+    VFUNC 25 0x00486918 undefined FUN_00496918
+  FUNC 0x001566b0 undefined new
+
+CLASS SpeedyLaneChallengeProperties 0x30
+  FIELD 0x0 SpeedyLaneChallengePropertiesVTable * vtable
+  VAR 0x00cc06e4 undefined4 instance
+  VTABLE 0x00c4d748 LevelModuleProperties SpeedyLaneChallengePropertiesVTable 0x40
+    VFUNC 0 0x00481c7c undefined GetType
+    VFUNC 1 0x00481c88 bool IsAbstract
+    VFUNC 2 0x00481c90 undefined ~SpeedyLaneChallengeProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00481d54 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00481e1c undefined FUN_00491e1c
+  FUNC 0x0047f0ac undefined SGetType
+  FUNC 0x0047f1b4 undefined new
+
+CLASS SpeedyLaneChallengeModule 0x28
+  FIELD 0x0 SpeedyLaneChallengeModuleVTable * vtable
+  VAR 0x00cc06e0 undefined4 instance
+  VTABLE 0x00c4d6f8 LevelModule SpeedyLaneChallengeModuleVTable 0x3c
+    VFUNC 0 0x00480e4c undefined GetType
+    VFUNC 1 0x00480ed4 bool IsAbstract
+    VFUNC 2 0x00480edc undefined ~SpeedyLaneChallengeModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00480f54 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0047fd64 undefined FUN_0048fd64
+      PARAM 0 int param_1
+    VFUNC 14 0x0047fd54 undefined FUN_0048fd54
+      PARAM 0 int param_1
+  FUNC 0x0047eef0 undefined new
+
+CLASS SpawnGravestonesWaveActionProps 0x40
+  FIELD 0x0 SpawnGravestonesWaveActionPropsVTable * vtable
+  VAR 0x00cc0624 undefined4 instance
+  VTABLE 0x00c4d6b8 WaveActionProperties SpawnGravestonesWaveActionPropsVTable 0x38
+    VFUNC 0 0x0047e9e4 undefined GetType
+    VFUNC 1 0x0047e9f0 bool IsAbstract
+    VFUNC 2 0x0047e9f8 undefined ~SpawnGravestonesWaveActionProps
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0047ea0c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x0047ea24 undefined FUN_0048ea24
+  FUNC 0x0047c26c undefined SGetType
+  FUNC 0x0047c374 undefined new
+
+CLASS SpawnGravestonesWaveAction 0x28
+  FIELD 0x0 SpawnGravestonesWaveActionVTable * vtable
+  VAR 0x00cc0620 undefined4 instance
+  VTABLE 0x00c4d668 WaveAction SpawnGravestonesWaveActionVTable 0x48
+    VFUNC 0 0x0047d854 undefined GetType
+    VFUNC 1 0x0047d8dc bool IsAbstract
+    VFUNC 2 0x0047d8e4 undefined ~SpawnGravestonesWaveAction
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0047d98c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0047ce78 undefined FUN_0048ce78
+      PARAM 0 int param_1
+    VFUNC 16 0x0047d6a0 undefined FUN_0048d6a0
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 17 0x0047cda8 undefined FUN_0048cda8
+      PARAM 0 int param_1
+  FUNC 0x0047c15c undefined new
+
+CLASS SpawnGravestoneZombiesOnFlagWavesProperties 0x20
+  FIELD 0x0 SpawnGravestoneZombiesOnFlagWavesPropertiesVTable * vtable
+  VAR 0x00cc0564 undefined4 instance
+  VTABLE 0x00c4d618 LevelModuleProperties SpawnGravestoneZombiesOnFlagWavesPropertiesVTable 0x40
+    VFUNC 0 0x0047beb0 undefined GetType
+    VFUNC 1 0x0047bebc bool IsAbstract
+    VFUNC 2 0x0047bec4 undefined ~SpawnGravestoneZombiesOnFlagWavesProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0047bf88 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0047c050 undefined FUN_0048c050
+  FUNC 0x0047b6e4 undefined SGetType
+  FUNC 0x0047b7ec undefined new
+
+CLASS SpawnGravestoneZombiesOnFlagWavesModule 0x28
+  FIELD 0x0 SpawnGravestoneZombiesOnFlagWavesModuleVTable * vtable
+  VAR 0x00cc0560 undefined4 instance
+  VTABLE 0x00c4d5c8 LevelModule SpawnGravestoneZombiesOnFlagWavesModuleVTable 0x3c
+    VFUNC 0 0x0047bb60 undefined GetType
+    VFUNC 1 0x0047bbe4 bool IsAbstract
+    VFUNC 2 0x0047bbec undefined ~SpawnGravestoneZombiesOnFlagWavesModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0047bc34 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0047b9c4 undefined FUN_0048b9c4
+      PARAM 0 undefined4 param_1
+
+CLASS SimpleZombieSpawnerProperties 0x28
+  FIELD 0x0 SimpleZombieSpawnerPropertiesVTable * vtable
+  VAR 0x00cc0334 undefined4 instance
+  VTABLE 0x00c4d468 LevelModuleProperties SimpleZombieSpawnerPropertiesVTable 0x40
+    VFUNC 0 0x004781b0 undefined GetType
+    VFUNC 1 0x004781bc bool IsAbstract
+    VFUNC 2 0x004781c4 undefined ~SimpleZombieSpawnerProperties
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 allocator * param_3
+    VFUNC 3 0x00478218 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x004783b0 undefined FUN_004883b0
+  FUNC 0x004713b8 undefined SGetType
+  FUNC 0x004714c0 undefined new
+
+CLASS RailcartTutorialIntroProperties 0x38
+  FIELD 0x0 RailcartTutorialIntroPropertiesVTable * vtable
+  VAR 0x00cbf304 undefined4 instance
+  VTABLE 0x00c4c688 StandardLevelIntroProperties RailcartTutorialIntroPropertiesVTable 0x40
+    VFUNC 0 0x0044bc20 undefined GetType
+    VFUNC 1 0x0044bc2c bool IsAbstract
+    VFUNC 2 0x0044bc34 undefined ~RailcartTutorialIntroProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0044bcf8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0044bdc0 undefined FUN_0045bdc0
+  FUNC 0x00449170 undefined SGetType
+  FUNC 0x00449278 undefined new
+
+CLASS RailcartTutorialIntro 0x48
+  FIELD 0x0 RailcartTutorialIntroVTable * vtable
+  VAR 0x00cbf300 undefined4 instance
+  VTABLE 0x00c4c628 StandardLevelIntro RailcartTutorialIntroVTable 0x54
+    VFUNC 0 0x0044b9ac undefined GetType
+    VFUNC 1 0x0044ba34 bool IsAbstract
+    VFUNC 2 0x0044ba3c undefined ~RailcartTutorialIntro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0044babc undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00449c6c undefined FUN_00459c6c
+      PARAM 0 int param_1
+    VFUNC 13 0x0044983c undefined FUN_0045983c
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x00449990 undefined FUN_00459990
+      PARAM 0 int param_1
+    VFUNC 15 0x00449c1c undefined FUN_00459c1c
+    VFUNC 20 0x0044ace8 undefined FUN_0045ace8
+      PARAM 0 int * param_1
+  FUNC 0x00449060 undefined new
+
+CLASS ProtectThePlantChallengeProperties 0x30
+  FIELD 0x0 ProtectThePlantChallengePropertiesVTable * vtable
+  VAR 0x00cbedf4 undefined4 instance
+  VTABLE 0x00c4c378 LevelModuleProperties ProtectThePlantChallengePropertiesVTable 0x40
+    VFUNC 0 0x0043df68 undefined GetType
+    VFUNC 1 0x0043df74 bool IsAbstract
+    VFUNC 2 0x0043df7c undefined ~ProtectThePlantChallengeProperties
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x0043df90 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 13 0x0043dfa8 undefined FUN_0044dfa8
+  FUNC 0x00438d64 undefined SGetType
+  FUNC 0x00438e6c undefined new
+
+CLASS PowerupTutorialIntroProperties 0x4
+  FIELD 0x0 PowerupTutorialIntroPropertiesVTable * vtable
+  VAR 0x00cbe0a4 undefined4 instance
+  VTABLE 0x00c4c058 StandardLevelIntroProperties PowerupTutorialIntroPropertiesVTable 0x40
+    VFUNC 0 0x00416874 undefined GetType
+    VFUNC 1 0x00416880 bool IsAbstract
+    VFUNC 2 0x00416888 undefined ~PowerupTutorialIntroProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0041694c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00416a14 undefined FUN_00426a14
+  FUNC 0x0040b108 undefined SGetType
+
+CLASS PowerupTutorialIntro 0x98
+  FIELD 0x0 PowerupTutorialIntroVTable * vtable
+  VAR 0x00cbe0a0 undefined4 instance
+  VTABLE 0x00c4bff8 StandardLevelIntro PowerupTutorialIntroVTable 0x54
+    VFUNC 0 0x00414c60 undefined GetType
+    VFUNC 1 0x00414ce8 bool IsAbstract
+    VFUNC 2 0x00414cf0 undefined ~PowerupTutorialIntro
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x00414d04 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0040e548 undefined FUN_0041e548
+      PARAM 0 int param_1
+    VFUNC 11 0x0040cf6c undefined FUN_0041cf6c
+      PARAM 0 int param_1
+    VFUNC 13 0x0040ce84 undefined FUN_0041ce84
+      PARAM 0 undefined4 param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x0040cf38 undefined FUN_0041cf38
+      PARAM 0 int param_1
+  FUNC 0x0040aef8 undefined new
+
+CLASS PowerupPurchaseIntroProperties 0x38
+  FIELD 0x0 PowerupPurchaseIntroPropertiesVTable * vtable
+  VAR 0x00cbdee4 undefined4 instance
+  VTABLE 0x00c4bed8 StandardLevelIntroProperties PowerupPurchaseIntroPropertiesVTable 0x40
+    VFUNC 0 0x00409fcc undefined GetType
+    VFUNC 1 0x00409fd8 bool IsAbstract
+    VFUNC 2 0x00409fe0 undefined ~PowerupPurchaseIntroProperties
+      PARAM 0 int * param_1
+    VFUNC 3 0x0040a060 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0040a180 undefined FUN_0041a180
+  FUNC 0x004088e4 undefined SGetType
+  FUNC 0x004089ec undefined new
+
+CLASS PowerupPurchaseIntro 0x40
+  FIELD 0x0 PowerupPurchaseIntroVTable * vtable
+  VAR 0x00cbdee0 undefined4 instance
+  VTABLE 0x00c4be78 StandardLevelIntro PowerupPurchaseIntroVTable 0x54
+    VFUNC 0 0x00409c2c undefined GetType
+    VFUNC 1 0x00409cb4 bool IsAbstract
+    VFUNC 2 0x00409cbc undefined ~PowerupPurchaseIntro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00409d04 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x004091c8 undefined FUN_004191c8
+      PARAM 0 int param_1
+    VFUNC 14 0x004091b0 undefined FUN_004191b0
+      PARAM 0 int param_1
+    VFUNC 16 0x0040982c undefined FUN_0041982c
+    VFUNC 18 0x00409470 undefined FUN_00419470
+      PARAM 0 undefined4 param_1
+  FUNC 0x004087e8 undefined new
+
+CLASS PowerTileIntroProperties 0x38
+  FIELD 0x0 PowerTileIntroPropertiesVTable * vtable
+  VAR 0x00cbdab4 undefined4 instance
+  VTABLE 0x00c4bc38 StandardLevelIntroProperties PowerTileIntroPropertiesVTable 0x40
+    VFUNC 0 0x00400728 undefined GetType
+    VFUNC 1 0x00400734 bool IsAbstract
+    VFUNC 2 0x0040073c undefined ~PowerTileIntroProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00400800 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x004008c8 undefined FUN_004108c8
+  FUNC 0x003fd160 undefined SGetType
+  FUNC 0x003fd268 undefined new
+
+CLASS PowerTileIntro 0x58
+  FIELD 0x0 PowerTileIntroVTable * vtable
+  VAR 0x00cbdab0 undefined4 instance
+  VTABLE 0x00c4bbd8 StandardLevelIntro PowerTileIntroVTable 0x54
+    VFUNC 0 0x00400494 undefined GetType
+    VFUNC 1 0x0040051c bool IsAbstract
+    VFUNC 2 0x00400524 undefined ~PowerTileIntro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x004005dc undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x003fdfbc undefined FUN_0040dfbc
+      PARAM 0 int param_1
+    VFUNC 13 0x003fdbb4 undefined FUN_0040dbb4
+      PARAM 0 int param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x003fdd08 undefined FUN_0040dd08
+      PARAM 0 int param_1
+    VFUNC 15 0x003fdf6c undefined FUN_0040df6c
+    VFUNC 20 0x003fec64 undefined FUN_0040ec64
+      PARAM 0 int * param_1
+  FUNC 0x003fd04c undefined new
+
+CLASS PlantfoodTutorialIntro 0x68
+  FIELD 0x0 PlantfoodTutorialIntroVTable * vtable
+  VAR 0x00cbd040 undefined4 instance
+  VTABLE 0x00c4b6a8 StandardLevelIntro PlantfoodTutorialIntroVTable 0x54
+    VFUNC 0 0x003c7424 undefined GetType
+    VFUNC 1 0x003c74ac bool IsAbstract
+    VFUNC 2 0x003c74b4 undefined ~PlantfoodTutorialIntro
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x003c74c8 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003c3828 undefined FUN_003d3828
+      PARAM 0 int param_1
+    VFUNC 13 0x003c3264 undefined FUN_003d3264
+      PARAM 0 undefined4 param_1
+      PARAM 1 _Rb_tree<std::string,std::string,std::_Identity<std::string>,std::less<std::string>,std::allocator<std::string>> * param_2
+    VFUNC 14 0x003c33b4 undefined FUN_003d33b4
+      PARAM 0 int param_1
+  FUNC 0x003c2158 undefined new
+
+CLASS PlantfoodPurchaseTutorialIntro 0x60
+  FIELD 0x0 PlantfoodPurchaseTutorialIntroVTable * vtable
+  VAR 0x00cbcf50 undefined4 instance
+  VTABLE 0x00c4b5f8 StandardLevelIntro PlantfoodPurchaseTutorialIntroVTable 0x54
+    VFUNC 0 0x003c18ac undefined GetType
+    VFUNC 1 0x003c1934 bool IsAbstract
+    VFUNC 2 0x003c193c undefined ~PlantfoodPurchaseTutorialIntro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x003c1a04 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x003bfdf8 undefined FUN_003cfdf8
+      PARAM 0 int param_1
+    VFUNC 14 0x003bfc88 undefined FUN_003cfc88
+      PARAM 0 int param_1
+  FUNC 0x003bf2dc undefined new
+
+CLASS PlantfoodCursor 0x28
+  FIELD 0x0 PlantfoodCursorVTable * vtable
+  VAR 0x00cbce70 undefined4 instance
+  VTABLE 0x00c4b5b8 BaseCursor PlantfoodCursorVTable 0x2c
+    VFUNC 0 0x001898dc undefined GetType
+    VFUNC 1 0x001898e8 bool IsAbstract
+    VFUNC 2 0x003bf01c undefined ~PlantfoodCursor
+      PARAM 0 int * param_1
+    VFUNC 3 0x003bf030 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 8 0x003be54c undefined FUN_003ce54c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 9 0x003be5e8 undefined FUN_003ce5e8
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x00154504 undefined SGetType
+
+CLASS PlantWallnut 0x10
+  FIELD 0x0 PlantWallnutVTable * vtable
+  VAR 0x00cbcd80 undefined4 instance
+  VTABLE 0x00c4b3b8 PlantFramework PlantWallnutVTable 0xf4
+    VFUNC 0 0x003bdd84 undefined GetType
+    VFUNC 1 0x003bdd90 bool IsAbstract
+    VFUNC 2 0x003bdd98 undefined ~PlantWallnut
+    VFUNC 3 0x003bdd9c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003bd934 undefined FUN_003cd934
+      PARAM 0 int * param_1
+    VFUNC 15 0x003bdcf8 undefined FUN_003cdcf8
+      PARAM 0 int param_1
+    VFUNC 35 0x003bdbac undefined FUN_003cdbac
+      PARAM 0 int param_1
+    VFUNC 36 0x003bdc3c undefined FUN_003cdc3c
+      PARAM 0 int * param_1
+    VFUNC 37 0x003bdcdc undefined FUN_003cdcdc
+      PARAM 0 int param_1
+    VFUNC 43 0x003bd958 undefined FUN_003cd958
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 * param_3
+    VFUNC 60 0x003bda8c undefined FUN_003cda8c
+      PARAM 0 int param_1
+  FUNC 0x003bd46c undefined SGetType
+  FUNC 0x003bd574 undefined new
+
+CLASS PlantTorchwood 0x14
+  FIELD 0x0 PlantTorchwoodVTable * vtable
+  VAR 0x00cbcbf0 undefined4 instance
+  VTABLE 0x00c4b1b8 PlantFramework PlantTorchwoodVTable 0xf0
+    VFUNC 0 0x003bbab8 undefined GetType
+    VFUNC 1 0x003bbac4 bool IsAbstract
+    VFUNC 2 0x003bbacc undefined ~PlantTorchwood
+      PARAM 0 int * param_1
+    VFUNC 3 0x003bbb3c undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 25 0x003bb2ec undefined FUN_003cb2ec
+      PARAM 0 int param_1
+    VFUNC 35 0x003bb9fc undefined FUN_003cb9fc
+      PARAM 0 int param_1
+    VFUNC 36 0x003bba14 undefined FUN_003cba14
+      PARAM 0 int param_1
+  FUNC 0x003ba5b8 undefined SGetType
+  FUNC 0x003ba6c0 undefined new
+
+CLASS PlantThreepeater 0x10
+  FIELD 0x0 PlantThreepeaterVTable * vtable
+  VAR 0x00cbcb34 undefined4 instance
+  VTABLE 0x00c4b0b8 PlantFramework PlantThreepeaterVTable 0xf0
+    VFUNC 0 0x003ba388 undefined GetType
+    VFUNC 1 0x003ba394 bool IsAbstract
+    VFUNC 2 0x003ba39c undefined ~PlantThreepeater
+    VFUNC 3 0x003ba3a0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003b97e4 undefined FUN_003c97e4
+      PARAM 0 int param_1
+    VFUNC 17 0x003b9ed0 undefined FUN_003c9ed0
+      PARAM 0 int * param_1
+    VFUNC 23 0x003b99e4 undefined FUN_003c99e4
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 25 0x003b97f0 undefined FUN_003c97f0
+      PARAM 0 int * param_1
+    VFUNC 35 0x003b9938 undefined FUN_003c9938
+    VFUNC 36 0x003b9940 undefined FUN_003c9940
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x003b905c undefined SGetType
+  FUNC 0x003b9164 undefined new
+
+CLASS PlantTallnut 0x10
+  FIELD 0x0 PlantTallnutVTable * vtable
+  VAR 0x00cbca70 undefined4 instance
+  VTABLE 0x00c4af58 PlantFramework PlantTallnutVTable 0xf4
+    VFUNC 0 0x001302d8 undefined GetType
+    VFUNC 1 0x001302e4 bool IsAbstract
+    VFUNC 2 0x003b8cbc undefined ~PlantTallnut
+    VFUNC 3 0x003b8cc0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003b886c undefined FUN_003c886c
+      PARAM 0 int * param_1
+    VFUNC 15 0x003b8c30 undefined FUN_003c8c30
+      PARAM 0 int param_1
+    VFUNC 35 0x003b8ae4 undefined FUN_003c8ae4
+      PARAM 0 int param_1
+    VFUNC 36 0x003b8b74 undefined FUN_003c8b74
+      PARAM 0 int * param_1
+    VFUNC 37 0x003b8c14 undefined FUN_003c8c14
+      PARAM 0 int param_1
+    VFUNC 43 0x003b8890 undefined FUN_003c8890
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 * param_3
+    VFUNC 60 0x003b89c4 undefined FUN_003c89c4
+      PARAM 0 int param_1
+  FUNC 0x0012c298 undefined SGetType
+  FUNC 0x0012c3ac undefined new
+
+CLASS PlantSunflower 0xc
+  FIELD 0x0 PlantSunflowerVTable * vtable
+  VAR 0x00cbc8f0 undefined4 instance
+  VTABLE 0x00c4ad58 PlantFramework PlantSunflowerVTable 0xf0
+    VFUNC 0 0x002e3fd8 undefined GetType
+    VFUNC 1 0x002e3fe4 bool IsAbstract
+    VFUNC 2 0x003b78f8 undefined ~PlantSunflower
+    VFUNC 3 0x003b78fc undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003b747c undefined FUN_003c747c
+      PARAM 0 int param_1
+    VFUNC 16 0x003b77e8 undefined FUN_003c77e8
+      PARAM 0 int * param_1
+    VFUNC 25 0x003b74a8 undefined FUN_003c74a8
+      PARAM 0 int param_1
+    VFUNC 34 0x003b75d8 undefined FUN_003c75d8
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 35 0x003b7848 undefined FUN_003c7848
+    VFUNC 36 0x003b7850 undefined FUN_003c7850
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003b78dc undefined FUN_003c78dc
+      PARAM 0 int param_1
+  FUNC 0x002d1170 undefined SGetType
+  FUNC 0x002d1284 undefined new
+
+CLASS PlantSunshroom 0x10
+  FIELD 0x0 PlantSunshroomVTable * vtable
+  VAR 0x00cbc9b0 undefined4 instance
+  VTABLE 0x00c4ae58 PlantSunflower PlantSunshroomVTable 0xf0
+    VFUNC 0 0x003b8238 undefined GetType
+    VFUNC 1 0x003b82c0 bool IsAbstract
+    VFUNC 2 0x003b82c8 undefined ~PlantSunshroom
+    VFUNC 3 0x003b82cc undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003b7f54 undefined FUN_003c7f54
+      PARAM 0 int param_1
+    VFUNC 25 0x003b80ec undefined FUN_003c80ec
+      PARAM 0 int param_1
+  FUNC 0x003b7b9c undefined new
+
+CLASS PlantTwinSunflower 0xc
+  FIELD 0x0 PlantTwinSunflowerVTable * vtable
+  VAR 0x00cbccc0 undefined4 instance
+  VTABLE 0x00c4b2b8 PlantSunflower PlantTwinSunflowerVTable 0xf0
+    VFUNC 0 0x003bd1c0 undefined GetType
+    VFUNC 1 0x003bd248 bool IsAbstract
+    VFUNC 2 0x003bd250 undefined ~PlantTwinSunflower
+    VFUNC 3 0x003bd254 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 16 0x003bd034 undefined FUN_003cd034
+      PARAM 0 int param_1
+    VFUNC 34 0x003bd0dc undefined FUN_003cd0dc
+      PARAM 0 int param_1
+  FUNC 0x003bcd84 undefined new
+
+CLASS PlantStarFruit 0x18
+  FIELD 0x0 PlantStarFruitVTable * vtable
+  VAR 0x00cbc830 undefined4 instance
+  VTABLE 0x00c4ac58 PlantFramework PlantStarFruitVTable 0xf0
+    VFUNC 0 0x003b6fbc undefined GetType
+    VFUNC 1 0x003b6fc8 bool IsAbstract
+    VFUNC 2 0x003b6fd0 undefined ~PlantStarFruit
+    VFUNC 3 0x003b6fd4 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 17 0x003b6288 undefined FUN_003c6288
+      PARAM 0 int * param_1
+    VFUNC 19 0x003b6ae4 undefined FUN_003c6ae4
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 26 0x003b6780 undefined FUN_003c6780
+      PARAM 0 int param_1
+    VFUNC 35 0x003b60d0 undefined FUN_003c60d0
+    VFUNC 36 0x003b60d8 undefined FUN_003c60d8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003b6278 undefined FUN_003c6278
+      PARAM 0 int param_1
+  FUNC 0x003b5a18 undefined SGetType
+  FUNC 0x003b5b20 undefined new
+
+CLASS PlantSquash 0x40
+  FIELD 0x0 PlantSquashVTable * vtable
+  VAR 0x00cbc770 undefined4 instance
+  VTABLE 0x00c4ab58 PlantFramework PlantSquashVTable 0xf0
+    VFUNC 0 0x003b56a8 undefined GetType
+    VFUNC 1 0x003b56b4 bool IsAbstract
+    VFUNC 2 0x003b56bc undefined ~PlantSquash
+      PARAM 0 int * param_1
+    VFUNC 3 0x003b5710 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x003b19f4 undefined FUN_003c19f4
+      PARAM 0 int param_1
+    VFUNC 12 0x003b4e70 undefined FUN_003c4e70
+      PARAM 0 int * param_1
+    VFUNC 25 0x003b43fc undefined FUN_003c43fc
+      PARAM 0 int * param_1
+    VFUNC 29 0x003b4edc undefined FUN_003c4edc
+    VFUNC 32 0x003b4cb8 undefined FUN_003c4cb8
+      PARAM 0 int param_1
+    VFUNC 33 0x003b4ca0 undefined FUN_003c4ca0
+      PARAM 0 int * param_1
+    VFUNC 35 0x003b4ee4 undefined FUN_003c4ee4
+      PARAM 0 int param_1
+    VFUNC 36 0x003b4efc undefined FUN_003c4efc
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003b5480 undefined FUN_003c5480
+      PARAM 0 int param_1
+    VFUNC 38 0x003b4cd0 undefined FUN_003c4cd0
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 48 0x003b4e58 undefined FUN_003c4e58
+      PARAM 0 int param_1
+    VFUNC 52 0x003b49d8 undefined FUN_003c49d8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 58 0x003b347c undefined FUN_003c347c
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x003b0f4c undefined SGetType
+  FUNC 0x003b1054 undefined new
+
+CLASS PlantSpringbean 0xc
+  FIELD 0x0 PlantSpringbeanVTable * vtable
+  VAR 0x00cbc670 undefined4 instance
+  VTABLE 0x00c4aa58 PlantFramework PlantSpringbeanVTable 0xf0
+    VFUNC 0 0x003b0b98 undefined GetType
+    VFUNC 1 0x003b0ba4 bool IsAbstract
+    VFUNC 2 0x003b0bac undefined ~PlantSpringbean
+    VFUNC 3 0x003b0bb0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003af4d0 undefined FUN_003bf4d0
+      PARAM 0 int param_1
+    VFUNC 25 0x003afff8 undefined FUN_003bfff8
+      PARAM 0 int * param_1
+    VFUNC 29 0x003b0854 undefined FUN_003c0854
+    VFUNC 35 0x003b085c undefined FUN_003c085c
+      PARAM 0 int param_1
+    VFUNC 36 0x003b0874 undefined FUN_003c0874
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003b0890 undefined FUN_003c0890
+      PARAM 0 int param_1
+    VFUNC 38 0x003affa8 undefined FUN_003bffa8
+      PARAM 0 undefined4 * param_1
+    VFUNC 39 0x003aff9c undefined FUN_003bff9c
+    VFUNC 41 0x003affc0 undefined FUN_003bffc0
+      PARAM 0 int param_1
+    VFUNC 45 0x003affdc undefined FUN_003bffdc
+      PARAM 0 int param_1
+    VFUNC 47 0x003b06a8 undefined FUN_003c06a8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 48 0x003b068c undefined FUN_003c068c
+      PARAM 0 int param_1
+    VFUNC 58 0x003aff84 undefined FUN_003bff84
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+  FUNC 0x003aec54 undefined SGetType
+  FUNC 0x003aed5c undefined new
+
+CLASS PlantSplitpea 0x30
+  FIELD 0x0 PlantSplitpeaVTable * vtable
+  VAR 0x00cbc5b0 undefined4 instance
+  VTABLE 0x00c4a958 PlantFramework PlantSplitpeaVTable 0xf0
+    VFUNC 0 0x003aea24 undefined GetType
+    VFUNC 1 0x003aea30 bool IsAbstract
+    VFUNC 2 0x003aea38 undefined ~PlantSplitpea
+    VFUNC 3 0x003aea3c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 17 0x003ae5ec undefined FUN_003be5ec
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 19 0x003adb4c undefined FUN_003bdb4c
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 20 0x003ade1c undefined FUN_003bde1c
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+    VFUNC 26 0x003ad750 undefined FUN_003bd750
+      PARAM 0 int param_1
+    VFUNC 31 0x003adf44 undefined FUN_003bdf44
+      PARAM 0 int * param_1
+    VFUNC 35 0x003ad5b8 undefined FUN_003bd5b8
+    VFUNC 36 0x003ad5c0 undefined FUN_003bd5c0
+      PARAM 0 int param_1
+    VFUNC 37 0x003ad81c undefined FUN_003bd81c
+      PARAM 0 int param_1
+    VFUNC 47 0x003ae9d8 undefined FUN_003be9d8
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 52 0x003adb34 undefined FUN_003bdb34
+      PARAM 0 int param_1
+  FUNC 0x003ad0ec undefined SGetType
+  FUNC 0x003ad1f4 undefined new
+
+CLASS PlantSpikeweed 0x18
+  FIELD 0x0 PlantSpikeweedVTable * vtable
+  VAR 0x00cbc4d0 undefined4 instance
+  VTABLE 0x00c4a848 PlantFramework PlantSpikeweedVTable 0xfc
+    VFUNC 0 0x003aa0c8 undefined GetType
+    VFUNC 1 0x003aa0d4 bool IsAbstract
+    VFUNC 2 0x003aa0dc undefined ~PlantSpikeweed
+      PARAM 0 int * param_1
+    VFUNC 3 0x003aa14c undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x003aa768 undefined FUN_003ba768
+      PARAM 0 int param_1
+    VFUNC 9 0x003aa9a4 undefined FUN_003ba9a4
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 12 0x003aabf4 undefined FUN_003babf4
+      PARAM 0 int * param_1
+    VFUNC 21 0x003aad40 undefined FUN_003bad40
+      PARAM 0 int * param_1
+    VFUNC 25 0x003ab288 undefined FUN_003bb288
+      PARAM 0 int * param_1
+    VFUNC 29 0x003ac2dc undefined FUN_003bc2dc
+      PARAM 0 int * param_1
+    VFUNC 35 0x003ac314 undefined FUN_003bc314
+    VFUNC 36 0x003ac31c undefined FUN_003bc31c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003ac9c8 undefined FUN_003bc9c8
+      PARAM 0 int param_1
+    VFUNC 38 0x003ac300 undefined FUN_003bc300
+      PARAM 0 undefined4 * param_1
+    VFUNC 41 0x003aa0c0 undefined FUN_003ba0c0
+    VFUNC 60 0x003aca18 undefined FUN_003bca18
+    VFUNC 61 0x003aac28 undefined FUN_003bac28
+      PARAM 0 int param_1
+    VFUNC 62 0x003aacb4 undefined FUN_003bacb4
+      PARAM 0 int param_1
+  FUNC 0x003a9988 undefined SGetType
+  FUNC 0x003a9a9c undefined new
+
+CLASS PlantSpikerock 0x28
+  FIELD 0x0 PlantSpikerockVTable * vtable
+  VAR 0x00cbc4a0 undefined4 instance
+  VTABLE 0x00c4a738 PlantSpikeweed PlantSpikerockVTable 0xfc
+    VFUNC 0 0x003a9f50 undefined GetType
+    VFUNC 1 0x003a9fd4 bool IsAbstract
+    VFUNC 2 0x003a9fdc undefined ~PlantSpikerock
+      PARAM 0 int * param_1
+    VFUNC 3 0x003aa04c undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x003a9ba8 undefined FUN_003b9ba8
+      PARAM 0 int param_1
+    VFUNC 46 0x003a9dec undefined FUN_003b9dec
+      PARAM 0 int param_1
+    VFUNC 60 0x003a9bc0 undefined FUN_003b9bc0
+    VFUNC 61 0x003a9e38 undefined FUN_003b9e38
+      PARAM 0 int param_1
+    VFUNC 62 0x003a9ec4 undefined FUN_003b9ec4
+      PARAM 0 int param_1
+
+CLASS PlantSnowPea 0x28
+  FIELD 0x0 PlantSnowPeaVTable * vtable
+  VAR 0x00cbc3e0 undefined4 instance
+  VTABLE 0x00c4a638 PlantFramework PlantSnowPeaVTable 0xf0
+    VFUNC 0 0x003a9768 undefined GetType
+    VFUNC 1 0x003a9774 bool IsAbstract
+    VFUNC 2 0x003a8d04 undefined ~PlantSnowPea
+      PARAM 0 int * param_1
+    VFUNC 3 0x003a8cec undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 17 0x003a96c0 undefined FUN_003b96c0
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 26 0x003a954c undefined FUN_003b954c
+      PARAM 0 int param_1
+    VFUNC 35 0x003a8de4 undefined FUN_003b8de4
+    VFUNC 36 0x003a8dec undefined FUN_003b8dec
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003a95c4 undefined FUN_003b95c4
+      PARAM 0 int param_1
+    VFUNC 54 0x003a9474 undefined FUN_003b9474
+      PARAM 0 int param_1
+  FUNC 0x003a87dc undefined SGetType
+  FUNC 0x003a88e4 undefined new
+
+CLASS PlantSnapdragon 0xc
+  FIELD 0x0 PlantSnapdragonVTable * vtable
+  VAR 0x00cbc320 undefined4 instance
+  VTABLE 0x00c4a538 PlantFramework PlantSnapdragonVTable 0xf0
+    VFUNC 0 0x003a8484 undefined GetType
+    VFUNC 1 0x003a8490 bool IsAbstract
+    VFUNC 2 0x003a8498 undefined ~PlantSnapdragon
+    VFUNC 3 0x003a849c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x003a69dc undefined FUN_003b69dc
+      PARAM 0 int param_1
+    VFUNC 17 0x003a7de8 undefined FUN_003b7de8
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 23 0x003a7f34 undefined FUN_003b7f34
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 26 0x003a6a9c undefined FUN_003b6a9c
+      PARAM 0 int param_1
+    VFUNC 30 0x003a8474 undefined FUN_003b8474
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 35 0x003a69e8 undefined FUN_003b69e8
+    VFUNC 36 0x003a69f0 undefined FUN_003b69f0
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 37 0x003a6a84 undefined FUN_003b6a84
+      PARAM 0 int param_1
+    VFUNC 47 0x003a6cd4 undefined FUN_003b6cd4
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 53 0x003a79d4 undefined FUN_003b79d4
+      PARAM 0 int param_1
+  FUNC 0x003a6610 undefined SGetType
+  FUNC 0x003a6718 undefined new
+
+CLASS PlantScaredyshroom 0x1c
+  FIELD 0x0 PlantScaredyshroomVTable * vtable
+  VAR 0x00cbc260 undefined4 instance
+  VTABLE 0x00c4a438 PlantFramework PlantScaredyshroomVTable 0xf0
+    VFUNC 0 0x003a63e0 undefined GetType
+    VFUNC 1 0x003a63ec bool IsAbstract
+    VFUNC 2 0x003a63f4 undefined ~PlantScaredyshroom
+    VFUNC 17 0x003a62c0 undefined FUN_003b62c0
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 23 0x003a629c undefined FUN_003b629c
+      PARAM 0 int param_1
+    VFUNC 25 0x003a6044 undefined FUN_003b6044
+      PARAM 0 int param_1
+    VFUNC 26 0x003a6368 undefined FUN_003b6368
+      PARAM 0 int param_1
+    VFUNC 35 0x003a5f2c undefined FUN_003b5f2c
+    VFUNC 36 0x003a5f34 undefined FUN_003b5f34
+      PARAM 0 int param_1
+    VFUNC 37 0x003a6014 undefined FUN_003b6014
+      PARAM 0 int param_1
+  FUNC 0x003a5b58 undefined SGetType
+  FUNC 0x003a5c60 undefined new
+  FUNC 0x003a63f8 undefined Destroy
+    PARAM 0 void * param_1
+
+CLASS PlantRepeater 0x1c
+  FIELD 0x0 PlantRepeaterVTable * vtable
+  VAR 0x00cbc1a0 undefined4 instance
+  VTABLE 0x00c4a338 PlantFramework PlantRepeaterVTable 0xf0
+    VFUNC 0 0x003a5928 undefined GetType
+    VFUNC 1 0x003a5934 bool IsAbstract
+    VFUNC 2 0x003a593c undefined ~PlantRepeater
+    VFUNC 3 0x003a5940 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 17 0x003a56e0 undefined FUN_003b56e0
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 26 0x003a5350 undefined FUN_003b5350
+      PARAM 0 int param_1
+    VFUNC 35 0x003a5260 undefined FUN_003b5260
+    VFUNC 36 0x003a5268 undefined FUN_003b5268
+      PARAM 0 int param_1
+    VFUNC 37 0x003a53c8 undefined FUN_003b53c8
+      PARAM 0 int param_1
+    VFUNC 52 0x003a5910 undefined FUN_003b5910
+      PARAM 0 int param_1
+  FUNC 0x003a4e8c undefined SGetType
+  FUNC 0x003a4f94 undefined new
+
+CLASS StarChallengePlantBeforeLine 0x38
+  FIELD 0x0 StarChallengePlantBeforeLineVTable * vtable
+  VAR 0x00cc0c20 undefined4 instance
+  VTABLE 0x00c4da78 StarChallenge StarChallengePlantBeforeLineVTable 0x54
+    VFUNC 0 0x00495798 undefined GetType
+    VFUNC 1 0x004957a4 bool IsAbstract
+    VFUNC 2 0x004957ac undefined ~StarChallengePlantBeforeLine
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x004957c0 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x00493c9c undefined FUN_004a3c9c
+      PARAM 0 int param_1
+    VFUNC 18 0x00493b10 undefined FUN_004a3b10
+      PARAM 0 int param_1
+    VFUNC 19 0x00493b24 undefined FUN_004a3b24
+      PARAM 0 int param_1
+  FUNC 0x00492c50 undefined SGetType
+  FUNC 0x00492d58 undefined new
+
+CLASS StarChallengePlantBeforeLineProps 0x20
+  FIELD 0x0 StarChallengePlantBeforeLinePropsVTable * vtable
+  VAR 0x00cc0c24 undefined4 instance
+  VTABLE 0x00c4dad8 LevelModuleProperties StarChallengePlantBeforeLinePropsVTable 0x40
+    VFUNC 0 0x00497a5c undefined GetType
+    VFUNC 1 0x00497a68 bool IsAbstract
+    VFUNC 2 0x00497a70 undefined ~StarChallengePlantBeforeLineProps
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00497bfc undefined FUN_004a7bfc
+    VFUNC 14 0x00497c08 undefined FUN_004a7c08
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x00497d00 undefined FUN_004a7d00
+      PARAM 0 undefined4 param_1
+  FUNC 0x00492f30 undefined SGetType
+  FUNC 0x00493038 undefined new
+  FUNC 0x00497b34 undefined Destroy
+    PARAM 0 GameObject * param_1
+
+CLASS StarChallengePlantsLost 0x28
+  FIELD 0x0 StarChallengePlantsLostVTable * vtable
+  VAR 0x00cc0d00 undefined4 instance
+  VTABLE 0x00c4db28 StarChallenge StarChallengePlantsLostVTable 0x54
+    VFUNC 0 0x00185848 undefined GetType
+    VFUNC 1 0x00185854 bool IsAbstract
+    VFUNC 2 0x00498d20 undefined ~StarChallengePlantsLost
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00498d8c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049862c undefined FUN_004a862c
+      PARAM 0 int param_1
+    VFUNC 18 0x0049860c undefined FUN_004a860c
+      PARAM 0 int param_1
+    VFUNC 20 0x001858b0 undefined FUN_001958b0
+      PARAM 0 int param_1
+  FUNC 0x001581ec undefined SGetType
+  FUNC 0x00158300 undefined new
+
+CLASS StarChallengeZombieDistanceProps 0x20
+  FIELD 0x0 StarChallengeZombieDistancePropsVTable * vtable
+  VAR 0x00cc1204 undefined4 instance
+  VTABLE 0x00c4db88 LevelModuleProperties StarChallengeZombieDistancePropsVTable 0x40
+    VFUNC 0 0x00499050 undefined GetType
+    VFUNC 1 0x0049905c bool IsAbstract
+    VFUNC 2 0x00499064 undefined ~StarChallengeZombieDistanceProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00499128 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x004991f0 undefined FUN_004a91f0
+    VFUNC 14 0x004991fc undefined FUN_004a91fc
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x004992fc undefined FUN_004a92fc
+      PARAM 0 undefined4 param_1
+  FUNC 0x00498020 undefined SGetType
+  FUNC 0x00498134 undefined new
+
+CLASS StarChallengeSaveMowers 0x20
+  FIELD 0x0 StarChallengeSaveMowersVTable * vtable
+  VAR 0x00cc0de0 undefined4 instance
+  VTABLE 0x00c4dbd8 StarChallenge StarChallengeSaveMowersVTable 0x54
+    VFUNC 0 0x004999d4 undefined GetType
+    VFUNC 1 0x004999e0 bool IsAbstract
+    VFUNC 2 0x004999e8 undefined ~StarChallengeSaveMowers
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00499a30 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049991c undefined FUN_004a991c
+      PARAM 0 undefined4 param_1
+    VFUNC 18 0x004998fc undefined FUN_004a98fc
+      PARAM 0 int param_1
+  FUNC 0x00499334 undefined SGetType
+  FUNC 0x0049943c undefined new
+
+CLASS StarChallengeSaveMowersProps 0x20
+  FIELD 0x0 StarChallengeSaveMowersPropsVTable * vtable
+  VAR 0x00cc0de4 undefined4 instance
+  VTABLE 0x00c4dc38 LevelModuleProperties StarChallengeSaveMowersPropsVTable 0x40
+    VFUNC 0 0x00499cac undefined GetType
+    VFUNC 1 0x00499cb8 bool IsAbstract
+    VFUNC 2 0x00499cc0 undefined ~StarChallengeSaveMowersProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00499d84 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00499e4c undefined FUN_004a9e4c
+    VFUNC 14 0x00499e58 undefined FUN_004a9e58
+      PARAM 0 undefined4 param_1
+    VFUNC 15 0x00499e7c undefined FUN_004a9e7c
+      PARAM 0 undefined4 param_1
+  FUNC 0x0049954c undefined SGetType
+  FUNC 0x00499654 undefined new
+
+CLASS StarChallengeSimultaneousPlants 0x30
+  FIELD 0x0 StarChallengeSimultaneousPlantsVTable * vtable
+  VAR 0x00cc0ea0 undefined4 instance
+  VTABLE 0x00c4dc88 StarChallenge StarChallengeSimultaneousPlantsVTable 0x54
+    VFUNC 0 0x0049b114 undefined GetType
+    VFUNC 1 0x0049b120 bool IsAbstract
+    VFUNC 2 0x0049b128 undefined ~StarChallengeSimultaneousPlants
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049b194 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049a880 undefined FUN_004aa880
+      PARAM 0 int param_1
+    VFUNC 18 0x0049a860 undefined FUN_004aa860
+      PARAM 0 int param_1
+    VFUNC 20 0x0049b204 undefined FUN_004ab204
+      PARAM 0 int param_1
+  FUNC 0x00499ea0 undefined SGetType
+  FUNC 0x00499fa8 undefined new
+
+CLASS StarChallengeSimultaneousPlantsProps 0x20
+  FIELD 0x0 StarChallengeSimultaneousPlantsPropsVTable * vtable
+  VAR 0x00cc0ea4 undefined4 instance
+  VTABLE 0x00c4dce8 LevelModuleProperties StarChallengeSimultaneousPlantsPropsVTable 0x40
+    VFUNC 0 0x0049b580 undefined GetType
+    VFUNC 1 0x0049b58c bool IsAbstract
+    VFUNC 2 0x0049b594 undefined ~StarChallengeSimultaneousPlantsProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049b658 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0049b720 undefined FUN_004ab720
+    VFUNC 14 0x0049b72c undefined FUN_004ab72c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x0049b824 undefined FUN_004ab824
+      PARAM 0 undefined4 param_1
+  FUNC 0x0049a0c8 undefined SGetType
+  FUNC 0x0049a1d0 undefined new
+
+CLASS StarChallengeSpendSunHoldout 0x30
+  FIELD 0x0 StarChallengeSpendSunHoldoutVTable * vtable
+  VAR 0x00cc0f80 undefined4 instance
+  VTABLE 0x00c4dd38 StarChallenge StarChallengeSpendSunHoldoutVTable 0x54
+    VFUNC 0 0x0049cc08 undefined GetType
+    VFUNC 1 0x0049cc14 bool IsAbstract
+    VFUNC 2 0x0049cc1c undefined ~StarChallengeSpendSunHoldout
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049cc88 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049c234 undefined FUN_004ac234
+      PARAM 0 int param_1
+    VFUNC 18 0x0049c224 undefined FUN_004ac224
+      PARAM 0 int param_1
+    VFUNC 20 0x0049ccf8 undefined FUN_004accf8
+      PARAM 0 int param_1
+  FUNC 0x0049b848 undefined SGetType
+  FUNC 0x0049b950 undefined new
+
+CLASS StarChallengeSpendSunHoldoutProps 0x20
+  FIELD 0x0 StarChallengeSpendSunHoldoutPropsVTable * vtable
+  VAR 0x00cc0f84 undefined4 instance
+  VTABLE 0x00c4dd98 LevelModuleProperties StarChallengeSpendSunHoldoutPropsVTable 0x40
+    VFUNC 0 0x0049d098 undefined GetType
+    VFUNC 1 0x0049d0a4 bool IsAbstract
+    VFUNC 2 0x0049d0ac undefined ~StarChallengeSpendSunHoldoutProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049d170 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0049d238 undefined FUN_004ad238
+    VFUNC 14 0x0049d244 undefined FUN_004ad244
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x0049d33c undefined FUN_004ad33c
+      PARAM 0 undefined4 param_1
+  FUNC 0x0049ba88 undefined SGetType
+  FUNC 0x0049bb90 undefined new
+
+CLASS StarChallengeSunProduced 0x30
+  FIELD 0x0 StarChallengeSunProducedVTable * vtable
+  VAR 0x00cc1040 undefined4 instance
+  VTABLE 0x00c4dde8 StarChallenge StarChallengeSunProducedVTable 0x54
+    VFUNC 0 0x0049e618 undefined GetType
+    VFUNC 1 0x0049e624 bool IsAbstract
+    VFUNC 2 0x0049e62c undefined ~StarChallengeSunProduced
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049e698 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0049dda8 undefined FUN_004adda8
+      PARAM 0 int param_1
+    VFUNC 18 0x0049dd70 undefined FUN_004add70
+      PARAM 0 int param_1
+    VFUNC 20 0x0049e708 undefined FUN_004ae708
+      PARAM 0 int param_1
+  FUNC 0x0049d360 undefined SGetType
+  FUNC 0x0049d468 undefined new
+
+CLASS StarChallengeSunProducedProps 0x20
+  FIELD 0x0 StarChallengeSunProducedPropsVTable * vtable
+  VAR 0x00cc1044 undefined4 instance
+  VTABLE 0x00c4de48 LevelModuleProperties StarChallengeSunProducedPropsVTable 0x40
+    VFUNC 0 0x0049eaa8 undefined GetType
+    VFUNC 1 0x0049eab4 bool IsAbstract
+    VFUNC 2 0x0049eabc undefined ~StarChallengeSunProducedProps
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0049eb80 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0049ec48 undefined FUN_004aec48
+    VFUNC 14 0x0049ec54 undefined FUN_004aec54
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 15 0x0049ed54 undefined FUN_004aed54
+      PARAM 0 undefined4 param_1
+  FUNC 0x0049d584 undefined SGetType
+  FUNC 0x0049d68c undefined new
 
