@@ -1,3 +1,139 @@
+CLASS basic_string <>
+  FUNC 0x00ae2754 char * _S_construct
+    PARAM 0 char * __beg
+    PARAM 1 char * __end
+    LOCAL <> char * __dest
+  FUNC 0x00ae2bc8 undefined basic_string
+    PARAM 0 std_string * this
+    PARAM 1 undefined4 __s
+    LOCAL <> undefined4 __len
+
+CLASS CRefManualTypeBuilder <>
+  FUNC 0x007b8314 void GetInnerTemplateTypeName
+    PARAM 0 undefined4 result
+    PARAM 1 undefined4 type_name
+    LOCAL <> undefined4 length
+
+CLASS Logger <>
+  FUNC 0x0071a178 undefined Debug
+
+CLASS PlayerProfileProperties 0x20
+  FIELD 0x0 PlayerProfilePropertiesVTable * vtable
+  VAR 0x00cbe980 RtClass * instance
+  VTABLE 0x00c38f58 GameObject PlayerProfilePropertiesVTable 0x34
+    VFUNC 0 0x0012fb74 RtClass * GetType
+      LOCAL <> RegisterClass * factory
+    VFUNC 1 0x0012fc04 bool IsAbstract
+    VFUNC 2 0x0012fc0c undefined ~PlayerProfileProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0012fcd0 undefined Destroy
+      PARAM 0 GameObject * param_1
+  FUNC 0x0012c5c0 undefined new
+  FUNC 0x00422c70 void RegisterProperties
+  FUNC 0x00422d3c void PlayerProfileProperties
+    PARAM 0 PlayerProfileProperties * this
+    PARAM 1 undefined4 param_2
+    LOCAL <> undefined4 super
+
+CLASS IntroBoardDispatch 0x28
+  FIELD 0x0 IntroBoardDispatchVTable * vtable
+  VAR 0x00cb10f0 undefined4 instance
+  VTABLE 0x00c38f98 AnimationController IntroBoardDispatchVTable 0x40
+    VFUNC 0 0x00130420 undefined GetType
+    VFUNC 1 0x001304b0 bool IsAbstract
+    VFUNC 2 0x001304b8 undefined ~IntroBoardDispatch
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00130590 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 11 0x0013066c undefined FUN_0014066c
+      PARAM 0 int param_1
+    VFUNC 14 0x00130698 undefined FUN_00140698
+      PARAM 0 int param_1
+  FUNC 0x0012c028 undefined new
+
+CLASS ShakeBoard 0x30
+  FIELD 0x0 ShakeBoardVTable * vtable
+  VAR 0x00cb10ec undefined4 instance
+  VTABLE 0x00c38fe8 AnimationController ShakeBoardVTable 0x40
+    VFUNC 0 0x00131194 undefined GetType
+    VFUNC 1 0x00131224 bool IsAbstract
+    VFUNC 2 0x0013122c undefined ~ShakeBoard
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x001312ac undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 14 0x00131330 undefined FUN_00141330
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+  FUNC 0x0012bf54 undefined new
+
+CLASS MoveBoard 0x38
+  FIELD 0x0 MoveBoardVTable * vtable
+  VAR 0x00cb10e8 undefined4 instance
+  VTABLE 0x00c39038 AnimationController MoveBoardVTable 0x40
+    VFUNC 0 0x001315e4 undefined GetType
+    VFUNC 1 0x00131674 bool IsAbstract
+    VFUNC 2 0x0013167c undefined ~MoveBoard
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x001316fc undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 14 0x00131780 undefined FUN_00141780
+      PARAM 0 int param_1
+      PARAM 1 float param_2
+  FUNC 0x0012be80 undefined new
+
+CLASS TimeLineReflectionExposer 0x4
+  FIELD 0x0 TimeLineReflectionExposerVTable * vtable
+  VAR 0x00cc1b50 undefined4 instance
+  VTABLE 0x00c39088 Sexy::RtObject TimeLineReflectionExposerVTable 0x1c
+    VFUNC 0 0x001318ec undefined GetType
+    VFUNC 1 0x0013197c bool IsAbstract
+    VFUNC 2 0x00131984 undefined ~TimeLineReflectionExposer
+    VFUNC 3 0x00131988 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0012badc undefined new
+
+CLASS OutroManager 0x4
+  FIELD 0x0 OutroManagerVTable * vtable
+  VAR 0x00cb7780 undefined4 instance
+  VTABLE 0x00c390b8 Sexy::RtObject OutroManagerVTable 0x1c
+    VFUNC 0 0x00131994 undefined GetType
+    VFUNC 1 0x00131a24 bool IsAbstract
+    VFUNC 2 0x00131a2c undefined ~OutroManager
+    VFUNC 3 0x00131a30 undefined Destroy
+      PARAM 0 void * param_1
+  FUNC 0x0012ba1c undefined new
+
+CLASS OutroModuleProperties 0x20
+  FIELD 0x0 OutroModulePropertiesVTable * vtable
+  VAR 0x00cb7754 undefined4 instance
+  VTABLE 0x00c390e8 LevelModuleProperties OutroModulePropertiesVTable 0x40
+    VFUNC 0 0x00131a3c undefined GetType
+    VFUNC 1 0x00131a48 bool IsAbstract
+    VFUNC 2 0x00131a50 undefined ~OutroModuleProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00131bdc undefined FUN_00141bdc
+  FUNC 0x0012b830 undefined SGetType
+  FUNC 0x0012b944 undefined new
+  FUNC 0x00131b14 undefined Destroy
+    PARAM 0 GameObject * param_1
+
+CLASS LevelModuleProperties 0x20
+  FIELD 0x0 LevelModulePropertiesVTable * vtable
+  VAR 0x00cb6550 undefined4 instance
+  VTABLE 0x00c39138 GameObject LevelModulePropertiesVTable 0x40
+    VFUNC 0 0x00131ccc undefined GetType
+    VFUNC 1 0x00131d5c bool IsAbstract
+    VFUNC 2 0x00131d64 undefined ~LevelModuleProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00131e28 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x00131ef0 undefined FUN_00141ef0
+    VFUNC 14 0x00131c6c undefined FUN_00141c6c
+      PARAM 0 undefined4 param_1
+    VFUNC 15 0x00131c9c undefined FUN_00141c9c
+      PARAM 0 undefined4 param_1
+  FUNC 0x00125488 undefined new
+
 CLASS Sexy <>
 
 CLASS Sexy::RtObject 0x4
@@ -340,12 +476,28 @@ CLASS GameObject 0x10
     VFUNC 8 0x0012fdb8 undefined FUN_0013fdb8
     VFUNC 9 0x0012fdbc undefined FUN_0013fdbc
     VFUNC 10 0x0012fdc0 undefined FUN_0013fdc0
-    VFUNC 11 0x0012fdc4 undefined FUN_0013fdc4
+    VFUNC 11 0x0012fdc4 void RegisterProperty
+      PARAM 0 GameObject * this
+      PARAM 1 void * param_2
+      PARAM 2 std_string name
+      PARAM 3 undefined4 offset
+      PARAM 4 undefined4 param_5
     VFUNC 12 0x0012fdc8 undefined FUN_0013fdc8
   FUNC 0x0011d1dc GameObject * new
     LOCAL <> GameObject * self
   FUNC 0x0011d14c RtClass * SGetType
     LOCAL <> RegisterClass * factory
+  FUNC 0x00249444 void GameObject
+    PARAM 0 GameObject * this
+    PARAM 1 undefined4 param_2
+    LOCAL <> undefined4 factory
+  FUNC 0x002490c4 void RegisterProperties
+  FUNC 0x0014b9cc undefined FUN_0015b9cc
+    PARAM 0 GameObject * this
+    PARAM 1 std_string param_2
+  FUNC 0x007b826c undefined FUN_007c826c
+    PARAM 0 GameObject * this
+    PARAM 1 undefined4 type_name
 
 CLASS GamePropertySheet 0x28
   VAR 0x00cb46f0 RtClass * instance
@@ -423,6 +575,7 @@ CLASS GridItemGravestoneZombieTimeSpawnerPropertySheet 0x60
     VFUNC 3 0x0013b4a8 undefined Destroy
       PARAM 0 int * param_1
   FUNC 0x00122cd4 undefined new
+  FUNC 0x00262bc4 void RegisterProperties
 
 CLASS GridItemGravestoneSunOnDestructionPropertySheet 0x50
   FIELD 0x0 GridItemGravestoneSunOnDestructionPropertySheetVTable * vtable
@@ -709,6 +862,7 @@ CLASS CrazyOlafTest 0x70
     VFUNC 14 0x001e93d4 undefined FUN_001f93d4
       PARAM 0 int param_1
   FUNC 0x001e7950 undefined new
+  FUNC 0x001e78c8 undefined SGetType
 
 CLASS ZombieHeroProps 0xd8
   FIELD 0x0 ZombieHeroPropsVTable * vtable
@@ -1107,6 +1261,7 @@ CLASS BaseCursor 0x4
     VFUNC 8 0x00150a38 undefined FUN_00160a38
     VFUNC 9 0x00aa3738 void __cxa_pure_virtual
     VFUNC 10 0x00150a3c undefined FUN_00160a3c
+  FUNC 0x00127070 undefined new
 
 CLASS BasePowerup 0x4
   FIELD 0x0 BasePowerupVTable * vtable
@@ -1936,23 +2091,6 @@ CLASS LevelModule 0x18
     VFUNC 14 0x00132030 undefined FUN_00142030
   FUNC 0x001254d0 undefined SGetType
   FUNC 0x001255e4 undefined new
-
-CLASS LevelModuleProperties 0x20
-  FIELD 0x0 LevelModulePropertiesVTable * vtable
-  VAR 0x00cb6550 undefined4 instance
-  VTABLE 0x00c39138 GameObject LevelModulePropertiesVTable 0x40
-    VFUNC 0 0x00131ccc undefined GetType
-    VFUNC 1 0x00131d5c bool IsAbstract
-    VFUNC 2 0x00131d64 undefined ~LevelModuleProperties
-      PARAM 0 GameObject * param_1
-    VFUNC 3 0x00131e28 undefined Destroy
-      PARAM 0 GameObject * param_1
-    VFUNC 13 0x00131ef0 undefined FUN_00141ef0
-    VFUNC 14 0x00131c6c undefined FUN_00141c6c
-      PARAM 0 undefined4 param_1
-    VFUNC 15 0x00131c9c undefined FUN_00141c9c
-      PARAM 0 undefined4 param_1
-  FUNC 0x00125488 undefined new
 
 CLASS OutroModule 0x18
   FIELD 0x0 OutroModuleVTable * vtable
@@ -3109,100 +3247,6 @@ CLASS ScaredyshroomProps 0x98
       PARAM 0 void * param_1
   FUNC 0x0012acec undefined SGetType
   FUNC 0x0012ae00 undefined new
-
-CLASS OutroModuleProperties 0x20
-  FIELD 0x0 OutroModulePropertiesVTable * vtable
-  VAR 0x00cb7754 undefined4 instance
-  VTABLE 0x00c390e8 LevelModuleProperties OutroModulePropertiesVTable 0x40
-    VFUNC 0 0x00131a3c undefined GetType
-    VFUNC 1 0x00131a48 bool IsAbstract
-    VFUNC 2 0x00131a50 undefined ~OutroModuleProperties
-      PARAM 0 GameObject * param_1
-    VFUNC 13 0x00131bdc undefined FUN_00141bdc
-  FUNC 0x0012b830 undefined SGetType
-  FUNC 0x0012b944 undefined new
-  FUNC 0x00131b14 undefined Destroy
-    PARAM 0 GameObject * param_1
-
-CLASS OutroManager 0x4
-  FIELD 0x0 OutroManagerVTable * vtable
-  VAR 0x00cb7780 undefined4 instance
-  VTABLE 0x00c390b8 Sexy::RtObject OutroManagerVTable 0x1c
-    VFUNC 0 0x00131994 undefined GetType
-    VFUNC 1 0x00131a24 bool IsAbstract
-    VFUNC 2 0x00131a2c undefined ~OutroManager
-    VFUNC 3 0x00131a30 undefined Destroy
-      PARAM 0 void * param_1
-  FUNC 0x0012ba1c undefined new
-
-CLASS TimeLineReflectionExposer 0x4
-  FIELD 0x0 TimeLineReflectionExposerVTable * vtable
-  VAR 0x00cc1b50 undefined4 instance
-  VTABLE 0x00c39088 Sexy::RtObject TimeLineReflectionExposerVTable 0x1c
-    VFUNC 0 0x001318ec undefined GetType
-    VFUNC 1 0x0013197c bool IsAbstract
-    VFUNC 2 0x00131984 undefined ~TimeLineReflectionExposer
-    VFUNC 3 0x00131988 undefined Destroy
-      PARAM 0 void * param_1
-  FUNC 0x0012badc undefined new
-
-CLASS MoveBoard 0x38
-  FIELD 0x0 MoveBoardVTable * vtable
-  VAR 0x00cb10e8 undefined4 instance
-  VTABLE 0x00c39038 AnimationController MoveBoardVTable 0x40
-    VFUNC 0 0x001315e4 undefined GetType
-    VFUNC 1 0x00131674 bool IsAbstract
-    VFUNC 2 0x0013167c undefined ~MoveBoard
-      PARAM 0 GameObject * param_1
-    VFUNC 3 0x001316fc undefined Destroy
-      PARAM 0 GameObject * param_1
-    VFUNC 14 0x00131780 undefined FUN_00141780
-      PARAM 0 int param_1
-      PARAM 1 float param_2
-  FUNC 0x0012be80 undefined new
-
-CLASS ShakeBoard 0x30
-  FIELD 0x0 ShakeBoardVTable * vtable
-  VAR 0x00cb10ec undefined4 instance
-  VTABLE 0x00c38fe8 AnimationController ShakeBoardVTable 0x40
-    VFUNC 0 0x00131194 undefined GetType
-    VFUNC 1 0x00131224 bool IsAbstract
-    VFUNC 2 0x0013122c undefined ~ShakeBoard
-      PARAM 0 GameObject * param_1
-    VFUNC 3 0x001312ac undefined Destroy
-      PARAM 0 GameObject * param_1
-    VFUNC 14 0x00131330 undefined FUN_00141330
-      PARAM 0 int param_1
-      PARAM 1 float param_2
-  FUNC 0x0012bf54 undefined new
-
-CLASS IntroBoardDispatch 0x28
-  FIELD 0x0 IntroBoardDispatchVTable * vtable
-  VAR 0x00cb10f0 undefined4 instance
-  VTABLE 0x00c38f98 AnimationController IntroBoardDispatchVTable 0x40
-    VFUNC 0 0x00130420 undefined GetType
-    VFUNC 1 0x001304b0 bool IsAbstract
-    VFUNC 2 0x001304b8 undefined ~IntroBoardDispatch
-      PARAM 0 GameObject * param_1
-    VFUNC 3 0x00130590 undefined Destroy
-      PARAM 0 GameObject * param_1
-    VFUNC 11 0x0013066c undefined FUN_0014066c
-      PARAM 0 int param_1
-    VFUNC 14 0x00130698 undefined FUN_00140698
-      PARAM 0 int param_1
-  FUNC 0x0012c028 undefined new
-
-CLASS PlayerProfileProperties 0x20
-  FIELD 0x0 PlayerProfilePropertiesVTable * vtable
-  VAR 0x00cbe980 undefined4 instance
-  VTABLE 0x00c38f58 GameObject PlayerProfilePropertiesVTable 0x34
-    VFUNC 0 0x0012fb74 undefined GetType
-    VFUNC 1 0x0012fc04 bool IsAbstract
-    VFUNC 2 0x0012fc0c undefined ~PlayerProfileProperties
-      PARAM 0 GameObject * param_1
-    VFUNC 3 0x0012fcd0 undefined Destroy
-      PARAM 0 GameObject * param_1
-  FUNC 0x0012c5c0 undefined new
 
 CLASS CheatCommand 0x10
   FIELD 0x0 CheatCommandVTable * vtable
