@@ -9910,3 +9910,1483 @@ CLASS ZombieCamel 0x178
   FUNC 0x00191630 undefined SGetType
   FUNC 0x00191744 undefined new
 
+CLASS ZombieCamelTouch 0x198
+  FIELD 0x0 ZombieCamelTouchVTable * vtable
+  VAR 0x00cc6660 undefined4 instance
+  VTABLE 0x00c53f68 ZombieCamel ZombieCamelTouchVTable 0x1e4
+    VFUNC 0 0x00198318 undefined GetType
+    VFUNC 1 0x001983a8 bool IsAbstract
+    VFUNC 2 0x005bbc54 undefined ~ZombieCamelTouch
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005bbc9c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005b8620 undefined FUN_005c8620
+      PARAM 0 int param_1
+    VFUNC 8 0x005b8738 undefined FUN_005c8738
+      PARAM 0 undefined4 param_1
+    VFUNC 23 0x005b9ce4 undefined FUN_005c9ce4
+      PARAM 0 int param_1
+    VFUNC 25 0x005b97d0 undefined FUN_005c97d0
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 26 0x005b9b60 undefined FUN_005c9b60
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 82 0x005ba300 undefined FUN_005ca300
+      PARAM 0 int * param_1
+    VFUNC 83 0x005b8768 undefined FUN_005c8768
+      PARAM 0 int param_1
+    VFUNC 103 0x005ba46c undefined FUN_005ca46c
+    VFUNC 104 0x005ba32c undefined FUN_005ca32c
+      PARAM 0 undefined4 * param_1
+    VFUNC 111 0x005bb678 undefined FUN_005cb678
+      PARAM 0 int * param_1
+    VFUNC 112 0x005bb730 undefined FUN_005cb730
+      PARAM 0 int param_1
+    VFUNC 113 0x005bb760 undefined FUN_005cb760
+    VFUNC 114 0x005bb76c undefined FUN_005cb76c
+      PARAM 0 int * param_1
+    VFUNC 115 0x005bba74 undefined FUN_005cba74
+      PARAM 0 int * param_1
+    VFUNC 116 0x005bbb50 undefined FUN_005cbb50
+      PARAM 0 int param_1
+    VFUNC 117 0x005bbbf4 undefined FUN_005cbbf4
+      PARAM 0 int param_1
+    VFUNC 118 0x005bbc10 undefined FUN_005cbc10
+      PARAM 0 undefined4 param_1
+    VFUNC 119 0x005bbc50 undefined FUN_005cbc50
+    VFUNC 120 0x005bb424 undefined FUN_005cb424
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+  FUNC 0x00191810 undefined new
+
+CLASS ZombieChicken 0x168
+  FIELD 0x0 ZombieChickenVTable * vtable
+  VAR 0x00cc6740 undefined4 instance
+  VTABLE 0x00c54158 Zombie ZombieChickenVTable 0x19c
+    VFUNC 0 0x005bc900 undefined GetType
+    VFUNC 1 0x005bc90c bool IsAbstract
+    VFUNC 2 0x005bc914 undefined ~ZombieChicken
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005bc928 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 46 0x005bc25c undefined FUN_005cc25c
+      PARAM 0 int param_1
+    VFUNC 47 0x005bc344 undefined FUN_005cc344
+      PARAM 0 int * param_1
+    VFUNC 48 0x005bc498 undefined FUN_005cc498
+    VFUNC 86 0x005bc858 undefined FUN_005cc858
+      PARAM 0 undefined4 param_1
+    VFUNC 87 0x005bc258 undefined FUN_005cc258
+    VFUNC 92 0x005bc49c undefined FUN_005cc49c
+      PARAM 0 undefined4 param_1
+    VFUNC 95 0x005bc940 undefined FUN_005cc940
+      PARAM 0 undefined4 param_1
+    VFUNC 96 0x005bc970 undefined FUN_005cc970
+    VFUNC 97 0x005bc97c undefined FUN_005cc97c
+  FUNC 0x005bbf84 undefined SGetType
+  FUNC 0x005bc08c undefined new
+
+CLASS ZombieChickenFarmer 0x168
+  FIELD 0x0 ZombieChickenFarmerVTable * vtable
+  VAR 0x00cc6800 undefined4 instance
+  VTABLE 0x00c54308 Zombie ZombieChickenFarmerVTable 0x19c
+    VFUNC 0 0x005bd3a0 undefined GetType
+    VFUNC 1 0x005bd3ac bool IsAbstract
+    VFUNC 2 0x005bd3b4 undefined ~ZombieChickenFarmer
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005bd3c8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 49 0x005bd2d8 undefined FUN_005cd2d8
+      PARAM 0 int param_1
+    VFUNC 83 0x005bd03c undefined FUN_005cd03c
+      PARAM 0 int param_1
+    VFUNC 91 0x005bd048 undefined FUN_005cd048
+      PARAM 0 int param_1
+  FUNC 0x005bcb94 undefined SGetType
+  FUNC 0x005bcc9c undefined new
+
+CLASS ZombieCowboyBasic 0x168
+  FIELD 0x0 ZombieCowboyBasicVTable * vtable
+  VAR 0x00cc68c0 undefined4 instance
+  VTABLE 0x00c544b8 ZombieBasic ZombieCowboyBasicVTable 0x19c
+    VFUNC 0 0x005be2f8 undefined GetType
+    VFUNC 1 0x005be37c bool IsAbstract
+    VFUNC 2 0x005be384 undefined ~ZombieCowboyBasic
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005be398 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 93 0x005be0e8 undefined FUN_005ce0e8
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 94 0x005be174 undefined FUN_005ce174
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x005be0ac undefined new
+
+CLASS ZombieExplorer 0x168
+  FIELD 0x0 ZombieExplorerVTable * vtable
+  VAR 0x00cc69d0 undefined4 instance
+  VTABLE 0x00c54828 Zombie ZombieExplorerVTable 0x19c
+    VFUNC 0 0x001302ec undefined GetType
+    VFUNC 1 0x001302f8 bool IsAbstract
+    VFUNC 2 0x005c06f4 undefined ~ZombieExplorer
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c0708 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 31 0x005c0268 undefined FUN_005d0268
+      PARAM 0 int param_1
+      PARAM 1 uint param_2
+    VFUNC 35 0x005c0440 undefined FUN_005d0440
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 47 0x005c00f0 undefined FUN_005d00f0
+      PARAM 0 int * param_1
+    VFUNC 56 0x005c01e8 undefined FUN_005d01e8
+      PARAM 0 int * param_1
+    VFUNC 83 0x005c00e4 undefined FUN_005d00e4
+      PARAM 0 int param_1
+    VFUNC 85 0x005c06c8 undefined FUN_005d06c8
+      PARAM 0 int param_1
+    VFUNC 91 0x005c0648 undefined FUN_005d0648
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 92 0x005c06a0 undefined FUN_005d06a0
+      PARAM 0 int param_1
+  FUNC 0x0012c080 undefined SGetType
+  FUNC 0x0012c194 undefined new
+
+CLASS ZombieFutureJetpack 0x168
+  FIELD 0x0 ZombieFutureJetpackVTable * vtable
+  VAR 0x00cc6ac0 undefined4 instance
+  VTABLE 0x00c54bb8 Zombie ZombieFutureJetpackVTable 0x1b4
+    VFUNC 0 0x00402214 undefined GetType
+    VFUNC 1 0x00402220 bool IsAbstract
+    VFUNC 2 0x005c2228 undefined ~ZombieFutureJetpack
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c223c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 47 0x005c1b9c undefined FUN_005d1b9c
+      PARAM 0 int * param_1
+    VFUNC 83 0x005c1a18 undefined FUN_005d1a18
+      PARAM 0 int param_1
+    VFUNC 84 0x005c1a78 undefined FUN_005d1a78
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 100 0x005c1a34 undefined FUN_005d1a34
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 103 0x005c1c2c undefined FUN_005d1c2c
+      PARAM 0 int param_1
+    VFUNC 104 0x005c1df8 undefined FUN_005d1df8
+    VFUNC 105 0x005c1dfc undefined FUN_005d1dfc
+    VFUNC 106 0x005c1e00 undefined FUN_005d1e00
+      PARAM 0 int param_1
+    VFUNC 107 0x005c20e8 undefined FUN_005d20e8
+      PARAM 0 int * param_1
+    VFUNC 108 0x005c2224 undefined FUN_005d2224
+  FUNC 0x00400cf0 undefined SGetType
+  FUNC 0x00400e04 undefined new
+
+CLASS ZombieFutureProtector 0x178
+  FIELD 0x0 ZombieFutureProtectorVTable * vtable
+  VAR 0x00cc6bc0 undefined4 instance
+  VTABLE 0x00c54d78 Zombie ZombieFutureProtectorVTable 0x1b8
+    VFUNC 0 0x00269758 undefined GetType
+    VFUNC 1 0x00269764 bool IsAbstract
+    VFUNC 2 0x005c2f8c undefined ~ZombieFutureProtector
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c2f74 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005c31d4 undefined FUN_005d31d4
+      PARAM 0 undefined4 param_1
+    VFUNC 47 0x005c3ad0 undefined FUN_005d3ad0
+      PARAM 0 int * param_1
+    VFUNC 83 0x005c30f8 undefined FUN_005d30f8
+      PARAM 0 int param_1
+    VFUNC 85 0x005c3aa8 undefined FUN_005d3aa8
+      PARAM 0 undefined4 param_1
+    VFUNC 92 0x005c3a90 undefined FUN_005d3a90
+      PARAM 0 undefined4 param_1
+    VFUNC 103 0x005c3d80 undefined FUN_005d3d80
+      PARAM 0 int param_1
+    VFUNC 104 0x005c3f54 undefined FUN_005d3f54
+    VFUNC 105 0x005c3f58 undefined FUN_005d3f58
+    VFUNC 106 0x005c3f5c undefined FUN_005d3f5c
+      PARAM 0 int param_1
+    VFUNC 107 0x005c413c undefined FUN_005d413c
+    VFUNC 108 0x005c4140 undefined FUN_005d4140
+    VFUNC 109 0x005c3ac0 undefined FUN_005d3ac0
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x00265bb0 undefined SGetType
+  FUNC 0x00265cc4 undefined new
+
+CLASS ZombieGargantuar 0x170
+  FIELD 0x0 ZombieGargantuarVTable * vtable
+  VAR 0x00cc6cc0 undefined4 instance
+  VTABLE 0x00c54f38 Zombie ZombieGargantuarVTable 0x1b4
+    VFUNC 0 0x0038afe0 undefined GetType
+    VFUNC 1 0x0038afec bool IsAbstract
+    VFUNC 2 0x0038aff4 undefined ~ZombieGargantuar
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0038b008 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x005c48ec undefined FUN_005d48ec
+      PARAM 0 int param_1
+    VFUNC 47 0x005c490c undefined FUN_005d490c
+      PARAM 0 int * param_1
+    VFUNC 84 0x005c5244 undefined FUN_005d5244
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 96 0x0038afc8 undefined FUN_0039afc8
+    VFUNC 97 0x0038afd4 undefined FUN_0039afd4
+    VFUNC 103 0x005c4aa4 undefined FUN_005d4aa4
+      PARAM 0 int param_1
+    VFUNC 104 0x005c4c0c undefined FUN_005d4c0c
+      PARAM 0 int param_1
+    VFUNC 105 0x005c4c38 undefined FUN_005d4c38
+    VFUNC 106 0x005c4c3c undefined FUN_005d4c3c
+      PARAM 0 int param_1
+    VFUNC 107 0x005c4da4 undefined FUN_005d4da4
+      PARAM 0 int param_1
+    VFUNC 108 0x005c5240 undefined FUN_005d5240
+  FUNC 0x00389c84 undefined SGetType
+  FUNC 0x00389d98 undefined new
+
+CLASS ZombieGargantuarMech 0x1c8
+  FIELD 0x0 ZombieGargantuarMechVTable * vtable
+  VAR 0x00cc6d90 undefined4 instance
+  VTABLE 0x00c550f8 ZombieGargantuar ZombieGargantuarMechVTable 0x1c4
+    VFUNC 0 0x0038af30 undefined GetType
+    VFUNC 1 0x0038afc0 bool IsAbstract
+    VFUNC 2 0x005c8820 undefined ~ZombieGargantuarMech
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c8888 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x005c68cc undefined FUN_005d68cc
+      PARAM 0 int param_1
+    VFUNC 12 0x005c7adc undefined FUN_005d7adc
+      PARAM 0 int param_1
+    VFUNC 16 0x005c6c28 undefined FUN_005d6c28
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 24 0x005c7054 undefined FUN_005d7054
+      PARAM 0 int * param_1
+    VFUNC 46 0x005c801c undefined FUN_005d801c
+      PARAM 0 int param_1
+    VFUNC 47 0x005c80dc undefined FUN_005d80dc
+      PARAM 0 int * param_1
+    VFUNC 48 0x005c83a4 undefined FUN_005d83a4
+      PARAM 0 int param_1
+    VFUNC 84 0x005c5244 undefined FUN_005d5244
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 96 0x0038afc8 undefined FUN_0039afc8
+    VFUNC 97 0x0038afd4 undefined FUN_0039afd4
+    VFUNC 103 0x005c4aa4 undefined FUN_005d4aa4
+      PARAM 0 int param_1
+    VFUNC 104 0x005c4c0c undefined FUN_005d4c0c
+      PARAM 0 int param_1
+    VFUNC 105 0x005c4c38 undefined FUN_005d4c38
+    VFUNC 106 0x005c4c3c undefined FUN_005d4c3c
+      PARAM 0 int param_1
+    VFUNC 107 0x005c4da4 undefined FUN_005d4da4
+      PARAM 0 int param_1
+    VFUNC 108 0x005c5240 undefined FUN_005d5240
+    VFUNC 109 0x005c7b8c undefined FUN_005d7b8c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 110 0x005c7ba0 undefined FUN_005d7ba0
+      PARAM 0 int param_1
+    VFUNC 111 0x005c7ec0 undefined FUN_005d7ec0
+      PARAM 0 int param_1
+    VFUNC 112 0x005c7f1c undefined FUN_005d7f1c
+      PARAM 0 int param_1
+  FUNC 0x00389e64 undefined new
+
+CLASS ZombieHelmDroppedSprinter 0x168
+  FIELD 0x0 ZombieHelmDroppedSprinterVTable * vtable
+  VAR 0x00cc6e70 undefined4 instance
+  VTABLE 0x00c552c8 Zombie ZombieHelmDroppedSprinterVTable 0x1a8
+    VFUNC 0 0x005bfc08 undefined GetType
+    VFUNC 1 0x005bfc14 bool IsAbstract
+    VFUNC 2 0x005bfc1c undefined ~ZombieHelmDroppedSprinter
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005bfc30 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 31 0x005c9430 undefined FUN_005d9430
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 83 0x005c907c undefined FUN_005d907c
+      PARAM 0 undefined4 param_1
+    VFUNC 93 0x005c90cc undefined FUN_005d90cc
+      PARAM 0 int param_1
+    VFUNC 94 0x005c9164 undefined FUN_005d9164
+      PARAM 0 undefined4 param_1
+    VFUNC 103 0x005c91e8 undefined FUN_005d91e8
+      PARAM 0 int param_1
+    VFUNC 104 0x005c942c undefined FUN_005d942c
+    VFUNC 105 0x005c9428 undefined FUN_005d9428
+  FUNC 0x005be5bc undefined SGetType
+  FUNC 0x005be6d0 undefined new
+
+CLASS ZombieHero 0x180
+  FIELD 0x0 ZombieHeroVTable * vtable
+  VAR 0x00cc6ec0 undefined4 instance
+  VTABLE 0x00c55478 Zombie ZombieHeroVTable 0x1a8
+    VFUNC 0 0x00528d38 undefined GetType
+    VFUNC 1 0x00528d44 bool IsAbstract
+    VFUNC 2 0x005cb724 undefined ~ZombieHero
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005cb76c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 23 0x005ca3bc undefined FUN_005da3bc
+      PARAM 0 int * param_1
+    VFUNC 24 0x005ca8c0 undefined FUN_005da8c0
+      PARAM 0 int * param_1
+    VFUNC 34 0x005cb394 undefined FUN_005db394
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 83 0x005ca264 undefined FUN_005da264
+      PARAM 0 int param_1
+    VFUNC 89 0x005cb380 undefined FUN_005db380
+      PARAM 0 int param_1
+    VFUNC 96 0x005ca364 undefined FUN_005da364
+      PARAM 0 int param_1
+    VFUNC 103 0x005cb3c8 undefined FUN_005db3c8
+      PARAM 0 int param_1
+    VFUNC 104 0x005cb5bc undefined FUN_005db5bc
+    VFUNC 105 0x005cb5c0 undefined FUN_005db5c0
+      PARAM 0 int param_1
+  FUNC 0x0051dc10 undefined SGetType
+  FUNC 0x0051dd24 undefined new
+
+CLASS ZombieImp 0x178
+  FIELD 0x0 ZombieImpVTable * vtable
+  VAR 0x00cc6fa0 undefined4 instance
+  VTABLE 0x00c55628 Zombie ZombieImpVTable 0x1d8
+    VFUNC 0 0x005c0e44 undefined GetType
+    VFUNC 1 0x005c0e50 bool IsAbstract
+    VFUNC 2 0x005c0e58 undefined ~ZombieImp
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c0ed8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 22 0x005cdc74 undefined FUN_005ddc74
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 29 0x005cdcc8 undefined FUN_005ddcc8
+    VFUNC 32 0x005ccfdc undefined FUN_005dcfdc
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 39 0x005cdc04 undefined FUN_005ddc04
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 87 0x005ccce0 undefined FUN_005dcce0
+      PARAM 0 int * param_1
+    VFUNC 95 0x005c0e14 undefined FUN_005d0e14
+      PARAM 0 undefined4 param_1
+    VFUNC 103 0x005cd2bc undefined FUN_005dd2bc
+      PARAM 0 int param_1
+    VFUNC 104 0x005cd2d8 undefined FUN_005dd2d8
+      PARAM 0 int * param_1
+    VFUNC 105 0x005cd3a4 undefined FUN_005dd3a4
+    VFUNC 106 0x005cd9e8 undefined FUN_005dd9e8
+      PARAM 0 int param_1
+    VFUNC 107 0x005cdbfc undefined FUN_005ddbfc
+    VFUNC 108 0x005cdc00 undefined FUN_005ddc00
+    VFUNC 109 0x005cd3a8 undefined FUN_005dd3a8
+      PARAM 0 int param_1
+    VFUNC 110 0x005cd5c4 undefined FUN_005dd5c4
+      PARAM 0 int param_1
+    VFUNC 111 0x005cd5e0 undefined FUN_005dd5e0
+    VFUNC 112 0x005cd5e4 undefined FUN_005dd5e4
+      PARAM 0 int param_1
+    VFUNC 113 0x005cd62c undefined FUN_005dd62c
+      PARAM 0 int * param_1
+    VFUNC 114 0x005cd7b4 undefined FUN_005dd7b4
+      PARAM 0 int param_1
+    VFUNC 115 0x005cd7c0 undefined FUN_005dd7c0
+      PARAM 0 int param_1
+    VFUNC 116 0x005cd9c8 undefined FUN_005dd9c8
+      PARAM 0 int param_1
+    VFUNC 117 0x005cd9e4 undefined FUN_005dd9e4
+  FUNC 0x005b1bac undefined SGetType
+  FUNC 0x005b1cc0 undefined new
+
+CLASS ZombieMech 0x170
+  FIELD 0x0 ZombieMechVTable * vtable
+  VAR 0x00cc70d0 undefined4 instance
+  VTABLE 0x00c55808 Zombie ZombieMechVTable 0x1ac
+    VFUNC 0 0x003856b4 undefined GetType
+    VFUNC 1 0x003856c0 bool IsAbstract
+    VFUNC 2 0x005ce940 undefined ~ZombieMech
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005ce988 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 96 0x003856c8 undefined FUN_003956c8
+    VFUNC 97 0x003856d4 undefined FUN_003956d4
+    VFUNC 103 0x005ce430 undefined FUN_005de430
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 104 0x005ce444 undefined FUN_005de444
+      PARAM 0 int param_1
+    VFUNC 105 0x005ce798 undefined FUN_005de798
+      PARAM 0 int param_1
+    VFUNC 106 0x005ce7f4 undefined FUN_005de7f4
+      PARAM 0 int param_1
+  FUNC 0x00382490 undefined SGetType
+  FUNC 0x003825a4 undefined new
+
+CLASS ZombieMechDisco 0x188
+  FIELD 0x0 ZombieMechDiscoVTable * vtable
+  VAR 0x00cc7190 undefined4 instance
+  VTABLE 0x00c559c8 ZombieMech ZombieMechDiscoVTable 0x1c4
+    VFUNC 0 0x005d03cc undefined GetType
+    VFUNC 1 0x005d0454 bool IsAbstract
+    VFUNC 2 0x005d045c undefined ~ZombieMechDisco
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d0504 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 23 0x005cf490 undefined FUN_005df490
+      PARAM 0 int param_1
+    VFUNC 24 0x005cf5a4 undefined FUN_005df5a4
+      PARAM 0 int * param_1
+    VFUNC 46 0x005cf650 undefined FUN_005df650
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 47 0x005cf684 undefined FUN_005df684
+      PARAM 0 int * param_1
+    VFUNC 89 0x005d0394 undefined FUN_005e0394
+    VFUNC 92 0x005d03ac undefined FUN_005e03ac
+    VFUNC 107 0x005cf784 undefined FUN_005df784
+      PARAM 0 int param_1
+    VFUNC 108 0x005cff0c undefined FUN_005dff0c
+      PARAM 0 int param_1
+    VFUNC 109 0x005d030c undefined FUN_005e030c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 110 0x005d031c undefined FUN_005e031c
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 111 0x005d0368 undefined FUN_005e0368
+      PARAM 0 int param_1
+    VFUNC 112 0x005d0390 undefined FUN_005e0390
+  FUNC 0x005cecb0 undefined new
+
+CLASS ZombieDarkGravedropper 0x170
+  FIELD 0x0 ZombieDarkGravedropperVTable * vtable
+  VAR 0x00cc68f0 undefined4 instance
+  VTABLE 0x00c54668 ZombieHelmDroppedSprinter ZombieDarkGravedropperVTable 0x1b4
+    VFUNC 0 0x005bfa78 undefined GetType
+    VFUNC 1 0x005bfb00 bool IsAbstract
+    VFUNC 2 0x005bfb08 undefined ~ZombieDarkGravedropper
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005bfb50 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 28 0x005bf314 undefined FUN_005cf314
+      PARAM 0 int param_1
+    VFUNC 47 0x005bf984 undefined FUN_005cf984
+      PARAM 0 int * param_1
+    VFUNC 83 0x005bf050 undefined FUN_005cf050
+      PARAM 0 int param_1
+    VFUNC 93 0x005bf248 undefined FUN_005cf248
+      PARAM 0 int * param_1
+    VFUNC 94 0x005bf410 undefined FUN_005cf410
+      PARAM 0 undefined4 param_1
+    VFUNC 103 0x005bf420 undefined FUN_005cf420
+      PARAM 0 int param_1
+    VFUNC 104 0x005bf4a8 undefined FUN_005cf4a8
+      PARAM 0 undefined4 param_1
+    VFUNC 105 0x005bf4b8 undefined FUN_005cf4b8
+      PARAM 0 int param_1
+    VFUNC 106 0x005bf53c undefined FUN_005cf53c
+      PARAM 0 int param_1
+    VFUNC 107 0x005bf708 undefined FUN_005cf708
+    VFUNC 108 0x005bf70c undefined FUN_005cf70c
+      PARAM 0 int param_1
+  FUNC 0x005be794 undefined new
+
+CLASS ZombieFutureImp 0x178
+  FIELD 0x0 ZombieFutureImpVTable * vtable
+  VAR 0x00cc6a90 undefined4 instance
+  VTABLE 0x00c549d8 ZombieImp ZombieFutureImpVTable 0x1d8
+    VFUNC 0 0x005c0c80 undefined GetType
+    VFUNC 1 0x005c0d08 bool IsAbstract
+    VFUNC 2 0x005c0d10 undefined ~ZombieFutureImp
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005c0d90 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 96 0x005c0c68 undefined FUN_005d0c68
+    VFUNC 97 0x005c0c74 undefined FUN_005d0c74
+  FUNC 0x005c09b4 undefined new
+
+CLASS ZombieMechFootball 0x178
+  FIELD 0x0 ZombieMechFootballVTable * vtable
+  VAR 0x00cc7250 undefined4 instance
+  VTABLE 0x00c55b98 ZombieMech ZombieMechFootballVTable 0x1b8
+    VFUNC 0 0x005d17c0 undefined GetType
+    VFUNC 1 0x005d1848 bool IsAbstract
+    VFUNC 2 0x005d1850 undefined ~ZombieMechFootball
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d1898 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 47 0x005d14ec undefined FUN_005e14ec
+      PARAM 0 int * param_1
+    VFUNC 84 0x005d1784 undefined FUN_005e1784
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 100 0x005d0e5c undefined FUN_005e0e5c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 107 0x005d1560 undefined FUN_005e1560
+      PARAM 0 int param_1
+    VFUNC 108 0x005d1754 undefined FUN_005e1754
+      PARAM 0 int param_1
+    VFUNC 109 0x005d1780 undefined FUN_005e1780
+  FUNC 0x005d088c undefined new
+
+CLASS ZombieModifierModule 0x18
+  FIELD 0x0 ZombieModifierModuleVTable * vtable
+  VAR 0x00cc7310 undefined4 instance
+  VTABLE 0x00c55d58 LevelModule ZombieModifierModuleVTable 0x3c
+    VFUNC 0 0x005d20a8 undefined GetType
+    VFUNC 1 0x005d212c bool IsAbstract
+    VFUNC 2 0x005d2134 undefined ~ZombieModifierModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d217c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005d1fe4 undefined FUN_005e1fe4
+      PARAM 0 undefined4 param_1
+    VFUNC 14 0x005d1fe0 undefined FUN_005e1fe0
+  FUNC 0x005d1bbc undefined new
+
+CLASS ZombieModifierProperties 0x20
+  FIELD 0x0 ZombieModifierPropertiesVTable * vtable
+  VAR 0x00cc7314 undefined4 instance
+  VTABLE 0x00c55da8 LevelModuleProperties ZombieModifierPropertiesVTable 0x40
+    VFUNC 0 0x005d23f8 undefined GetType
+    VFUNC 1 0x005d2404 bool IsAbstract
+    VFUNC 2 0x005d240c undefined ~ZombieModifierProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d24d0 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x005d2598 undefined FUN_005e2598
+  FUNC 0x005d1c00 undefined SGetType
+  FUNC 0x005d1d08 undefined new
+
+CLASS ZombieParticle 0x98
+  FIELD 0x0 ZombieParticleVTable * vtable
+  VAR 0x00cc73d0 undefined4 instance
+  VTABLE 0x00c55df8 BoardEntity ZombieParticleVTable 0x6c
+    VFUNC 0 0x003fafdc undefined GetType
+    VFUNC 1 0x003fb06c bool IsAbstract
+    VFUNC 2 0x005d35a0 undefined ~ZombieParticle
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d3588 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x005d3420 undefined FUN_005e3420
+      PARAM 0 int param_1
+    VFUNC 11 0x005d34c4 undefined FUN_005e34c4
+      PARAM 0 int param_1
+    VFUNC 16 0x005d4a74 undefined FUN_005e4a74
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 int * param_3
+    VFUNC 24 0x005d3e3c undefined FUN_005e3e3c
+      PARAM 0 int * param_1
+    VFUNC 25 0x005d42a4 undefined FUN_005e42a4
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 26 0x005d4790 undefined FUN_005e4790
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x003f8d40 undefined new
+
+CLASS ZombiePharaoh 0x168
+  FIELD 0x0 ZombiePharaohVTable * vtable
+  VAR 0x00cc74b0 undefined4 instance
+  VTABLE 0x00c55e78 Zombie ZombiePharaohVTable 0x1a8
+    VFUNC 0 0x005d5bc4 undefined GetType
+    VFUNC 1 0x005d5bd0 bool IsAbstract
+    VFUNC 2 0x005d5bd8 undefined ~ZombiePharaoh
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d5bec undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 31 0x005d5afc undefined FUN_005e5afc
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 83 0x005d5420 undefined FUN_005e5420
+      PARAM 0 int param_1
+    VFUNC 93 0x005d5484 undefined FUN_005e5484
+      PARAM 0 int * param_1
+    VFUNC 94 0x005d5560 undefined FUN_005e5560
+      PARAM 0 undefined4 param_1
+    VFUNC 103 0x005d55f4 undefined FUN_005e55f4
+      PARAM 0 int * param_1
+    VFUNC 104 0x005d5af8 undefined FUN_005e5af8
+    VFUNC 105 0x005d5af4 undefined FUN_005e5af4
+  FUNC 0x005d4cc4 undefined SGetType
+  FUNC 0x005d4dcc undefined new
+
+CLASS ZombiePiano 0x168
+  FIELD 0x0 ZombiePianoVTable * vtable
+  VAR 0x00cc7590 undefined4 instance
+  VTABLE 0x00c56028 Zombie ZombiePianoVTable 0x19c
+    VFUNC 0 0x005d6760 undefined GetType
+    VFUNC 1 0x005d676c bool IsAbstract
+    VFUNC 2 0x005d6774 undefined ~ZombiePiano
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d6788 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x005d6234 undefined FUN_005e6234
+      PARAM 0 int param_1
+    VFUNC 24 0x005d6380 undefined FUN_005e6380
+      PARAM 0 int * param_1
+    VFUNC 46 0x005d63b0 undefined FUN_005e63b0
+      PARAM 0 int param_1
+    VFUNC 47 0x005d6498 undefined FUN_005e6498
+      PARAM 0 int * param_1
+    VFUNC 48 0x005d6654 undefined FUN_005e6654
+    VFUNC 50 0x005d6658 undefined FUN_005e6658
+      PARAM 0 int * param_1
+    VFUNC 88 0x005d639c undefined FUN_005e639c
+      PARAM 0 int param_1
+    VFUNC 92 0x005d66d0 undefined FUN_005e66d0
+    VFUNC 100 0x005d66c8 undefined FUN_005e66c8
+  FUNC 0x005d5e7c undefined SGetType
+  FUNC 0x005d5f84 undefined new
+
+CLASS ZombiePirateBarrel 0x178
+  FIELD 0x0 ZombiePirateBarrelVTable * vtable
+  VAR 0x00cc7650 undefined4 instance
+  VTABLE 0x00c561d8 Zombie ZombiePirateBarrelVTable 0x1b4
+    VFUNC 0 0x005d869c undefined GetType
+    VFUNC 1 0x005d86a8 bool IsAbstract
+    VFUNC 2 0x005d86b0 undefined ~ZombiePirateBarrel
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d86f8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 9 0x005d740c undefined FUN_005e740c
+      PARAM 0 int param_1
+    VFUNC 12 0x005d855c undefined FUN_005e855c
+      PARAM 0 int param_1
+    VFUNC 23 0x005d7d00 undefined FUN_005e7d00
+      PARAM 0 int param_1
+    VFUNC 24 0x005d75d8 undefined FUN_005e75d8
+      PARAM 0 int * param_1
+    VFUNC 31 0x005d7c24 undefined FUN_005e7c24
+      PARAM 0 int param_1
+      PARAM 1 uint param_2
+    VFUNC 34 0x005d854c undefined FUN_005e854c
+      PARAM 0 undefined4 param_1
+    VFUNC 36 0x005d8630 undefined FUN_005e8630
+      PARAM 0 float * param_1
+      PARAM 1 int * param_2
+    VFUNC 39 0x005d76f8 undefined FUN_005e76f8
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 82 0x005d7e80 undefined FUN_005e7e80
+      PARAM 0 undefined4 param_1
+    VFUNC 91 0x005d7ff0 undefined FUN_005e7ff0
+      PARAM 0 int param_1
+    VFUNC 92 0x005d80dc undefined FUN_005e80dc
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 96 0x005d8744 undefined FUN_005e8744
+    VFUNC 97 0x005d8750 undefined FUN_005e8750
+    VFUNC 100 0x005d7c1c undefined FUN_005e7c1c
+    VFUNC 103 0x005d7f30 undefined FUN_005e7f30
+      PARAM 0 int param_1
+    VFUNC 104 0x005d7f48 undefined FUN_005e7f48
+      PARAM 0 int param_1
+    VFUNC 105 0x005d7f8c undefined FUN_005e7f8c
+      PARAM 0 int param_1
+    VFUNC 106 0x005d7fa4 undefined FUN_005e7fa4
+    VFUNC 107 0x005d7fa8 undefined FUN_005e7fa8
+      PARAM 0 int param_1
+    VFUNC 108 0x005d7fec undefined FUN_005e7fec
+  FUNC 0x005d6a44 undefined SGetType
+  FUNC 0x005d6b4c undefined new
+
+CLASS ZombiePirateBarrelPusher 0x170
+  FIELD 0x0 ZombiePirateBarrelPusherVTable * vtable
+  VAR 0x00cc7720 undefined4 instance
+  VTABLE 0x00c56398 Zombie ZombiePirateBarrelPusherVTable 0x19c
+    VFUNC 0 0x005d87a4 undefined GetType
+    VFUNC 1 0x005d87b0 bool IsAbstract
+    VFUNC 2 0x005d9930 undefined ~ZombiePirateBarrelPusher
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005d9978 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005d8c48 undefined FUN_005e8c48
+      PARAM 0 undefined4 param_1
+    VFUNC 12 0x005d98f4 undefined FUN_005e98f4
+      PARAM 0 int param_1
+    VFUNC 23 0x005d8d60 undefined FUN_005e8d60
+      PARAM 0 int param_1
+    VFUNC 31 0x005d9660 undefined FUN_005e9660
+      PARAM 0 int param_1
+    VFUNC 32 0x005d9750 undefined FUN_005e9750
+      PARAM 0 int param_1
+    VFUNC 44 0x005d9420 undefined FUN_005e9420
+      PARAM 0 int param_1
+    VFUNC 47 0x005d9544 undefined FUN_005e9544
+      PARAM 0 int * param_1
+    VFUNC 52 0x005d9840 undefined FUN_005e9840
+      PARAM 0 int param_1
+    VFUNC 82 0x005d9160 undefined FUN_005e9160
+      PARAM 0 int param_1
+    VFUNC 83 0x005d8d04 undefined FUN_005e8d04
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 92 0x005d9194 undefined FUN_005e9194
+  FUNC 0x005d6dfc undefined SGetType
+  FUNC 0x005d6f10 undefined new
+
+CLASS ZombiePirateCannon 0x198
+  FIELD 0x0 ZombiePirateCannonVTable * vtable
+  VAR 0x00cc77f0 undefined4 instance
+  VTABLE 0x00c56548 Zombie ZombiePirateCannonVTable 0x1cc
+    VFUNC 0 0x003b0c7c undefined GetType
+    VFUNC 1 0x003b0c88 bool IsAbstract
+    VFUNC 2 0x005dbc30 undefined ~ZombiePirateCannon
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005dbc78 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 23 0x005da928 undefined FUN_005ea928
+      PARAM 0 int param_1
+    VFUNC 31 0x005daaa4 undefined FUN_005eaaa4
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 34 0x005db898 undefined FUN_005eb898
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 * param_2
+    VFUNC 46 0x005dac2c undefined FUN_005eac2c
+      PARAM 0 int param_1
+    VFUNC 47 0x005dad80 undefined FUN_005ead80
+      PARAM 0 int * param_1
+    VFUNC 84 0x005da494 undefined FUN_005ea494
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 90 0x005da8e4 undefined FUN_005ea8e4
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 * param_3
+    VFUNC 96 0x003b0c90 undefined FUN_003c0c90
+    VFUNC 97 0x003b0c9c undefined FUN_003c0c9c
+    VFUNC 101 0x005da3dc undefined FUN_005ea3dc
+      PARAM 0 int param_1
+    VFUNC 103 0x005daf9c undefined FUN_005eaf9c
+      PARAM 0 int param_1
+    VFUNC 104 0x005dafb8 undefined FUN_005eafb8
+      PARAM 0 int param_1
+    VFUNC 105 0x005db068 undefined FUN_005eb068
+    VFUNC 106 0x005db06c undefined FUN_005eb06c
+      PARAM 0 int param_1
+    VFUNC 107 0x005db224 undefined FUN_005eb224
+    VFUNC 108 0x005db228 undefined FUN_005eb228
+    VFUNC 109 0x005db22c undefined FUN_005eb22c
+      PARAM 0 int param_1
+    VFUNC 110 0x005db748 undefined FUN_005eb748
+    VFUNC 111 0x005db74c undefined FUN_005eb74c
+    VFUNC 112 0x005db750 undefined FUN_005eb750
+      PARAM 0 int param_1
+    VFUNC 113 0x005db890 undefined FUN_005eb890
+    VFUNC 114 0x005db894 undefined FUN_005eb894
+  FUNC 0x003aef44 undefined SGetType
+  FUNC 0x003af058 undefined new
+
+CLASS ZombiePirateCaptain 0x180
+  FIELD 0x0 ZombiePirateCaptainVTable * vtable
+  VAR 0x00cc78d0 undefined4 instance
+  VTABLE 0x00c56728 Zombie ZombiePirateCaptainVTable 0x19c
+    VFUNC 0 0x003491b4 undefined GetType
+    VFUNC 1 0x003491c0 bool IsAbstract
+    VFUNC 2 0x005dd4b0 undefined ~ZombiePirateCaptain
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005dd4f8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 23 0x005dc720 undefined FUN_005ec720
+      PARAM 0 int param_1
+    VFUNC 47 0x005dc828 undefined FUN_005ec828
+      PARAM 0 int * param_1
+    VFUNC 83 0x005dc4b4 undefined FUN_005ec4b4
+      PARAM 0 int param_1
+    VFUNC 85 0x005dd304 undefined FUN_005ed304
+      PARAM 0 int param_1
+    VFUNC 92 0x005dd3e4 undefined FUN_005ed3e4
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x00341bb4 undefined SGetType
+  FUNC 0x00341cc8 undefined new
+
+CLASS ZombiePirateParrot 0x180
+  FIELD 0x0 ZombiePirateParrotVTable * vtable
+  VAR 0x00cc7990 undefined4 instance
+  VTABLE 0x00c568d8 Zombie ZombiePirateParrotVTable 0x1e4
+    VFUNC 0 0x00349180 undefined GetType
+    VFUNC 1 0x0034918c bool IsAbstract
+    VFUNC 2 0x005dfa18 undefined ~ZombiePirateParrot
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005dfa74 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 12 0x005de2f8 undefined FUN_005ee2f8
+      PARAM 0 int param_1
+    VFUNC 15 0x005de388 undefined FUN_005ee388
+      PARAM 0 int param_1
+      PARAM 1 uint param_2
+    VFUNC 23 0x005de0fc undefined FUN_005ee0fc
+      PARAM 0 undefined4 param_1
+    VFUNC 27 0x005df94c undefined FUN_005ef94c
+      PARAM 0 float * param_1
+      PARAM 1 int param_2
+    VFUNC 31 0x005df5c0 undefined FUN_005ef5c0
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+    VFUNC 41 0x00349194 undefined FUN_00359194
+    VFUNC 83 0x005de0e0 undefined FUN_005ee0e0
+      PARAM 0 int param_1
+    VFUNC 86 0x005df930 undefined FUN_005ef930
+      PARAM 0 undefined4 param_1
+    VFUNC 92 0x005df5ec undefined FUN_005ef5ec
+      PARAM 0 undefined4 param_1
+    VFUNC 96 0x0034919c undefined FUN_0035919c
+    VFUNC 97 0x003491a8 undefined FUN_003591a8
+    VFUNC 98 0x005df4c4 undefined FUN_005ef4c4
+      PARAM 0 int * param_1
+    VFUNC 103 0x005de3dc undefined FUN_005ee3dc
+      PARAM 0 int param_1
+    VFUNC 104 0x005de548 undefined FUN_005ee548
+      PARAM 0 int * param_1
+    VFUNC 105 0x005de848 undefined FUN_005ee848
+    VFUNC 106 0x005de84c undefined FUN_005ee84c
+      PARAM 0 int param_1
+    VFUNC 107 0x005de9b8 undefined FUN_005ee9b8
+      PARAM 0 int param_1
+    VFUNC 108 0x005deb2c undefined FUN_005eeb2c
+    VFUNC 109 0x005deb30 undefined FUN_005eeb30
+      PARAM 0 int param_1
+    VFUNC 110 0x005deb50 undefined FUN_005eeb50
+      PARAM 0 int * param_1
+    VFUNC 111 0x005ded88 undefined FUN_005eed88
+      PARAM 0 undefined4 param_1
+    VFUNC 112 0x005ded98 undefined FUN_005eed98
+      PARAM 0 int param_1
+    VFUNC 113 0x005def10 undefined FUN_005eef10
+      PARAM 0 int * param_1
+    VFUNC 114 0x005df07c undefined FUN_005ef07c
+      PARAM 0 undefined4 param_1
+    VFUNC 115 0x005df08c undefined FUN_005ef08c
+      PARAM 0 int param_1
+    VFUNC 116 0x005df27c undefined FUN_005ef27c
+      PARAM 0 int param_1
+    VFUNC 117 0x005df358 undefined FUN_005ef358
+      PARAM 0 undefined4 param_1
+    VFUNC 118 0x005df368 undefined FUN_005ef368
+    VFUNC 119 0x005df36c undefined FUN_005ef36c
+      PARAM 0 int * param_1
+    VFUNC 120 0x005df4c0 undefined FUN_005ef4c0
+  FUNC 0x00341d10 undefined SGetType
+  FUNC 0x00341e24 undefined new
+
+CLASS ZombiePirateSeagull 0x168
+  FIELD 0x0 ZombiePirateSeagullVTable * vtable
+  VAR 0x00cc7a50 undefined4 instance
+  VTABLE 0x00c56ac8 Zombie ZombiePirateSeagullVTable 0x19c
+    VFUNC 0 0x001a941c undefined GetType
+    VFUNC 1 0x001a9428 bool IsAbstract
+    VFUNC 2 0x005e0864 undefined ~ZombiePirateSeagull
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005e0878 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 31 0x005e06c4 undefined FUN_005f06c4
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 42 0x005e07e4 undefined FUN_005f07e4
+      PARAM 0 int param_1
+    VFUNC 60 0x005e07ec undefined FUN_005f07ec
+      PARAM 0 int param_1
+    VFUNC 61 0x005e0818 undefined FUN_005f0818
+      PARAM 0 int param_1
+    VFUNC 62 0x005e0850 undefined FUN_005f0850
+      PARAM 0 undefined4 param_1
+    VFUNC 63 0x005e0860 undefined FUN_005f0860
+    VFUNC 83 0x005e01a4 undefined FUN_005f01a4
+      PARAM 0 int param_1
+    VFUNC 84 0x005e0700 undefined FUN_005f0700
+      PARAM 0 undefined4 param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 92 0x005e023c undefined FUN_005f023c
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 95 0x001a9430 undefined FUN_001b9430
+      PARAM 0 undefined4 param_1
+    VFUNC 96 0x005e0200 undefined FUN_005f0200
+    VFUNC 97 0x005e020c undefined FUN_005f020c
+    VFUNC 98 0x005e0218 undefined FUN_005f0218
+      PARAM 0 int * param_1
+    VFUNC 100 0x005e01cc undefined FUN_005f01cc
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+  FUNC 0x00199148 undefined SGetType
+  FUNC 0x0019925c undefined new
+
+CLASS ZombiePoncho 0x170
+  FIELD 0x0 ZombiePonchoVTable * vtable
+  VAR 0x00cc7b10 undefined4 instance
+  VTABLE 0x00c56c78 Zombie ZombiePonchoVTable 0x19c
+    VFUNC 0 0x005e1540 undefined GetType
+    VFUNC 1 0x005e154c bool IsAbstract
+    VFUNC 2 0x005e1554 undefined ~ZombiePoncho
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005e1568 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 28 0x005e12fc undefined FUN_005f12fc
+      PARAM 0 int param_1
+    VFUNC 29 0x005e1488 undefined FUN_005f1488
+      PARAM 0 int param_1
+    VFUNC 83 0x005e0f68 undefined FUN_005f0f68
+      PARAM 0 int param_1
+    VFUNC 93 0x005e1320 undefined FUN_005f1320
+      PARAM 0 int * param_1
+    VFUNC 94 0x005e1084 undefined FUN_005f1084
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+  FUNC 0x005e0a9c undefined SGetType
+  FUNC 0x005e0ba4 undefined new
+
+CLASS ZombieProspector 0x180
+  FIELD 0x0 ZombieProspectorVTable * vtable
+  VAR 0x00cc7be0 undefined4 instance
+  VTABLE 0x00c56e28 Zombie ZombieProspectorVTable 0x1cc
+    VFUNC 0 0x005f1628 undefined GetType
+    VFUNC 1 0x005f1634 bool IsAbstract
+    VFUNC 2 0x005f163c undefined ~ZombieProspector
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005f1650 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 24 0x005efe2c undefined FUN_005ffe2c
+      PARAM 0 int * param_1
+    VFUNC 31 0x005f0100 undefined FUN_00600100
+      PARAM 0 int param_1
+      PARAM 1 uint param_2
+    VFUNC 83 0x005efdf8 undefined FUN_005ffdf8
+      PARAM 0 int param_1
+    VFUNC 84 0x005f1358 undefined FUN_00601358
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 89 0x005f0124 undefined FUN_00600124
+      PARAM 0 undefined4 param_1
+    VFUNC 90 0x005f0c50 undefined FUN_00600c50
+      PARAM 0 undefined4 * param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 * param_3
+    VFUNC 103 0x005f0134 undefined FUN_00600134
+      PARAM 0 int param_1
+    VFUNC 104 0x005f0374 undefined FUN_00600374
+    VFUNC 105 0x005f0378 undefined FUN_00600378
+    VFUNC 106 0x005f03b0 undefined FUN_006003b0
+      PARAM 0 int param_1
+    VFUNC 107 0x005f06d8 undefined FUN_006006d8
+      PARAM 0 int * param_1
+    VFUNC 108 0x005f0cb8 undefined FUN_00600cb8
+    VFUNC 109 0x005f0cbc undefined FUN_00600cbc
+      PARAM 0 int * param_1
+    VFUNC 110 0x005f1178 undefined FUN_00601178
+      PARAM 0 int * param_1
+    VFUNC 111 0x005f11e4 undefined FUN_006011e4
+    VFUNC 112 0x005f121c undefined FUN_0060121c
+      PARAM 0 int param_1
+    VFUNC 113 0x005f12a4 undefined FUN_006012a4
+      PARAM 0 int param_1
+    VFUNC 114 0x005f1354 undefined FUN_00601354
+  FUNC 0x005eec14 undefined SGetType
+  FUNC 0x005eed1c undefined new
+
+CLASS ZombiePrototype 0x168
+  FIELD 0x0 ZombiePrototypeVTable * vtable
+  VAR 0x00cc7cf0 undefined4 instance
+  VTABLE 0x00c57008 Zombie ZombiePrototypeVTable 0x19c
+    VFUNC 0 0x005f1c58 undefined GetType
+    VFUNC 1 0x005f1c64 bool IsAbstract
+    VFUNC 2 0x005f1c6c undefined ~ZombiePrototype
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005f1c80 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 83 0x005f1a44 undefined FUN_00601a44
+      PARAM 0 int param_1
+  FUNC 0x005f1904 undefined SGetType
+  FUNC 0x005f1a08 undefined new
+
+CLASS ZombieRa 0x170
+  FIELD 0x0 ZombieRaVTable * vtable
+  VAR 0x00cc7db0 undefined4 instance
+  VTABLE 0x00c571b8 Zombie ZombieRaVTable 0x19c
+    VFUNC 0 0x005f3384 undefined GetType
+    VFUNC 1 0x005f3390 bool IsAbstract
+    VFUNC 2 0x005f3398 undefined ~ZombieRa
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005f33ac undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005f2adc undefined FUN_00602adc
+      PARAM 0 undefined4 param_1
+    VFUNC 83 0x005f2984 undefined FUN_00602984
+      PARAM 0 int param_1
+    VFUNC 85 0x005f2b7c undefined FUN_00602b7c
+      PARAM 0 int param_1
+    VFUNC 89 0x005f2f70 undefined FUN_00602f70
+    VFUNC 92 0x005f2dd8 undefined FUN_00602dd8
+      PARAM 0 undefined4 param_1
+  FUNC 0x005f1ea4 undefined SGetType
+  FUNC 0x005f1fac undefined new
+
+CLASS ZombieRaSubSystem 0x28
+  FIELD 0x0 ZombieRaSubSystemVTable * vtable
+  VAR 0x00cc7ef0 undefined4 instance
+  VTABLE 0x00c57368 GameSubSystem ZombieRaSubSystemVTable 0x3c
+    VFUNC 0 0x005f3454 undefined GetType
+    VFUNC 1 0x005f34e4 bool IsAbstract
+    VFUNC 2 0x005f596c undefined ~ZombieRaSubSystem
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x005f5980 undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x005f408c undefined FUN_0060408c
+      PARAM 0 undefined4 param_1
+    VFUNC 13 0x005f4c00 undefined FUN_00604c00
+      PARAM 0 int param_1
+    VFUNC 14 0x005f4260 undefined FUN_00604260
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+  FUNC 0x005f2314 undefined new
+
+CLASS ZombieSwashbuckler 0x168
+  FIELD 0x0 ZombieSwashbucklerVTable * vtable
+  VAR 0x00cc7fb0 undefined4 instance
+  VTABLE 0x00c573b8 Zombie ZombieSwashbucklerVTable 0x1c0
+    VFUNC 0 0x005f8eb8 undefined GetType
+    VFUNC 1 0x005f8ec4 bool IsAbstract
+    VFUNC 2 0x005f8ecc undefined ~ZombieSwashbuckler
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005f8ee0 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 22 0x005f8b9c undefined FUN_00608b9c
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 23 0x005f7e8c undefined FUN_00607e8c
+      PARAM 0 int * param_1
+    VFUNC 26 0x005f8ea0 undefined FUN_00608ea0
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 31 0x005f8e7c undefined FUN_00608e7c
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 34 0x005f8a38 undefined FUN_00608a38
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 35 0x005f8d64 undefined FUN_00608d64
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+    VFUNC 36 0x005f8dfc undefined FUN_00608dfc
+      PARAM 0 float * param_1
+      PARAM 1 int * param_2
+      PARAM 2 float param_3
+    VFUNC 39 0x005f8a94 undefined FUN_00608a94
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 52 0x005f8a04 undefined FUN_00608a04
+      PARAM 0 int param_1
+    VFUNC 83 0x005f7e78 undefined FUN_00607e78
+      PARAM 0 int param_1
+    VFUNC 98 0x005f8b78 undefined FUN_00608b78
+      PARAM 0 int * param_1
+    VFUNC 103 0x005f81b8 undefined FUN_006081b8
+      PARAM 0 int param_1
+    VFUNC 104 0x005f8414 undefined FUN_00608414
+      PARAM 0 int param_1
+    VFUNC 105 0x005f844c undefined FUN_0060844c
+    VFUNC 106 0x005f8450 undefined FUN_00608450
+      PARAM 0 int param_1
+    VFUNC 107 0x005f861c undefined FUN_0060861c
+      PARAM 0 int param_1
+    VFUNC 108 0x005f8688 undefined FUN_00608688
+    VFUNC 109 0x005f868c undefined FUN_0060868c
+      PARAM 0 int param_1
+    VFUNC 110 0x005f8858 undefined FUN_00608858
+      PARAM 0 int param_1
+    VFUNC 111 0x005f8a00 undefined FUN_00608a00
+  FUNC 0x005f6ffc undefined SGetType
+  FUNC 0x005f7104 undefined new
+
+CLASS TombraiserProjectile 0xa8
+  FIELD 0x0 TombraiserProjectileVTable * vtable
+  VAR 0x00cc80c0 undefined4 instance
+  VTABLE 0x00c57588 Projectile TombraiserProjectileVTable 0x54
+    VFUNC 0 0x005fc080 undefined GetType
+    VFUNC 1 0x005fc108 bool IsAbstract
+    VFUNC 2 0x005fc110 undefined ~TombraiserProjectile
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005fc124 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 14 0x005faa48 undefined FUN_0060aa48
+      PARAM 0 int * param_1
+  FUNC 0x005f91f8 undefined new
+
+CLASS ZombieTombRaiser 0x188
+  FIELD 0x0 ZombieTombRaiserVTable * vtable
+  VAR 0x00cc80c4 undefined4 instance
+  VTABLE 0x00c575e8 Zombie ZombieTombRaiserVTable 0x1b4
+    VFUNC 0 0x005fc13c undefined GetType
+    VFUNC 1 0x005fc148 bool IsAbstract
+    VFUNC 2 0x005fc150 undefined ~ZombieTombRaiser
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005fc198 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 23 0x005faea4 undefined FUN_0060aea4
+      PARAM 0 int param_1
+    VFUNC 47 0x005faef0 undefined FUN_0060aef0
+      PARAM 0 int * param_1
+    VFUNC 83 0x005fae5c undefined FUN_0060ae5c
+      PARAM 0 int param_1
+    VFUNC 92 0x005fbf74 undefined FUN_0060bf74
+      PARAM 0 int param_1
+      PARAM 1 int param_2
+    VFUNC 103 0x005fb3f0 undefined FUN_0060b3f0
+      PARAM 0 int param_1
+    VFUNC 104 0x005fb40c undefined FUN_0060b40c
+      PARAM 0 undefined4 param_1
+    VFUNC 105 0x005fb4cc undefined FUN_0060b4cc
+    VFUNC 106 0x005fb4d0 undefined FUN_0060b4d0
+      PARAM 0 int param_1
+    VFUNC 107 0x005fbe88 undefined FUN_0060be88
+    VFUNC 108 0x005fbe8c undefined FUN_0060be8c
+  FUNC 0x005f9300 undefined SGetType
+  FUNC 0x005f9408 undefined new
+
+CLASS ZombieTosserSubSystem 0x38
+  FIELD 0x0 ZombieTosserSubSystemVTable * vtable
+  VAR 0x00cc81c0 undefined4 instance
+  VTABLE 0x00c577a8 GameSubSystem ZombieTosserSubSystemVTable 0x38
+    VFUNC 0 0x003b0ca8 undefined GetType
+    VFUNC 1 0x003b0d38 bool IsAbstract
+    VFUNC 2 0x005fefa4 undefined ~ZombieTosserSubSystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x005ff02c undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x005fde5c undefined FUN_0060de5c
+      PARAM 0 undefined4 param_1
+    VFUNC 13 0x005fe968 undefined FUN_0060e968
+      PARAM 0 int param_1
+  FUNC 0x003aeee4 undefined new
+
+CLASS ZombieTreasureYeti 0x170
+  FIELD 0x0 ZombieTreasureYetiVTable * vtable
+  VAR 0x00cc8290 undefined4 instance
+  VTABLE 0x00c577e8 Zombie ZombieTreasureYetiVTable 0x1a8
+    VFUNC 0 0x0029a3d0 undefined GetType
+    VFUNC 1 0x0029a3dc bool IsAbstract
+    VFUNC 2 0x00605264 undefined ~ZombieTreasureYeti
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00605278 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 24 0x00604cc0 undefined FUN_00614cc0
+      PARAM 0 int * param_1
+    VFUNC 46 0x00604e8c undefined FUN_00614e8c
+      PARAM 0 int param_1
+    VFUNC 83 0x00604b90 undefined FUN_00614b90
+      PARAM 0 int param_1
+    VFUNC 85 0x006050b4 undefined FUN_006150b4
+    VFUNC 91 0x006051ec undefined FUN_006151ec
+      PARAM 0 int param_1
+    VFUNC 103 0x00605080 undefined FUN_00615080
+      PARAM 0 int param_1
+    VFUNC 104 0x006050a0 undefined FUN_006150a0
+    VFUNC 105 0x006050a4 undefined FUN_006150a4
+      PARAM 0 undefined4 param_1
+  FUNC 0x002831f8 undefined SGetType
+  FUNC 0x0028330c undefined new
+
+CLASS ZombieCamelSubSystem 0x20
+  FIELD 0x0 ZombieCamelSubSystemVTable * vtable
+  VAR 0x00cc8430 undefined4 instance
+  VTABLE 0x00c57998 GameSubSystem ZombieCamelSubSystemVTable 0x3c
+    VFUNC 0 0x00198280 undefined GetType
+    VFUNC 1 0x00198310 bool IsAbstract
+    VFUNC 2 0x00608230 undefined ~ZombieCamelSubSystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x006082e8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00606d80 undefined FUN_00616d80
+      PARAM 0 undefined4 param_1
+    VFUNC 13 0x00606e04 undefined FUN_00616e04
+      PARAM 0 int param_1
+    VFUNC 14 0x00606f5c undefined FUN_00616f5c
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+  FUNC 0x001918e8 undefined new
+
+CLASS ZombieChickenSubsystem 0x20
+  FIELD 0x0 ZombieChickenSubsystemVTable * vtable
+  VAR 0x00cc84f0 undefined4 instance
+  VTABLE 0x00c579e8 GameSubSystem ZombieChickenSubsystemVTable 0x38
+    VFUNC 0 0x005bd3e0 undefined GetType
+    VFUNC 1 0x005bd470 bool IsAbstract
+    VFUNC 2 0x0060add8 undefined ~ZombieChickenSubsystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0060ae20 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x0060a51c undefined FUN_0061a51c
+      PARAM 0 int param_1
+  FUNC 0x005bce28 undefined new
+
+CLASS ZombiePianoSubsystem 0x30
+  FIELD 0x0 ZombiePianoSubsystemVTable * vtable
+  VAR 0x00cc85e0 undefined4 instance
+  VTABLE 0x00c57a28 GameSubSystem ZombiePianoSubsystemVTable 0x3c
+    VFUNC 0 0x005d67a0 undefined GetType
+    VFUNC 1 0x005d6830 bool IsAbstract
+    VFUNC 2 0x0060de8c undefined ~ZombiePianoSubsystem
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x0060df44 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0060c414 undefined FUN_0061c414
+      PARAM 0 undefined4 param_1
+    VFUNC 9 0x0060c3f8 undefined FUN_0061c3f8
+      PARAM 0 int param_1
+    VFUNC 12 0x0060dd70 undefined FUN_0061dd70
+      PARAM 0 int param_1
+    VFUNC 13 0x0060c670 undefined FUN_0061c670
+      PARAM 0 int param_1
+    VFUNC 14 0x0060dc28 undefined FUN_0061dc28
+      PARAM 0 int param_1
+      PARAM 1 undefined4 * param_2
+  FUNC 0x005d6110 undefined new
+
+CLASS ZombiesAteYourBrainsModule 0x20
+  FIELD 0x0 ZombiesAteYourBrainsModuleVTable * vtable
+  VAR 0x00cc86a0 undefined4 instance
+  VTABLE 0x00c57a78 LevelModule ZombiesAteYourBrainsModuleVTable 0x3c
+    VFUNC 0 0x0060ffc8 undefined GetType
+    VFUNC 1 0x00610050 bool IsAbstract
+    VFUNC 2 0x00610058 undefined ~ZombiesAteYourBrainsModule
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x006100a0 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x0060f8e0 undefined FUN_0061f8e0
+      PARAM 0 int param_1
+    VFUNC 14 0x0060f8d4 undefined FUN_0061f8d4
+      PARAM 0 int param_1
+  FUNC 0x0060f128 undefined new
+
+CLASS ZombiesAteYourBrainsProperties 0x20
+  FIELD 0x0 ZombiesAteYourBrainsPropertiesVTable * vtable
+  VAR 0x00cc86a4 undefined4 instance
+  VTABLE 0x00c57ac8 LevelModuleProperties ZombiesAteYourBrainsPropertiesVTable 0x40
+    VFUNC 0 0x00610110 undefined GetType
+    VFUNC 1 0x0061011c bool IsAbstract
+    VFUNC 2 0x00610124 undefined ~ZombiesAteYourBrainsProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x006101e8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x006102b0 undefined FUN_006202b0
+  FUNC 0x0060f22c undefined SGetType
+  FUNC 0x0060f334 undefined new
+
+CLASS ZombiesAteYourBrainsOutro 0x58
+  FIELD 0x0 ZombiesAteYourBrainsOutroVTable * vtable
+  VAR 0x00cc8760 undefined4 instance
+  VTABLE 0x00c57b18 OutroModule ZombiesAteYourBrainsOutroVTable 0x3c
+    VFUNC 0 0x001a9350 undefined GetType
+    VFUNC 1 0x001a935c bool IsAbstract
+    VFUNC 2 0x00611374 undefined ~ZombiesAteYourBrainsOutro
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x006113e8 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x006107d8 undefined FUN_006207d8
+      PARAM 0 int param_1
+    VFUNC 14 0x006107bc undefined FUN_006207bc
+      PARAM 0 int param_1
+  FUNC 0x0019957c undefined SGetType
+  FUNC 0x0019968c undefined new
+
+CLASS ZombiesDeadWinCon 0x18
+  FIELD 0x0 ZombiesDeadWinConVTable * vtable
+  VAR 0x00cc8820 undefined4 instance
+  VTABLE 0x00c57b68 LevelModule ZombiesDeadWinConVTable 0x3c
+    VFUNC 0 0x00611bdc undefined GetType
+    VFUNC 1 0x00611c60 bool IsAbstract
+    VFUNC 2 0x00611c68 undefined ~ZombiesDeadWinCon
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00611cb0 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 7 0x00611a60 undefined FUN_00621a60
+      PARAM 0 int param_1
+  FUNC 0x0061173c undefined new
+
+CLASS ZombiesDeadWinConProperties 0x20
+  FIELD 0x0 ZombiesDeadWinConPropertiesVTable * vtable
+  VAR 0x00cc8824 undefined4 instance
+  VTABLE 0x00c57bb8 LevelModuleProperties ZombiesDeadWinConPropertiesVTable 0x40
+    VFUNC 0 0x00611f2c undefined GetType
+    VFUNC 1 0x00611f38 bool IsAbstract
+    VFUNC 2 0x00611f40 undefined ~ZombiesDeadWinConProperties
+      PARAM 0 GameObject * param_1
+    VFUNC 3 0x00612004 undefined Destroy
+      PARAM 0 GameObject * param_1
+    VFUNC 13 0x006120cc undefined FUN_006220cc
+  FUNC 0x00611780 undefined SGetType
+  FUNC 0x00611888 undefined new
+
+CLASS Font 0x4
+  FIELD 0x0 FontVTable * vtable
+  VTABLE 0x00c584e8 Sexy::BaseResource FontVTable 0x4c
+    VFUNC 0 0x00741c34 undefined GetType
+    VFUNC 1 0x00741c40 bool IsAbstract
+    VFUNC 2 0x00741aec undefined ~BaseResource
+      PARAM 0 int * param_1
+    VFUNC 3 0x00741a94 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x00741c48 undefined FUN_00751c48
+    VFUNC 8 0x00741b40 undefined FUN_00751b40
+      PARAM 0 int param_1
+    VFUNC 9 0x00741b48 undefined FUN_00751b48
+      PARAM 0 int param_1
+    VFUNC 10 0x00741b50 undefined FUN_00751b50
+      PARAM 0 int param_1
+    VFUNC 11 0x00741b60 undefined FUN_00751b60
+      PARAM 0 int param_1
+    VFUNC 12 0x00741b68 undefined FUN_00751b68
+      PARAM 0 int param_1
+    VFUNC 13 0x00741b70 undefined FUN_00751b70
+      PARAM 0 int param_1
+    VFUNC 14 0x00741b80 undefined FUN_00751b80
+    VFUNC 15 0x00741b88 undefined FUN_00751b88
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 16 0x00741c1c undefined FUN_00751c1c
+      PARAM 0 int * param_1
+    VFUNC 17 0x00741c30 undefined FUN_00751c30
+    VFUNC 18 0x00aa3738 void __cxa_pure_virtual
+  FUNC 0x0011993c undefined SGetType
+  FUNC 0x00119a64 undefined new
+
+CLASS ImageFont 0x68
+  FIELD 0x0 ImageFontVTable * vtable
+  VAR 0x00cda990 undefined4 instance
+  VTABLE 0x00c585c8 Font ImageFontVTable 0x7c
+    VFUNC 0 0x00757414 undefined GetType
+    VFUNC 1 0x007574ac bool IsAbstract
+    VFUNC 2 0x00753ae4 undefined ~ImageFont
+      PARAM 0 int * param_1
+    VFUNC 3 0x00753acc undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x007574b4 undefined FUN_007674b4
+    VFUNC 14 0x00754cec undefined FUN_00764cec
+      PARAM 0 int * param_1
+      PARAM 1 int * param_2
+    VFUNC 15 0x007550a8 undefined FUN_007650a8
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 16 0x00754d60 undefined FUN_00764d60
+      PARAM 0 int * param_1
+      PARAM 1 uint param_2
+      PARAM 2 uint param_3
+    VFUNC 17 0x00756910 undefined FUN_00766910
+      PARAM 0 int * param_1
+    VFUNC 18 0x0075694c undefined FUN_0076694c
+      PARAM 0 undefined4 param_1
+    VFUNC 19 0x00753d58 undefined FUN_00763d58
+      PARAM 0 int param_1
+    VFUNC 20 0x00755700 undefined FUN_00765700
+      PARAM 0 int * param_1
+      PARAM 1 int param_2
+      PARAM 2 int param_3
+      PARAM 3 int param_4
+      PARAM 4 int * param_5
+      PARAM 5 int * param_6
+      PARAM 6 undefined4 param_7
+      PARAM 7 undefined4 * param_8
+      PARAM 8 int * param_9
+    VFUNC 21 0x00756970 undefined FUN_00766970
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 22 0x00756994 undefined FUN_00766994
+      PARAM 0 int param_1
+    VFUNC 23 0x00756980 undefined FUN_00766980
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 param_3
+      PARAM 3 undefined4 param_4
+    VFUNC 24 0x0075699c undefined FUN_0076699c
+      PARAM 0 int param_1
+    VFUNC 25 0x007569a8 undefined FUN_007669a8
+      PARAM 0 int * param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 26 0x00756a84 undefined FUN_00766a84
+      PARAM 0 int param_1
+    VFUNC 27 0x00756b30 undefined FUN_00766b30
+      PARAM 0 int param_1
+      PARAM 1 undefined4 param_2
+    VFUNC 28 0x00756b60 undefined FUN_00766b60
+      PARAM 0 undefined4 param_1
+      PARAM 1 int param_2
+      PARAM 2 undefined4 param_3
+    VFUNC 29 0x00756bd4 undefined FUN_00766bd4
+      PARAM 0 int * param_1
+    VFUNC 30 0x00756ef0 undefined FUN_00766ef0
+  FUNC 0x00119ce8 undefined new
+
+CLASS ResourceInfo 0x4
+  FIELD 0x0 ResourceInfoVTable * vtable
+  VAR 0x00d28408 undefined4 instance
+  VTABLE 0x00c58e98 Sexy::RtObject ResourceInfoVTable 0x2c
+    VFUNC 0 0x007ed2a0 undefined GetType
+    VFUNC 1 0x007ed370 bool IsAbstract
+    VFUNC 2 0x007ed378 undefined ~ResourceInfo
+      PARAM 0 undefined4 param_1
+    VFUNC 3 0x007ed38c undefined Destroy
+      PARAM 0 void * param_1
+    VFUNC 7 0x0013f82c undefined FUN_0014f82c
+    VFUNC 8 0x0013f830 undefined FUN_0014f830
+      PARAM 0 int param_1
+    VFUNC 9 0x00aa3738 void __cxa_pure_virtual
+    VFUNC 10 0x00aa3738 void __cxa_pure_virtual
+  FUNC 0x0011a2e0 undefined new
+
+CLASS ResourceInfoTypes <>
+
+CLASS ResourceInfoTypes::ImageRes 0x4
+  VAR 0x00d28410 undefined4 instance
+  VTABLE 0x00c58c58 ResourceInfo ImageResVTable 0x2c
+    VFUNC 0 0x0013f91c undefined GetType
+    VFUNC 1 0x0013f928 bool IsAbstract
+    VFUNC 2 0x007eb540 undefined ~ImageRes
+      PARAM 0 int * param_1
+    VFUNC 3 0x007eb604 undefined Destroy
+      PARAM 0 int * param_1
+    VFUNC 7 0x007dcf1c undefined FUN_007ecf1c
+      PARAM 0 int param_1
+    VFUNC 8 0x0013f830 undefined FUN_0014f830
+      PARAM 0 int param_1
+    VFUNC 9 0x007e5d54 undefined FUN_007f5d54
+      PARAM 0 int * param_1
+    VFUNC 10 0x007e0b50 undefined FUN_007f0b50
+      PARAM 0 int param_1
+  FUNC 0x0011a390 undefined SGetType
+  FUNC 0x0011a524 undefined new
+
