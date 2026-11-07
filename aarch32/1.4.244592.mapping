@@ -1,4 +1,5 @@
 CLASS basic_string <>
+  VAR 0x00d58cf8 undefined4 _S_empty_rep
   FUNC 0x00ae2754 char * _S_construct
     PARAM 0 char * __beg
     PARAM 1 char * __end
@@ -13,9 +14,35 @@ CLASS CRefManualTypeBuilder <>
     PARAM 0 undefined4 result
     PARAM 1 undefined4 type_name
     LOCAL <> undefined4 length
+  FUNC 0x007b8280 undefined StripPointerFromTypeName
 
 CLASS Logger <>
   FUNC 0x0071a178 undefined Debug
+
+CLASS SoundBank <>
+  FUNC 0x007dc354 undefined SGetType
+  FUNC 0x007dc488 undefined new
+
+CLASS ResStreamsManager <>
+  FUNC 0x007db4bc undefined GotFocus
+  FUNC 0x007d916c undefined GetGroupForFile
+
+CLASS ResourceManager <>
+  FUNC 0x007e3820 undefined Init
+  FUNC 0x007eb28c undefined RemoveUngroupedSharedImage
+
+CLASS RtDbTable <>
+  FUNC 0x007f622c undefined Serialize
+
+CLASS PropertySheetBase 0x1
+  VAR 0x00cbedc0 RtClass * instance
+  FUNC 0x0011d32c undefined new
+  FUNC 0x0011d218 RtClass * SGetType
+    LOCAL <> RegisterClass * factory_00
+  FUNC 0x004386a8 undefined RegisterProperties
+  FUNC 0x00438768 void PropertySheetBase
+    PARAM 0 PropertySheetBase * this
+    PARAM 1 undefined4 param_2
 
 CLASS PlayerProfileProperties 0x20
   FIELD 0x0 PlayerProfilePropertiesVTable * vtable
@@ -33,7 +60,7 @@ CLASS PlayerProfileProperties 0x20
   FUNC 0x00422d3c void PlayerProfileProperties
     PARAM 0 PlayerProfileProperties * this
     PARAM 1 undefined4 param_2
-    LOCAL <> undefined4 super
+    LOCAL <> undefined4 propFactory
 
 CLASS IntroBoardDispatch 0x28
   FIELD 0x0 IntroBoardDispatchVTable * vtable
@@ -369,6 +396,8 @@ CLASS Sexy::ResourceGroup 0x68
     LOCAL <> RegisterClass * factory
   FUNC 0x0011a374 undefined new
     LOCAL <> undefined4 this
+  FUNC 0x007e99cc undefined DebugDump
+  FUNC 0x007dee14 undefined Load
 
 CLASS Sexy::ResourceInfoClass 0x50
   FIELD 0x0 ResourceInfoClassVTable * vtable
@@ -398,12 +427,6 @@ CLASS Sexy::ResourceClass 0x30
   FUNC 0x0011971c undefined new
   FUNC 0x0011960c RtClass * SGetType
     LOCAL <> undefined4 factory_00
-
-CLASS PropertySheetBase 0x1
-  VAR 0x00cbedc0 RtClass * instance
-  FUNC 0x0011d32c undefined new
-  FUNC 0x0011d218 RtClass * SGetType
-    LOCAL <> RegisterClass * factory_00
 
 CLASS ZombiePropertySheet 0xd0
   FIELD 0x0 ZombiePropertySheetVTable * vtable
@@ -473,9 +496,20 @@ CLASS GameObject 0x10
       PARAM 0 undefined4 * param_1
       PARAM 1 int param_2
     VFUNC 7 0x0012fdb4 undefined FUN_0013fdb4
-    VFUNC 8 0x0012fdb8 undefined FUN_0013fdb8
-    VFUNC 9 0x0012fdbc undefined FUN_0013fdbc
-    VFUNC 10 0x0012fdc0 undefined FUN_0013fdc0
+    VFUNC 8 0x0012fdb8 undefined RegisterTemplateType
+      PARAM 0 GameObject * this
+      PARAM 1 int param_2
+      PARAM 2 void * param_3
+      PARAM 3 int param_4
+      PARAM 4 void * param_5
+    VFUNC 9 0x0012fdbc undefined GetClassByName
+      PARAM 0 GameObject * this
+      PARAM 1 std_string name
+    VFUNC 10 0x0012fdc0 undefined RegisterBaseClass
+      PARAM 0 GameObject * this
+      PARAM 1 undefined4 param_2
+      PARAM 2 undefined4 superClass
+      PARAM 3 undefined4 param_4
     VFUNC 11 0x0012fdc4 void RegisterProperty
       PARAM 0 GameObject * this
       PARAM 1 void * param_2
@@ -492,7 +526,7 @@ CLASS GameObject 0x10
     PARAM 1 undefined4 param_2
     LOCAL <> undefined4 factory
   FUNC 0x002490c4 void RegisterProperties
-  FUNC 0x0014b9cc undefined FUN_0015b9cc
+  FUNC 0x0014b9cc undefined ResolveTemplateType
     PARAM 0 GameObject * this
     PARAM 1 std_string param_2
   FUNC 0x007b826c undefined FUN_007c826c
@@ -500,6 +534,7 @@ CLASS GameObject 0x10
     PARAM 1 undefined4 type_name
 
 CLASS GamePropertySheet 0x28
+  FIELD 0x0 GamePropertySheetVTable * vtable
   VAR 0x00cb46f0 RtClass * instance
   VTABLE 0x00c3b808 GameObject GamePropertySheetVTable 0x34
     VFUNC 0 0x001482bc RtClass * GetType
@@ -511,6 +546,11 @@ CLASS GamePropertySheet 0x28
       PARAM 0 void * this
   FUNC 0x0013ff9c undefined new
     LOCAL <> undefined4 this
+  FUNC 0x0024a860 undefined RegisterProperties
+  FUNC 0x0024a920 void GamePropertySheet
+    PARAM 0 GamePropertySheet * this
+    PARAM 1 undefined4 param_2
+    LOCAL <> undefined4 super
 
 CLASS GridItemPropertySheet 0x1
   VAR 0x00cb5420 RtClass * instance
@@ -576,6 +616,9 @@ CLASS GridItemGravestoneZombieTimeSpawnerPropertySheet 0x60
       PARAM 0 int * param_1
   FUNC 0x00122cd4 undefined new
   FUNC 0x00262bc4 void RegisterProperties
+  FUNC 0x002648e8 void GridItemGravestoneZombieTimeSpawnerPropertySheet
+    PARAM 0 undefined4 this
+    PARAM 1 undefined4 param_2
 
 CLASS GridItemGravestoneSunOnDestructionPropertySheet 0x50
   FIELD 0x0 GridItemGravestoneSunOnDestructionPropertySheetVTable * vtable
@@ -3033,7 +3076,7 @@ CLASS Reflection::RType 0x1
     VFUNC 9 0x00aa3738 void __cxa_pure_virtual
     VFUNC 10 0x0013efd8 undefined FUN_0014efd8
       PARAM 0 undefined4 param_1
-    VFUNC 11 0x007b85a8 undefined FUN_007c85a8
+    VFUNC 11 0x007b85a8 undefined InstanceRtonSync
       PARAM 0 undefined4 param_1
       PARAM 1 undefined4 param_2
       PARAM 2 int param_3
@@ -7926,6 +7969,10 @@ CLASS UIWidget 0xe8
     VFUNC 43 0x004dc828 undefined FUN_004ec828
   FUNC 0x00125040 undefined SGetType
   FUNC 0x00125154 undefined new
+  FUNC 0x004d6774 undefined RegisterProperties
+  FUNC 0x004d6b84 undefined UIWidget
+    PARAM 0 undefined4 this
+    PARAM 1 undefined4 param_2
 
 CLASS UIWidgetPrimeText 0xf8
   FIELD 0x0 UIWidgetPrimeTextVTable * vtable
