@@ -600,7 +600,6 @@ CLASS Sexy::BaseResource 0x1
       PARAM 0 int * this
   FUNC 0x00119804 undefined new
   FUNC 0x00119760 RtClass * SGetType
-  FUNC 0x007ed69c undefined RInit
 
 CLASS Sexy::GenericResFile 0x20
   FIELD 0x0 GenericResFileVTable * vtable
@@ -13635,6 +13634,7 @@ CLASS RtIdProtocol 0x1c
   FUNC 0x007b7164 undefined snew
   FUNC 0x001153ec undefined INIT
   FUNC 0x008036c4 undefined snew
+  FUNC 0x007ed69c undefined snew
 
 CLASS Board 0x4
   FIELD 0x0 BoardVTable * vtable
