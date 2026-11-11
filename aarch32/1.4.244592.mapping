@@ -5,6 +5,11 @@ SFUNC 0x00612fc0 undefined PraseEnum
 SFUNC 0x006130f4 undefined ParseVector2
 SFUNC 0x006131d8 undefined ParseVector3
 SFUNC 0x006132c4 undefined ParseRect
+SFUNC 0x00115454 undefined RtINIT
+SFUNC 0x000fe608 undefined INITConfig
+SFUNC 0x00114a04 undefined ReflectionINIT
+SFUNC 0x000e1ee4 undefined INITCheatUI
+SFUNC 0x000f9044 undefined INITSaveData
 CLASS basic_string <>
   VAR 0x00d58cf8 char * _S_empty_rep
   FUNC 0x00ae2754 char * _S_construct
@@ -20,6 +25,25 @@ CLASS basic_string <>
     PARAM 1 char * __pos
     PARAM 2 size_t __n
     LOCAL <> undefined4 __len
+
+CLASS ZombieConditionTracker <>
+  FUNC 0x0057166c undefined ZombieConditionTracker
+
+CLASS ZombieCondition <>
+  FUNC 0x0057145c undefined ZombieCondition
+
+CLASS Chickening <>
+  FUNC 0x00609e60 undefined Chickening
+
+CLASS AnimationSequence <>
+  FUNC 0x00217010 undefined AnimationSequence
+
+CLASS AnimationSequenceEntry <>
+  FUNC 0x00216d10 undefined AnimationSequenceEntry
+
+CLASS PrimeGlyphCache <>
+  FUNC 0x00a46644 undefined DestroyImageRenderData
+  FUNC 0x00a466d4 undefined CreateImageRenderData
 
 CLASS MapListNode <>
   FUNC 0x00535f0c undefined MapListNode
@@ -351,6 +375,7 @@ CLASS PropertySheetBase 0x1
   FUNC 0x00438768 void PropertySheetBase
     PARAM 0 PropertySheetBase * this
     PARAM 1 undefined4 param_2
+  FUNC 0x000fc648 undefined INIT
 
 CLASS PlayerProfileProperties 0x20
   FIELD 0x0 PlayerProfilePropertiesVTable * vtable
@@ -370,6 +395,7 @@ CLASS PlayerProfileProperties 0x20
     PARAM 1 undefined4 param_2
     LOCAL <> undefined4 propFactory
   FUNC 0x0012c530 undefined SGetType
+  FUNC 0x000fc134 undefined INIT
 
 CLASS IntroBoardDispatch 0x28
   FIELD 0x0 IntroBoardDispatchVTable * vtable
@@ -458,6 +484,7 @@ CLASS OutroManager 0x4
   FUNC 0x0012b98c undefined SGetType
   FUNC 0x002e9660 undefined RInit
   FUNC 0x002e9720 undefined OutroManager
+  FUNC 0x000ee834 undefined INIT
 
 CLASS OutroModuleProperties 0x20
   FIELD 0x0 OutroModulePropertiesVTable * vtable
@@ -618,6 +645,7 @@ CLASS ObjectTypeDescriptor 0x8
   FUNC 0x001484c4 undefined ObjectTypeDescriptor2
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x000ee474 undefined INIT
 
 CLASS PowerupType 0x34
   FIELD 0x0 PowerupTypeVTable * vtable
@@ -635,6 +663,7 @@ CLASS PowerupType 0x34
     LOCAL <> undefined4 this
   FUNC 0x00416d54 undefined RInit
   FUNC 0x00416e14 undefined PowerupType
+  FUNC 0x000fb600 undefined INIT
 
 CLASS PresentType 0x18
   FIELD 0x0 PresentTypeVTable * vtable
@@ -668,9 +697,11 @@ CLASS PresentTable 0x18
     LOCAL <> undefined4 this
   FUNC 0x0041b8f4 undefined RInit
   FUNC 0x0041bc64 undefined PresentTable
+  FUNC 0x000fba50 undefined INIT
 
 CLASS CollectableType 0x5c
   FIELD 0x0 CollectableTypeVTable * vtable
+  VAR 0x00cb2020 undefined4 instance
   VTABLE 0x00c39f68 ObjectTypeDescriptor CollectableTypeVTable 0x1c
     VFUNC 0 0x0013aa04 RtClass * GetType
     VFUNC 1 0x0013aa10 bool IsAbstract
@@ -686,6 +717,7 @@ CLASS CollectableType 0x5c
   FUNC 0x001c0a84 undefined CollectableType
     PARAM 0 GameObject * param_1
     PARAM 1 void * param_2
+  FUNC 0x000e3030 undefined INIT
 
 CLASS GridItemType 0x20
   VAR 0x00cb5710 RtClass * instance
@@ -704,6 +736,7 @@ CLASS GridItemType 0x20
   FUNC 0x0026b7b8 undefined GridItemType
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x000ea25c undefined INIT
 
 CLASS ZombieType 0x38
   FIELD 0x0 ZombieTypeVTable * vtable
@@ -719,6 +752,7 @@ CLASS ZombieType 0x38
   FUNC 0x001223c8 undefined new
   FUNC 0x006059ac undefined RInit
   FUNC 0x00605a6c undefined ZombieType
+  FUNC 0x00112c0c undefined INIT
 
 CLASS Sexy::RtProtocol 0x1
   VAR 0x00d284b8 RtClass * instance
@@ -906,6 +940,7 @@ CLASS GameObject 0x10
   FUNC 0x007b826c undefined FUN_007c826c
     PARAM 0 GameObject * this
     PARAM 1 undefined4 type_name
+  FUNC 0x000e7f84 undefined INIT
 
 CLASS GamePropertySheet 0x28
   FIELD 0x0 GamePropertySheetVTable * vtable
@@ -926,6 +961,7 @@ CLASS GamePropertySheet 0x28
     PARAM 1 undefined4 param_2
     LOCAL <> undefined4 super
   FUNC 0x0013ff0c undefined SGetType
+  FUNC 0x000e821c undefined INIT
 
 CLASS GridItemPropertySheet 0x1
   VAR 0x00cb5420 RtClass * instance
@@ -1246,6 +1282,7 @@ CLASS BoardEntity 0x1
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x0018e190 undefined snew
+  FUNC 0x000e11bc undefined INIT
 
 CLASS CrazyNPCManager 0x17c
   FIELD 0x0 CrazyNPCManagerVTable * vtable
@@ -1697,6 +1734,8 @@ CLASS ZombieMechDiscoProps 0xe8
       PARAM 0 int * param_1
   FUNC 0x0011df0c undefined new
   FUNC 0x0011de7c undefined SGetType
+  FUNC 0x005e22ec undefined RInit
+  FUNC 0x005e6ae0 undefined ZombieMechDiscoProps
 
 CLASS ZombieMechFootballProps 0xd8
   FIELD 0x0 ZombieMechFootballPropsVTable * vtable
@@ -1744,6 +1783,7 @@ CLASS ProjectilePropertySheet 0x28
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x0011d3c4 undefined new
+  FUNC 0x000fc4b4 undefined INIT
 
 CLASS StreamingMusicList 0x14
   FIELD 0x0 StreamingMusicListVTable * vtable
@@ -1761,6 +1801,7 @@ CLASS StreamingMusicList 0x14
   FUNC 0x004a882c undefined StreamingMusicList
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x00101618 undefined INIT
 
 CLASS BaseCursor 0x4
   FIELD 0x0 BaseCursorVTable * vtable
@@ -1778,6 +1819,7 @@ CLASS BaseCursor 0x4
     VFUNC 10 0x00150a3c undefined FUN_00160a3c
   FUNC 0x00127070 undefined new
   FUNC 0x00126fe4 undefined SGetType
+  FUNC 0x000e0bc4 undefined INIT
 
 CLASS BasePowerup 0x4
   FIELD 0x0 BasePowerupVTable * vtable
@@ -1809,6 +1851,8 @@ CLASS BasePowerup 0x4
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x001510ac undefined new
+  FUNC 0x0015222c undefined snew
+  FUNC 0x000e0d1c undefined INIT
 
 CLASS BoardSaveState 0xd0
   FIELD 0x0 BoardSaveStateVTable * vtable
@@ -1938,6 +1982,7 @@ CLASS PVZVersion 0x20
   FUNC 0x00156974 undefined SGetType
   FUNC 0x003300e8 undefined RInit
   FUNC 0x003301a8 undefined PVZVersion
+  FUNC 0x000f25c8 undefined INIT
 
 CLASS ModifyConveyorWaveActionProps 0x38
   FIELD 0x0 ModifyConveyorWaveActionPropsVTable * vtable
@@ -1972,6 +2017,7 @@ CLASS GameSubSystem 0x10
   FUNC 0x00155b38 undefined new
   FUNC 0x00251894 undefined RInit
   FUNC 0x00251954 undefined GameSubSystem
+  FUNC 0x000e85e8 undefined INIT
 
 CLASS DangerRoomPropertySheet 0x28
   FIELD 0x0 DangerRoomPropertySheetVTable * vtable
@@ -2004,6 +2050,7 @@ CLASS CollectableMoneyBagType 0x64
   FUNC 0x001bbc78 undefined CollectableMoneyBagType
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e2934 undefined INIT
 
 CLASS CollectableKeyType 0x5c
   FIELD 0x0 CollectableKeyTypeVTable * vtable
@@ -2021,6 +2068,7 @@ CLASS CollectableKeyType 0x5c
   FUNC 0x001bb7f4 undefined CollectableKeyType
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e2878 undefined INIT
 
 CLASS CollectablePresentType 0x5c
   FIELD 0x0 CollectablePresentTypeVTable * vtable
@@ -2106,6 +2154,7 @@ CLASS BoardPropertySheet 0x18
   FUNC 0x0018f164 undefined BoardPropertySheet
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e12a4 undefined INIT
 
 CLASS CheatUILine 0x28
   FIELD 0x0 CheatUILineVTable * vtable
@@ -2228,6 +2277,7 @@ CLASS Collectable 0x28
     PARAM 0 GameObject * param_1
     PARAM 1 void * param_2
   FUNC 0x001b57d4 undefined snew
+  FUNC 0x000e2640 undefined INIT
 
 CLASS CollectableNoteType 0x68
   FIELD 0x0 CollectableNoteTypeVTable * vtable
@@ -2244,6 +2294,7 @@ CLASS CollectableNoteType 0x68
   FUNC 0x001bc468 undefined CollectableNoteType
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e29f0 undefined INIT
 
 CLASS CollectableSeedPacket 0x128
   FIELD 0x0 CollectableSeedPacketVTable * vtable
@@ -2453,6 +2504,7 @@ CLASS CrazyNPC 0xa0
   FUNC 0x001db588 undefined CrazyNPC
     PARAM 0 undefined4 param_1
     PARAM 1 int param_2
+  FUNC 0x000e3670 undefined INIT
 
 CLASS FBOpenGraphConfig 0x14
   FIELD 0x0 FBOpenGraphConfigVTable * vtable
@@ -2588,6 +2640,7 @@ CLASS DraperSaveData 0x30
   FUNC 0x002077cc undefined SGetType
   FUNC 0x002078a8 undefined RInit
   FUNC 0x00207968 undefined DraperSaveData
+  FUNC 0x000e4e88 undefined INIT
 
 CLASS PlantFramework 0x8
   FIELD 0x0 PlantFrameworkVTable * vtable
@@ -2699,6 +2752,7 @@ CLASS PlantFramework 0x8
   FUNC 0x0012c1d0 undefined SGetType
   FUNC 0x00365808 undefined RInit
   FUNC 0x003658c8 undefined PlantFramework
+  FUNC 0x000f506c undefined INIT
 
 CLASS PlantType 0x38
   FIELD 0x0 PlantTypeVTable * vtable
@@ -2800,6 +2854,7 @@ CLASS LevelModuleManager 0x140
   FUNC 0x0012b508 undefined SGetType
   FUNC 0x002a61b0 undefined RInit
   FUNC 0x002a6270 undefined LevelModuleManager
+  FUNC 0x000ec258 undefined INIT
 
 CLASS LevelDefinition 0xb0
   FIELD 0x0 LevelDefinitionVTable * vtable
@@ -2815,6 +2870,7 @@ CLASS LevelDefinition 0xb0
   FUNC 0x0012b334 undefined SGetType
   FUNC 0x002a2770 undefined RInit
   FUNC 0x002a3240 undefined LevelDefinition
+  FUNC 0x000ec030 undefined INIT
 
 CLASS PlantPropertySheet 0x88
   FIELD 0x0 PlantPropertySheetVTable * vtable
@@ -3288,6 +3344,7 @@ CLASS NotificationStringProperties 0x40
   FUNC 0x00126adc undefined SGetType
   FUNC 0x002e4884 undefined RInit
   FUNC 0x002e4944 undefined NotificationStringProperties
+  FUNC 0x000ee280 undefined INIT
 
 CLASS MagentoProductProps 0x68
   FIELD 0x0 MagentoProductPropsVTable * vtable
@@ -3490,6 +3547,7 @@ CLASS UIWidgetSheet 0x28
     PARAM 1 undefined4 param_2
   FUNC 0x00125024 undefined new
   FUNC 0x00124f94 undefined SGetType
+  FUNC 0x00103538 undefined INIT
 
 CLASS Cheat 0x28
   FIELD 0x0 CheatVTable * vtable
@@ -3535,6 +3593,7 @@ CLASS PVZTypes 0x4
   FUNC 0x00123c78 undefined SGetType
   FUNC 0x0032a934 undefined RInit
   FUNC 0x0032a9f4 undefined PVZTypes
+  FUNC 0x000f2394 undefined INIT
 
 CLASS GameFeatureType 0x20
   FIELD 0x0 GameFeatureTypeVTable * vtable
@@ -3552,6 +3611,7 @@ CLASS GameFeatureType 0x20
   FUNC 0x00246458 undefined GameFeatureType
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x000e7f0c undefined INIT
 
 CLASS Reflection <>
 
@@ -3570,6 +3630,7 @@ CLASS Reflection::RSymbol 0x38
 
 CLASS Image 0x4
   FIELD 0x0 ImageVTable * vtable
+  VAR 0x00cda960 undefined4 instance
   VTABLE 0x00c58548 Sexy::BaseResource ImageVTable 0x24
     VFUNC 0 0x0074ae9c undefined GetType
     VFUNC 1 0x0074aea8 bool IsAbstract
@@ -3583,6 +3644,7 @@ CLASS Image 0x4
   FUNC 0x00749c80 undefined RInit
   FUNC 0x00749d50 undefined Image
   FUNC 0x00119934 undefined new
+  FUNC 0x00114474 undefined INIT
 
 CLASS MemoryImage 0x98
   FIELD 0x0 MemoryImageVTable * vtable
@@ -3741,6 +3803,7 @@ CLASS MemoryImage 0x98
     VFUNC 49 0x0073a120 undefined FUN_0074a120
   FUNC 0x00119da4 undefined new
   FUNC 0x00119d04 undefined SGetType
+  FUNC 0x001145d4 undefined INIT
 
 CLASS PIEffect 0x4
   FIELD 0x0 PIEffectVTable * vtable
@@ -3767,6 +3830,7 @@ CLASS PIEffect 0x4
   FUNC 0x0011b800 undefined SGetType
   FUNC 0x007753e4 undefined RInit
   FUNC 0x0011b928 undefined new
+  FUNC 0x001148d8 undefined INIT
 
 CLASS PopAnim 0x4
   FIELD 0x0 PopAnimVTable * vtable
@@ -3834,6 +3898,7 @@ CLASS PopAnim 0x4
   FUNC 0x0011b6b4 undefined SGetType
   FUNC 0x007a5fe8 undefined RInit
   FUNC 0x0011b7dc undefined new
+  FUNC 0x001149b4 undefined INIT
 
 CLASS Reflection::RType 0x1
   VAR 0x00d28324 undefined4 instance
@@ -4055,6 +4120,7 @@ CLASS PrimeFont 0x4
   FUNC 0x007dc490 undefined SGetType
   FUNC 0x0099ec64 undefined RInit
   FUNC 0x007dc5b8 undefined new
+  FUNC 0x00117990 undefined INIT
 
 CLASS SunshroomProps 0x98
   FIELD 0x0 SunshroomPropsVTable * vtable
@@ -4531,6 +4597,7 @@ CLASS CollectablePowerup 0x4
       PARAM 0 GameObject * param_1
   FUNC 0x00154c88 undefined SGetType
   FUNC 0x00154d98 undefined new
+  FUNC 0x000e2b78 undefined INIT
 
 CLASS CollectablePlantfood 0x4
   FIELD 0x0 CollectablePlantfoodVTable * vtable
@@ -4558,6 +4625,7 @@ CLASS RenderEffectDefinition 0x4
   FUNC 0x0015394c undefined SGetType
   FUNC 0x00153a74 undefined new
   FUNC 0x007d3c14 undefined RInit
+  FUNC 0x00114f48 undefined INIT
 
 CLASS CamelMinigameProperties 0x60
   FIELD 0x0 CamelMinigamePropertiesVTable * vtable
@@ -4613,6 +4681,8 @@ CLASS ZombiesAteYourBrainsOutroProperties 0x20
     VFUNC 13 0x001a9344 undefined GetModule
   FUNC 0x001997a8 undefined new
   FUNC 0x00199718 undefined SGetType
+  FUNC 0x00610544 undefined RInit
+  FUNC 0x00610604 undefined ZombiesAteYourBrainsOutroProperties
 
 CLASS CannonMinigameProperties 0x60
   FIELD 0x0 CannonMinigamePropertiesVTable * vtable
@@ -4692,6 +4762,7 @@ CLASS CowboyMinigameModule 0x38
   FUNC 0x001d5aa8 undefined CowboyMinigameModule
     PARAM 0 GameObject * param_1
     PARAM 1 void * param_2
+  FUNC 0x000e3504 undefined INIT
 
 CLASS CowboyMinigameProperties 0x28
   FIELD 0x0 CowboyMinigamePropertiesVTable * vtable
@@ -4856,6 +4927,7 @@ CLASS Effect_BouncingArrow 0x88
   FUNC 0x00148760 undefined new
   FUNC 0x00212c6c undefined RInit
   FUNC 0x00212d2c undefined Effect_BouncingArrow
+  FUNC 0x000e5d0c undefined INIT
 
 CLASS Effect_ChallengeFailedMessage 0x78
   FIELD 0x0 Effect_ChallengeFailedMessageVTable * vtable
@@ -4878,6 +4950,7 @@ CLASS Effect_ChallengeFailedMessage 0x78
   FUNC 0x00158b6c undefined SGetType
   FUNC 0x0021397c undefined RInit
   FUNC 0x00213a3c undefined Effect_ChallengeFailedMessage
+  FUNC 0x000e5e34 undefined INIT
 
 CLASS Effect_FloatingText 0xd8
   FIELD 0x0 Effect_FloatingTextVTable * vtable
@@ -4906,6 +4979,7 @@ CLASS Effect_FloatingText 0xd8
   FUNC 0x001994d0 undefined SGetType
   FUNC 0x00214758 undefined RInit
   FUNC 0x00214818 undefined Effect_FloatingText
+  FUNC 0x000e5ef0 undefined INIT
 
 CLASS Effect_PopAnim 0xa0
   FIELD 0x0 Effect_PopAnimVTable * vtable
@@ -4937,6 +5011,9 @@ CLASS Effect_PopAnim 0xa0
       PARAM 2 undefined4 param_3
   FUNC 0x0012b234 undefined new
   FUNC 0x0012b1a4 undefined SGetType
+  FUNC 0x002168a8 undefined RInit
+  FUNC 0x0021711c undefined Effect_PopAnim
+  FUNC 0x000e5fac undefined INIT
 
 CLASS Effect_ScreenFade 0x80
   FIELD 0x0 Effect_ScreenFadeVTable * vtable
@@ -4956,6 +5033,7 @@ CLASS Effect_ScreenFade 0x80
       PARAM 0 int param_1
       PARAM 1 int param_2
   FUNC 0x0021a814 undefined new
+  FUNC 0x000e6070 undefined INIT
 
 CLASS Effect_StaticImage 0x90
   FIELD 0x0 Effect_StaticImageVTable * vtable
@@ -4980,6 +5058,7 @@ CLASS Effect_StaticImage 0x90
       PARAM 1 undefined4 param_2
   FUNC 0x001b3a4c undefined new
   FUNC 0x001b39bc undefined SGetType
+  FUNC 0x000e61cc undefined INIT
 
 CLASS Effect_ZombieGate 0x80
   FIELD 0x0 Effect_ZombieGateVTable * vtable
@@ -5001,6 +5080,7 @@ CLASS Effect_ZombieGate 0x80
       PARAM 1 int param_2
   FUNC 0x001d5314 undefined new
   FUNC 0x001d5284 undefined SGetType
+  FUNC 0x000e6288 undefined INIT
 
 CLASS SandstormZombieSpawner 0x40
   FIELD 0x0 SandstormZombieSpawnerVTable * vtable
@@ -5187,6 +5267,7 @@ CLASS GameStateMgr 0x28
     VFUNC 45 0x0024d440 undefined FUN_0025d440
   FUNC 0x00123dc4 undefined new
   FUNC 0x00123d38 undefined SGetType
+  FUNC 0x000e82d8 undefined INIT
 
 CLASS CheatGameUnlockToEvent 0x28
   FIELD 0x0 CheatGameUnlockToEventVTable * vtable
@@ -5335,7 +5416,7 @@ CLASS GravestoneProperties 0x40
       PARAM 0 undefined4 param_1
     VFUNC 3 0x00255644 undefined Destroy
       PARAM 0 void * param_1
-    VFUNC 13 0x0025565c undefined FUN_0026565c
+    VFUNC 13 0x0025565c undefined GetModule
   FUNC 0x00252064 undefined SGetType
   FUNC 0x0025216c undefined new
   FUNC 0x00252204 undefined RInit
@@ -5370,6 +5451,7 @@ CLASS GridItem 0x50
   FUNC 0x0012bb0c undefined SGetType
   FUNC 0x00255888 undefined RInit
   FUNC 0x00255948 undefined GridItem
+  FUNC 0x000e8838 undefined INIT
 
 CLASS GridItemGravestone 0x78
   FIELD 0x0 GridItemGravestoneVTable * vtable
@@ -5401,6 +5483,7 @@ CLASS GridItemGravestone 0x78
   FUNC 0x001565d8 undefined new
   FUNC 0x00258998 undefined RInit
   FUNC 0x00258a58 undefined GridItemGravestone
+  FUNC 0x000e8af0 undefined INIT
 
 CLASS GridItemBarricade 0xa0
   FIELD 0x0 GridItemBarricadeVTable * vtable
@@ -5425,6 +5508,7 @@ CLASS GridItemBarricade 0xa0
   FUNC 0x00256c3c undefined RInit
   FUNC 0x00256b40 undefined SGetType
   FUNC 0x00256cfc undefined GridItemBarricade
+  FUNC 0x000e8994 undefined INIT
 
 CLASS GridItemGravestonePlantOnDestruction 0x78
   FIELD 0x0 GridItemGravestonePlantOnDestructionVTable * vtable
@@ -5441,6 +5525,7 @@ CLASS GridItemGravestonePlantOnDestruction 0x78
   FUNC 0x0025b34c undefined new
   FUNC 0x0025b394 undefined RInit
   FUNC 0x0025b454 undefined GridItemGravestonePlantOnDestruction
+  FUNC 0x000e8be4 undefined INIT
 
 CLASS GridItemGravestonePlantfoodOnDestruction 0x78
   FIELD 0x0 GridItemGravestonePlantfoodOnDestructionVTable * vtable
@@ -5458,6 +5543,7 @@ CLASS GridItemGravestonePlantfoodOnDestruction 0x78
   FUNC 0x0025bda0 undefined RInit
   FUNC 0x0025be60 undefined GridItemGravestonePlantfoodOnDestruction
   FUNC 0x0025bcd0 undefined SGetType
+  FUNC 0x000e8d40 undefined INIT
 
 CLASS GridItemGravestoneSunOnDestruction 0x78
   FIELD 0x0 GridItemGravestoneSunOnDestructionVTable * vtable
@@ -5474,6 +5560,7 @@ CLASS GridItemGravestoneSunOnDestruction 0x78
   FUNC 0x0025c83c undefined new
   FUNC 0x0025c884 undefined RInit
   FUNC 0x0025c944 undefined GridItemGravestoneSunOnDestruction
+  FUNC 0x000e8ff8 undefined INIT
 
 CLASS GridItemGravestoneZombieOnDestruction 0x78
   FIELD 0x0 GridItemGravestoneZombieOnDestructionVTable * vtable
@@ -5491,6 +5578,7 @@ CLASS GridItemGravestoneZombieOnDestruction 0x78
   FUNC 0x0025cfd4 undefined RInit
   FUNC 0x0025cf04 undefined SGetType
   FUNC 0x0025d094 undefined GridItemGravestoneZombieOnDestruction
+  FUNC 0x000e9154 undefined INIT
 
 CLASS GridItemGravestoneZombieTimeSpawner 0x80
   FIELD 0x0 GridItemGravestoneZombieTimeSpawnerVTable * vtable
@@ -5508,6 +5596,7 @@ CLASS GridItemGravestoneZombieTimeSpawner 0x80
   FUNC 0x0025d6b0 undefined RInit
   FUNC 0x0025d770 undefined GridItemGravestoneZombieTimeSpawner
   FUNC 0x0025d5d4 undefined SGetType
+  FUNC 0x000e92b0 undefined INIT
 
 CLASS GridItemPlank 0x50
   FIELD 0x0 GridItemPlankVTable * vtable
@@ -5535,6 +5624,7 @@ CLASS GridItemPlank 0x50
   FUNC 0x0025fa9c undefined new
   FUNC 0x0025fad8 undefined RInit
   FUNC 0x0025fb98 undefined GridItemPlank
+  FUNC 0x000e95b0 undefined INIT
 
 CLASS GridItemPlantShield 0x60
   FIELD 0x0 GridItemPlantShieldVTable * vtable
@@ -5559,6 +5649,7 @@ CLASS GridItemPlantShield 0x60
   FUNC 0x0025e3c4 undefined new
   FUNC 0x00260198 undefined RInit
   FUNC 0x00260258 undefined GridItemPlantShield
+  FUNC 0x000e97d8 undefined INIT
 
 CLASS GridItemLinkedPlantShield 0x70
   FIELD 0x0 GridItemLinkedPlantShieldVTable * vtable
@@ -5579,6 +5670,7 @@ CLASS GridItemLinkedPlantShield 0x70
   FUNC 0x0025ed6c undefined RInit
   FUNC 0x0025ee2c undefined GridItemLinkedPlantShield
   FUNC 0x0025e40c undefined SGetType
+  FUNC 0x000e94f4 undefined INIT
 
 CLASS GridItemInfinutShieldSegment 0x70
   FIELD 0x0 GridItemInfinutShieldSegmentVTable * vtable
@@ -5598,6 +5690,7 @@ CLASS GridItemInfinutShieldSegment 0x70
   FUNC 0x0025e5f8 undefined new
   FUNC 0x0025e64c undefined RInit
   FUNC 0x0025e70c undefined GridItemInfinutShieldSegment
+  FUNC 0x000e940c undefined INIT
 
 CLASS GridItemProtectorShield 0xa0
   FIELD 0x0 GridItemProtectorShieldVTable * vtable
@@ -5668,6 +5761,7 @@ CLASS GridItemProtectorShieldSegment 0x60
   FUNC 0x00265b60 undefined new
   FUNC 0x00269ae0 undefined RInit
   FUNC 0x00269ba0 undefined GridItemProtectorShieldSegment
+  FUNC 0x000e9d08 undefined INIT
 
 CLASS GridItemRailcart 0x58
   FIELD 0x0 GridItemRailcartVTable * vtable
@@ -5693,6 +5787,7 @@ CLASS GridItemRailcart 0x58
   FUNC 0x0012c71c undefined new
   FUNC 0x0026a5ac undefined RInit
   FUNC 0x0026a670 undefined GridItemRailcart
+  FUNC 0x000e9f98 undefined INIT
 
 CLASS HotUIWidgetProperties 0x80
   FIELD 0x0 HotUIWidgetPropertiesVTable * vtable
@@ -5833,6 +5928,7 @@ CLASS PVZLiveConfig 0x18
   FUNC 0x0031becc undefined RInit
   FUNC 0x0028311c undefined SGetType
   FUNC 0x0031bf8c undefined PVZLiveConfig
+  FUNC 0x000f2078 undefined INIT
 
 CLASS PVZRemoteControl 0x4
   FIELD 0x0 PVZRemoteControlVTable * vtable
@@ -5847,6 +5943,7 @@ CLASS PVZRemoteControl 0x4
   FUNC 0x00320680 undefined RInit
   FUNC 0x0028305c undefined SGetType
   FUNC 0x00320984 undefined PVZRemoteControl
+  FUNC 0x000f21f0 undefined INIT
 
 CLASS LawnMower 0x58
   FIELD 0x0 LawnMowerVTable * vtable
@@ -5884,6 +5981,7 @@ CLASS LawnMower 0x58
   FUNC 0x00148f14 undefined SGetType
   FUNC 0x0029da3c undefined RInit
   FUNC 0x0029db08 undefined LawnMower
+  FUNC 0x000ebc7c undefined INIT
 
 CLASS LawnMowerModule 0x20
   FIELD 0x0 LawnMowerModuleVTable * vtable
@@ -5903,6 +6001,7 @@ CLASS LawnMowerModule 0x20
   FUNC 0x001578bc undefined SGetType
   FUNC 0x002a1638 undefined RInit
   FUNC 0x002a1b58 undefined LawnMowerModule
+  FUNC 0x000ebe3c undefined INIT
 
 CLASS LightningBolt 0x70
   FIELD 0x0 LightningBoltVTable * vtable
@@ -5930,6 +6029,7 @@ CLASS LightningBolt 0x70
   FUNC 0x002abaf4 undefined LightningBolt
   FUNC 0x002ac378 undefined snew
   FUNC 0x002ab7e8 undefined SGetType
+  FUNC 0x000ec48c undefined INIT
 
 CLASS LightningCloud 0x60
   FIELD 0x0 LightningCloudVTable * vtable
@@ -5956,6 +6056,7 @@ CLASS LightningCloud 0x60
   FUNC 0x002b0ef0 undefined new
   FUNC 0x002b0f50 undefined RInit
   FUNC 0x002b1010 undefined LightningCloud
+  FUNC 0x000ec5e8 undefined INIT
 
 CLASS CheatGameFeatureToggle 0x28
   FIELD 0x0 CheatGameFeatureToggleVTable * vtable
@@ -6006,6 +6107,7 @@ CLASS PVZGameInfo 0x18
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
     LOCAL <> undefined4 super
+  FUNC 0x000f1fb4 undefined INIT
 
 CLASS SunDropperProperties 0x30
   FIELD 0x0 SunDropperPropertiesVTable * vtable
@@ -6040,6 +6142,7 @@ CLASS PacketCursor 0x28
     VFUNC 13 0x00189a58 undefined FUN_00199a58
   FUNC 0x00154188 undefined SGetType
   FUNC 0x00154294 undefined new
+  FUNC 0x000f2724 undefined INIT
 
 CLASS PaddedRoomModule 0x18
   FIELD 0x0 PaddedRoomModuleVTable * vtable
@@ -6240,6 +6343,7 @@ CLASS Plant 0xd8
   FUNC 0x003493d4 undefined RInit
   FUNC 0x003494a0 undefined Plant
   FUNC 0x0034c0cc undefined snew
+  FUNC 0x000f3d50 undefined INIT
 
 CLASS PlantCooldownModifierProperties 0x28
   FIELD 0x0 PlantCooldownModifierPropertiesVTable * vtable
@@ -6294,6 +6398,7 @@ CLASS PlantCursor 0x28
       PARAM 0 int * param_1
   FUNC 0x001542dc undefined SGetType
   FUNC 0x00154368 undefined new
+  FUNC 0x000f4f14 undefined INIT
 
 CLASS BloomerangProjectile 0x100
   FIELD 0x0 BloomerangProjectileVTable * vtable
@@ -6450,6 +6555,7 @@ CLASS PlantCherryBomb 0x4
     VFUNC 48 0x00381230 undefined FUN_00391230
   FUNC 0x00380950 undefined SGetType
   FUNC 0x00380a54 undefined new
+  FUNC 0x000f5b24 undefined INIT
 
 CLASS PlantChilibean 0x4
   FIELD 0x0 PlantChilibeanVTable * vtable
@@ -6496,6 +6602,7 @@ CLASS PlantChilibeanSubSystem 0x20
   FUNC 0x00382adc undefined PlantChilibeanSubSystem
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x000f5cf4 undefined INIT
 
 CLASS PlantCitron 0x8
   FIELD 0x0 PlantCitronVTable * vtable
@@ -6518,6 +6625,7 @@ CLASS PlantCitron 0x8
   FUNC 0x003859f4 undefined new
   FUNC 0x00385a2c undefined RInit
   FUNC 0x00385aec undefined PlantCitron
+  FUNC 0x000f5e50 undefined INIT
 
 CLASS CoconutCannonProjectile 0xc0
   FIELD 0x0 CoconutCannonProjectileVTable * vtable
@@ -6701,6 +6809,7 @@ CLASS PlantIceburg 0xc
   FUNC 0x0038df18 undefined PlantIceburg
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x000f635c undefined INIT
 
 CLASS PlantImitater 0x18
   FIELD 0x0 PlantImitaterVTable * vtable
@@ -6895,6 +7004,7 @@ CLASS PlantMagnifyingGrass 0x60
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x00396f44 undefined snew
+  FUNC 0x000f68cc undefined INIT
 
 CLASS PlantMarigold 0x8
   FIELD 0x0 PlantMarigoldVTable * vtable
@@ -8010,6 +8120,7 @@ CLASS PowerupTutorialIntro 0x98
   FUNC 0x0040af9c undefined RInit
   FUNC 0x0040ae70 undefined SGetType
   FUNC 0x0040b8d8 undefined PowerupTutorialIntro
+  FUNC 0x000fa7d0 undefined INIT
 
 CLASS PowerupPurchaseIntroProperties 0x38
   FIELD 0x0 PowerupPurchaseIntroPropertiesVTable * vtable
@@ -8148,6 +8259,7 @@ CLASS PlantfoodCursor 0x28
       PARAM 1 int param_2
   FUNC 0x00154504 undefined SGetType
   FUNC 0x00154610 undefined new
+  FUNC 0x000f8410 undefined INIT
 
 CLASS PlantWallnut 0x10
   FIELD 0x0 PlantWallnutVTable * vtable
@@ -8178,6 +8290,7 @@ CLASS PlantWallnut 0x10
   FUNC 0x003bd574 undefined new
   FUNC 0x003bd5ac undefined RInit
   FUNC 0x003bd66c undefined PlantWallnut
+  FUNC 0x000f8270 undefined INIT
 
 CLASS PlantTorchwood 0x14
   FIELD 0x0 PlantTorchwoodVTable * vtable
@@ -8668,6 +8781,7 @@ CLASS PlantRepeater 0x1c
   FUNC 0x003a4f94 undefined new
   FUNC 0x003a4fdc undefined RInit
   FUNC 0x003a509c undefined PlantRepeater
+  FUNC 0x000f7264 undefined INIT
 
 CLASS StarChallengePlantBeforeLine 0x38
   FIELD 0x0 StarChallengePlantBeforeLineVTable * vtable
@@ -9051,6 +9165,8 @@ CLASS ToolPacketCursor 0x28
       PARAM 1 int param_2
     VFUNC 13 0x004bac94 undefined FUN_004cac94
       PARAM 0 int param_1
+  FUNC 0x00102264 undefined INIT
+  FUNC 0x00460140 undefined new
 
 CLASS TutorialLevel1 0x60
   FIELD 0x0 TutorialLevel1VTable * vtable
@@ -9408,6 +9524,7 @@ CLASS UniverseMap 0x28
       PARAM 0 int * param_1
   FUNC 0x00307680 undefined new
   FUNC 0x004e4e4c undefined GetType2
+  FUNC 0x001035f4 undefined INIT
 
 CLASS VictoryOutroModule 0x60
   FIELD 0x0 VictoryOutroModuleVTable * vtable
@@ -9430,6 +9547,7 @@ CLASS VictoryOutroModule 0x60
   FUNC 0x001575b4 undefined new
   FUNC 0x004e85c8 undefined RInit
   FUNC 0x004e9d68 undefined VictoryOutroModule
+  FUNC 0x004eda30 undefined S~VictoryOutroModule
 
 CLASS CoinShowerSequence 0x48
   FIELD 0x0 CoinShowerSequenceVTable * vtable
@@ -9497,6 +9615,7 @@ CLASS ViewBoardOrZombiesButton 0x100
   FUNC 0x001d5744 undefined SGetType
   FUNC 0x004ee674 undefined RInit
   FUNC 0x004ee738 undefined ViewBoardOrZombiesButton
+  FUNC 0x00104294 undefined INIT
 
 CLASS WaveManager 0x4
   FIELD 0x0 WaveManagerVTable * vtable
@@ -9664,6 +9783,8 @@ CLASS WestStageProperties 0x68
       PARAM 0 void * param_1
     VFUNC 13 0x0052c104 undefined FUN_0053c104
   FUNC 0x0052b43c undefined new
+  FUNC 0x0052b564 undefined RInit
+  FUNC 0x0052b624 undefined WestStageProperties
 
 CLASS WorldMap 0xaf0
   FIELD 0x0 WorldMapVTable * vtable
@@ -9808,6 +9929,7 @@ CLASS WorldMap 0xaf0
     VFUNC 65 0x0055da68 undefined FUN_0056da68
   FUNC 0x00148834 undefined new
   FUNC 0x001487a8 undefined SGetType
+  FUNC 0x001058d4 undefined INIT
 
 CLASS WorldMap_AlmanacButton 0xe8
   FIELD 0x0 WorldMap_AlmanacButtonVTable * vtable
@@ -9962,6 +10084,7 @@ CLASS WorldMap_NavBar 0xf8
       PARAM 1 int param_2
   FUNC 0x004e53f4 undefined new
   FUNC 0x004e5368 undefined SGetType
+  FUNC 0x00106f30 undefined INIT
 
 CLASS WorldMap_SocialButton 0xe8
   FIELD 0x0 WorldMap_SocialButtonVTable * vtable
@@ -10035,6 +10158,7 @@ CLASS WorldMap_TopBar 0xe8
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x0056f8a0 undefined SGetType
+  FUNC 0x001075e8 undefined INIT
 
 CLASS WorldMap_UniverseViewButton 0xe8
   FIELD 0x0 WorldMap_UniverseViewButtonVTable * vtable
@@ -10065,6 +10189,7 @@ CLASS WorldMap_UniverseViewButton 0xe8
       PARAM 2 undefined4 param_3
       PARAM 3 int param_4
   FUNC 0x0053c818 undefined new
+  FUNC 0x001077a8 undefined INIT
 
 CLASS WorldMap_ZoomButton 0xe8
   FIELD 0x0 WorldMap_ZoomButtonVTable * vtable
@@ -10268,6 +10393,9 @@ CLASS Zombie 0x168
       PARAM 0 undefined4 param_1
   FUNC 0x0012b318 undefined new
   FUNC 0x0012b288 undefined SGetType
+  FUNC 0x00107be0 undefined INIT
+  FUNC 0x00570ba4 undefined RInit
+  FUNC 0x00571878 undefined Zombie
 
 CLASS ZombieAnimRig 0x1a0
   FIELD 0x0 ZombieAnimRigVTable * vtable
@@ -10341,6 +10469,7 @@ CLASS ZombieAnimRig 0x1a0
   FUNC 0x0012af8c undefined SGetType
   FUNC 0x00581d08 undefined RInit
   FUNC 0x00581dc8 undefined ZombieAnimRig
+  FUNC 0x00107fbc undefined INIT
 
 CLASS ZombieAnimRig_Basic 0x4
   FIELD 0x0 ZombieAnimRig_BasicVTable * vtable
@@ -10376,6 +10505,7 @@ CLASS ZombieAnimRig_Basic 0x4
   FUNC 0x003f8ca8 undefined new
   FUNC 0x005843e4 undefined RInit
   FUNC 0x005844a4 undefined ZombieAnimRig_Basic
+  FUNC 0x00108118 undefined INIT
 
 CLASS ZombieAnimRig_Bull 0x1a0
   FIELD 0x0 ZombieAnimRig_BullVTable * vtable
@@ -10833,6 +10963,7 @@ CLASS ZombieAnimRig_Parrot 0x1a0
     VFUNC 48 0x0059b0a4 undefined FUN_005ab0a4
   FUNC 0x0059acb8 undefined SGetType
   FUNC 0x0059adc0 undefined new
+  FUNC 0x0010c4f4 undefined INIT
 
 CLASS ZombieAnimRig_Piano 0x1a8
   FIELD 0x0 ZombieAnimRig_PianoVTable * vtable
@@ -11117,6 +11248,7 @@ CLASS ZombieAnimRig_StaticArtPrototype 0x1c0
       PARAM 1 undefined4 param_2
   FUNC 0x005a74c4 undefined SGetType
   FUNC 0x005a75c8 undefined new
+  FUNC 0x0010ebec undefined INIT
 
 CLASS ZombieAnimRig_Swashbuckler 0x1a0
   FIELD 0x0 ZombieAnimRig_SwashbucklerVTable * vtable
@@ -11182,6 +11314,7 @@ CLASS ZombieAnimRig_TreasureYeti 0x1a0
     VFUNC 51 0x005aa3f0 undefined FUN_005ba3f0
   FUNC 0x005a9d58 undefined SGetType
   FUNC 0x005a9e60 undefined new
+  FUNC 0x0010f5f4 undefined INIT
 
 CLASS ZombieAnimRig_Tutorial 0x1a8
   FIELD 0x0 ZombieAnimRig_TutorialVTable * vtable
@@ -11201,6 +11334,7 @@ CLASS ZombieAnimRig_Tutorial 0x1a8
     VFUNC 64 0x005abb30 undefined FUN_005bbb30
     VFUNC 65 0x005abd20 undefined FUN_005bbd20
   FUNC 0x005ab26c undefined new
+  FUNC 0x0010fc3c undefined INIT
 
 CLASS ZombieBasic 0x168
   FIELD 0x0 ZombieBasicVTable * vtable
@@ -11401,6 +11535,7 @@ CLASS ZombieCamel 0x178
   FUNC 0x00191744 undefined new
   FUNC 0x005b440c undefined RInit
   FUNC 0x005b4aa0 undefined ZombieCamel
+  FUNC 0x00110028 undefined INIT
 
 CLASS ZombieCamelTouch 0x198
   FIELD 0x0 ZombieCamelTouchVTable * vtable
@@ -11584,6 +11719,7 @@ CLASS ZombieFutureJetpack 0x168
     VFUNC 108 0x005c2224 undefined FUN_005d2224
   FUNC 0x00400cf0 undefined SGetType
   FUNC 0x00400e04 undefined new
+  FUNC 0x00110800 undefined INIT
 
 CLASS ZombieFutureProtector 0x178
   FIELD 0x0 ZombieFutureProtectorVTable * vtable
@@ -12261,6 +12397,7 @@ CLASS ZombiePirateCaptain 0x180
   FUNC 0x00341cc8 undefined new
   FUNC 0x005dbf3c undefined RInit
   FUNC 0x005dbffc undefined ZombiePirateCaptain
+  FUNC 0x00111998 undefined INIT
 
 CLASS ZombiePirateParrot 0x180
   FIELD 0x0 ZombiePirateParrotVTable * vtable
@@ -12332,6 +12469,7 @@ CLASS ZombiePirateParrot 0x180
   FUNC 0x00341e24 undefined new
   FUNC 0x005dd840 undefined RInit
   FUNC 0x005ddc38 undefined ZombiePirateParrot
+  FUNC 0x00111a80 undefined INIT
 
 CLASS ZombiePirateSeagull 0x168
   FIELD 0x0 ZombiePirateSeagullVTable * vtable
@@ -12376,6 +12514,7 @@ CLASS ZombiePirateSeagull 0x168
       PARAM 1 int param_2
   FUNC 0x00199148 undefined SGetType
   FUNC 0x0019925c undefined new
+  FUNC 0x00111b68 undefined INIT
 
 CLASS ZombiePoncho 0x170
   FIELD 0x0 ZombiePonchoVTable * vtable
@@ -12400,6 +12539,7 @@ CLASS ZombiePoncho 0x170
       PARAM 1 int param_2
   FUNC 0x005e0a9c undefined SGetType
   FUNC 0x005e0ba4 undefined new
+  FUNC 0x00111c50 undefined INIT
 
 CLASS ZombieProspector 0x180
   FIELD 0x0 ZombieProspectorVTable * vtable
@@ -12452,6 +12592,7 @@ CLASS ZombieProspector 0x180
   FUNC 0x005eed1c undefined new
   FUNC 0x005eed64 undefined RInit
   FUNC 0x005ef094 undefined ZombieProspector
+  FUNC 0x001121fc undefined INIT
 
 CLASS ZombiePrototype 0x168
   FIELD 0x0 ZombiePrototypeVTable * vtable
@@ -12467,6 +12608,7 @@ CLASS ZombiePrototype 0x168
       PARAM 0 int param_1
   FUNC 0x005f1904 undefined SGetType
   FUNC 0x005f1a08 undefined new
+  FUNC 0x001122e4 undefined INIT
 
 CLASS ZombieRa 0x170
   FIELD 0x0 ZombieRaVTable * vtable
@@ -12491,6 +12633,7 @@ CLASS ZombieRa 0x170
   FUNC 0x005f1fac undefined new
   FUNC 0x005f1fe8 undefined RInit
   FUNC 0x005f2368 undefined ZombieRa
+  FUNC 0x001123cc undefined INIT
 
 CLASS ZombieRaSubSystem 0x28
   FIELD 0x0 ZombieRaSubSystemVTable * vtable
@@ -12512,6 +12655,7 @@ CLASS ZombieRaSubSystem 0x28
   FUNC 0x005f2314 undefined new
   FUNC 0x005f36f8 undefined RInit
   FUNC 0x005f2284 undefined SGetType
+  FUNC 0x00112510 undefined INIT
 
 CLASS ZombieSwashbuckler 0x168
   FIELD 0x0 ZombieSwashbucklerVTable * vtable
@@ -12570,6 +12714,7 @@ CLASS ZombieSwashbuckler 0x168
     VFUNC 111 0x005f8a00 undefined FUN_00608a00
   FUNC 0x005f6ffc undefined SGetType
   FUNC 0x005f7104 undefined new
+  FUNC 0x0011266c undefined INIT
 
 CLASS TombraiserProjectile 0xa8
   FIELD 0x0 TombraiserProjectileVTable * vtable
@@ -12638,6 +12783,7 @@ CLASS ZombieTosserSubSystem 0x38
   FUNC 0x005fcfa4 undefined RInit
   FUNC 0x003aee54 undefined SGetType
   FUNC 0x005fd9c0 undefined ZombieTosserSubSystem
+  FUNC 0x001128c0 undefined INIT
 
 CLASS ZombieTreasureYeti 0x170
   FIELD 0x0 ZombieTreasureYetiVTable * vtable
@@ -12689,6 +12835,7 @@ CLASS ZombieCamelSubSystem 0x20
   FUNC 0x00191858 undefined SGetType
   FUNC 0x00606560 undefined RInit
   FUNC 0x00606ac8 undefined ZombieCamelSubSystem
+  FUNC 0x00112cf4 undefined INIT
 
 CLASS ZombieChickenSubsystem 0x20
   FIELD 0x0 ZombieChickenSubsystemVTable * vtable
@@ -12703,6 +12850,9 @@ CLASS ZombieChickenSubsystem 0x20
     VFUNC 13 0x0060a51c undefined FUN_0061a51c
       PARAM 0 int param_1
   FUNC 0x005bce28 undefined new
+  FUNC 0x00609cf4 undefined RInit
+  FUNC 0x0060a264 undefined ZombieChickenSubsystem
+  FUNC 0x00112e50 undefined INIT
 
 CLASS ZombiePianoSubsystem 0x30
   FIELD 0x0 ZombiePianoSubsystemVTable * vtable
@@ -12729,6 +12879,7 @@ CLASS ZombiePianoSubsystem 0x30
   FUNC 0x0060b8ec undefined RInit
   FUNC 0x005d6080 undefined SGetType
   FUNC 0x0060bd5c undefined ZombiePianoSubsystem
+  FUNC 0x00112fd4 undefined INIT
 
 CLASS ZombiesAteYourBrainsModule 0x20
   FIELD 0x0 ZombiesAteYourBrainsModuleVTable * vtable
@@ -12745,6 +12896,8 @@ CLASS ZombiesAteYourBrainsModule 0x20
     VFUNC 14 0x0060f8d4 undefined FUN_0061f8d4
       PARAM 0 int param_1
   FUNC 0x0060f128 undefined new
+  FUNC 0x0060f16c undefined RInit
+  FUNC 0x0060f614 undefined ZombiesAteYourBrainsModule
 
 CLASS ZombiesAteYourBrainsProperties 0x20
   FIELD 0x0 ZombiesAteYourBrainsPropertiesVTable * vtable
@@ -12809,6 +12962,7 @@ CLASS ZombiesDeadWinConProperties 0x20
 
 CLASS Font 0x4
   FIELD 0x0 FontVTable * vtable
+  VAR 0x00cca8b0 undefined4 instance
   VTABLE 0x00c584e8 Sexy::BaseResource FontVTable 0x4c
     VFUNC 0 0x00741c34 undefined GetType
     VFUNC 1 0x00741c40 bool IsAbstract
@@ -12839,6 +12993,8 @@ CLASS Font 0x4
     VFUNC 18 0x00aa3738 void __cxa_pure_virtual
   FUNC 0x0011993c undefined SGetType
   FUNC 0x00119a64 undefined new
+  FUNC 0x007419dc undefined RInit
+  FUNC 0x00114360 undefined INIT
 
 CLASS ImageFont 0x68
   FIELD 0x0 ImageFontVTable * vtable
@@ -12906,6 +13062,7 @@ CLASS ImageFont 0x68
     VFUNC 30 0x00756ef0 undefined FUN_00766ef0
   FUNC 0x00119ce8 undefined new
   FUNC 0x00119c48 undefined SGetType
+  FUNC 0x00114498 undefined INIT
 
 CLASS ResourceInfo 0x4
   FIELD 0x0 ResourceInfoVTable * vtable
@@ -13115,6 +13272,7 @@ CLASS SysFont 0x40
     VFUNC 18 0x009461bc undefined FUN_009561bc
   FUNC 0x001538a4 undefined new
   FUNC 0x00153804 undefined SGetType
+  FUNC 0x0011585c undefined INIT
 
 CLASS WidgetContainer 0x4c
   FIELD 0x0 WidgetContainerVTable * vtable
@@ -13218,6 +13376,7 @@ CLASS WidgetContainer 0x4c
   FUNC 0x00947bdc undefined WidgetContainer
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
+  FUNC 0x00115954 undefined INIT
 
 CLASS Widget 0x98
   FIELD 0x0 WidgetVTable * vtable
@@ -13412,6 +13571,7 @@ CLASS Widget 0x98
     VFUNC 97 0x00147b28 undefined FUN_00157b28
   FUNC 0x00119b18 undefined SGetType
   FUNC 0x00119c2c undefined new
+  FUNC 0x00115904 undefined INIT
 
 CLASS RtIdProtocol 0x1c
   FIELD 0x0 RtIdProtocolVTable * vtable
@@ -13425,6 +13585,7 @@ CLASS RtIdProtocol 0x1c
   FUNC 0x00119460 undefined SGetType
   FUNC 0x00119574 undefined new
   FUNC 0x007b7164 undefined snew
+  FUNC 0x001153ec undefined INIT
 
 CLASS Board 0x4
   FIELD 0x0 BoardVTable * vtable
@@ -13529,6 +13690,7 @@ CLASS ChallengeUI 0x128
   FUNC 0x001ab464 undefined ChallengeUI
     PARAM 0 GameObject * param_1
     PARAM 1 void * param_2
+  FUNC 0x000e1b8c undefined INIT
 
 CLASS ChallengePlantCounterUI 0x130
   FIELD 0x0 ChallengePlantCounterUIVTable * vtable
@@ -13550,6 +13712,7 @@ CLASS ChallengePlantCounterUI 0x130
     PARAM 0 int * param_1
     PARAM 1 int param_2
   FUNC 0x001a9e6c undefined snew
+  FUNC 0x000e19b0 undefined INIT
 
 CLASS ChallengeSunCounterUI 0x130
   FIELD 0x0 ChallengeSunCounterUIVTable * vtable
@@ -13572,6 +13735,7 @@ CLASS ChallengeSunCounterUI 0x130
     PARAM 0 int * param_1
     PARAM 1 int param_2
   FUNC 0x001aa7a4 undefined snew
+  FUNC 0x000e19f8 undefined INIT
 
 CLASS ChallengeSunTimerUI 0x128
   FIELD 0x0 ChallengeSunTimerUIVTable * vtable
@@ -13592,6 +13756,7 @@ CLASS ChallengeSunTimerUI 0x128
   FUNC 0x001aae6c undefined ChallengeSunTimerUI
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e1a40 undefined INIT
 
 CLASS ChallengeZombieComboUI 0x130
   FIELD 0x0 ChallengeZombieComboUIVTable * vtable
@@ -13613,6 +13778,7 @@ CLASS ChallengeZombieComboUI 0x130
     PARAM 0 int * param_1
     PARAM 1 int param_2
   FUNC 0x001acd20 undefined snew
+  FUNC 0x000e1d4c undefined INIT
 
 CLASS CoinBank 0x108
   FIELD 0x0 CoinBankVTable * vtable
@@ -13653,6 +13819,7 @@ CLASS CoinBank 0x108
   FUNC 0x001b1dc4 undefined CoinBank
     PARAM 0 int * param_1
     PARAM 1 int param_2
+  FUNC 0x000e23a4 undefined INIT
 
 CLASS DangerRoomLevelIntro 0x38
   FIELD 0x0 DangerRoomLevelIntroVTable * vtable
@@ -13711,6 +13878,7 @@ CLASS GridItemGravestoneShortcut 0x78
   FUNC 0x00203360 undefined SGetType
   FUNC 0x0025c330 undefined RInit
   FUNC 0x0025c3f0 undefined GridItemGravestoneShortcut
+  FUNC 0x000e8e9c undefined INIT
 
 CLASS EffectAnimRig_BreakingSodRoll 0x198
   FIELD 0x0 EffectAnimRig_BreakingSodRollVTable * vtable
@@ -13728,6 +13896,7 @@ CLASS EffectAnimRig_BreakingSodRoll 0x198
   FUNC 0x0020a118 undefined SGetType
   FUNC 0x0020a1fc undefined RInit
   FUNC 0x0020a368 undefined EffectAnimRig_BreakingSodRoll
+  FUNC 0x000e4fe4 undefined INIT
 
 CLASS EffectAnimRig_CoconutCannonball 0x180
   FIELD 0x0 EffectAnimRig_CoconutCannonballVTable * vtable
@@ -13741,6 +13910,7 @@ CLASS EffectAnimRig_CoconutCannonball 0x180
       PARAM 0 GameObject * param_1
   FUNC 0x0020b3a4 undefined new
   FUNC 0x0020b320 undefined SGetType
+  FUNC 0x000e51a8 undefined INIT
 
 CLASS EffectAnimRig_DelayReplayAnim 0x190
   FIELD 0x0 EffectAnimRig_DelayReplayAnimVTable * vtable
@@ -13758,6 +13928,7 @@ CLASS EffectAnimRig_DelayReplayAnim 0x190
   FUNC 0x0020bc64 undefined RInit
   FUNC 0x0020bb54 undefined SGetType
   FUNC 0x0020bd24 undefined EffectAnimRig_DelayReplayAnim
+  FUNC 0x000e5260 undefined INIT
 
 CLASS EffectAnimRig_JalapenoFireSquare 0x190
   FIELD 0x0 EffectAnimRig_JalapenoFireSquareVTable * vtable
@@ -13777,6 +13948,7 @@ CLASS EffectAnimRig_JalapenoFireSquare 0x190
   FUNC 0x0020c908 undefined RInit
   FUNC 0x0020c830 undefined SGetType
   FUNC 0x0020c9c8 undefined EffectAnimRig_JalapenoFireSquare
+  FUNC 0x000e531c undefined EffectAnimRig_JalapenoFireSquare
 
 CLASS EffectAnimRig_LevelNode 0x180
   FIELD 0x0 EffectAnimRig_LevelNodeVTable * vtable
@@ -13790,6 +13962,7 @@ CLASS EffectAnimRig_LevelNode 0x180
       PARAM 0 GameObject * param_1
   FUNC 0x0020dac4 undefined new
   FUNC 0x0020da40 undefined SGetType
+  FUNC 0x000e53e0 undefined INIT
 
 CLASS EffectAnimRig_LinkedTileConnect 0x180
   FIELD 0x0 EffectAnimRig_LinkedTileConnectVTable * vtable
@@ -13838,6 +14011,7 @@ CLASS EffectAnimRig_LinkedTileGlow 0x180
       PARAM 0 int param_1
   FUNC 0x0020f268 undefined new
   FUNC 0x0020f1e4 undefined SGetType
+  FUNC 0x000e56a4 undefined INIT
 
 CLASS EffectAnimRig_PlantFoodShine 0x188
   FIELD 0x0 EffectAnimRig_PlantFoodShineVTable * vtable
@@ -13857,6 +14031,7 @@ CLASS EffectAnimRig_PlantFoodShine 0x188
   FUNC 0x00127124 undefined SGetType
   FUNC 0x0020f870 undefined RInit
   FUNC 0x0020f930 undefined EffectAnimRig_PlantFoodShine
+  FUNC 0x000e575c undefined INIT
 
 CLASS EffectAnimRig_SodRoll 0x188
   FIELD 0x0 EffectAnimRig_SodRollVTable * vtable
@@ -13874,6 +14049,7 @@ CLASS EffectAnimRig_SodRoll 0x188
     PARAM 0 undefined4 this
     PARAM 1 undefined4 param_2
   FUNC 0x0020a2bc undefined SGetType
+  FUNC 0x000e5818 undefined INIT
 
 CLASS EffectAnimRig_SpikeweedSaw 0x188
   FIELD 0x0 EffectAnimRig_SpikeweedSawVTable * vtable
@@ -13921,6 +14097,7 @@ CLASS EffectAnimRig_StarGate 0x1a0
   FUNC 0x00211818 undefined RInit
   FUNC 0x002116a8 undefined SGetType
   FUNC 0x002118d8 undefined EffectAnimRig_StarGate
+  FUNC 0x000e5ab0 undefined INIT
 
 CLASS EffectAnimRig_WaterSplash 0x180
   FIELD 0x0 EffectAnimRig_WaterSplashVTable * vtable
@@ -13942,6 +14119,7 @@ CLASS EffectAnimRig_WaterSplash 0x180
       PARAM 1 undefined4 param_2
   FUNC 0x0021284c undefined new
   FUNC 0x002127c8 undefined SGetType
+  FUNC 0x000e5bb4 undefined INIT
 
 CLASS EgyptStage 0x78
   FIELD 0x0 EgyptStageVTable * vtable
@@ -14168,6 +14346,7 @@ CLASS PauseButton 0xe8
   FUNC 0x00158140 undefined SGetType
   FUNC 0x00334660 undefined RInit
   FUNC 0x00334724 undefined PauseButton
+  FUNC 0x000f2ccc undefined INIT
 
 CLASS PirateCannonTutorialIntro 0x40
   FIELD 0x0 PirateCannonTutorialIntroVTable * vtable
@@ -14286,6 +14465,7 @@ CLASS PlantAnimRig 0x220
   FUNC 0x00127078 undefined SGetType
   FUNC 0x003530e8 undefined RInit
   FUNC 0x00353358 undefined PlantAnimRig
+  FUNC 0x000f3f5c undefined INIT
 
 CLASS PlantAnimRig_Blover 0x220
   FIELD 0x0 PlantAnimRig_BloverVTable * vtable
@@ -14302,6 +14482,7 @@ CLASS PlantAnimRig_Blover 0x220
       PARAM 1 undefined4 * param_2
   FUNC 0x00358bb4 undefined SGetType
   FUNC 0x00358cb8 undefined new
+  FUNC 0x000f4018 undefined INIT
 
 CLASS PlantAnimRig_Bonkchoy 0x220
   FIELD 0x0 PlantAnimRig_BonkchoyVTable * vtable
@@ -14323,6 +14504,7 @@ CLASS PlantAnimRig_Bonkchoy 0x220
   FUNC 0x00358f4c undefined new
   FUNC 0x00358fa4 undefined RInit
   FUNC 0x00359064 undefined PlantAnimRig_Bonkchoy
+  FUNC 0x000f4060 undefined INIT
 
 CLASS PlantAnimRig_Chilibean 0x220
   FIELD 0x0 PlantAnimRig_ChilibeanVTable * vtable
@@ -14342,6 +14524,7 @@ CLASS PlantAnimRig_Chilibean 0x220
   FUNC 0x00359b28 undefined new
   FUNC 0x00359b80 undefined RInit
   FUNC 0x00359c40 undefined PlantAnimRig_Chilibean
+  FUNC 0x000f40e4 undefined INIT
 
 CLASS PlantAnimRig_Citron 0x220
   FIELD 0x0 PlantAnimRig_CitronVTable * vtable
@@ -14390,6 +14573,7 @@ CLASS PlantAnimRig_CoconutCannon 0x220
   FUNC 0x0035b54c undefined new
   FUNC 0x0035b5a4 undefined RInit
   FUNC 0x0035b664 undefined PlantAnimRig_CoconutCannon
+  FUNC 0x000f41f0 undefined INIT
 
 CLASS PlantAnimRig_EMPea 0x220
   FIELD 0x0 PlantAnimRig_EMPeaVTable * vtable
@@ -14427,6 +14611,7 @@ CLASS PlantAnimRig_GraveBuster 0x220
       PARAM 0 int param_1
   FUNC 0x0035cb48 undefined SGetType
   FUNC 0x0035cc4c undefined new
+  FUNC 0x000f42f8 undefined INIT
 
 CLASS PlantAnimRig_Holonut 0x220
   FIELD 0x0 PlantAnimRig_HolonutVTable * vtable
@@ -14446,6 +14631,7 @@ CLASS PlantAnimRig_Holonut 0x220
   FUNC 0x0035d35c undefined new
   FUNC 0x0035d3a0 undefined RInit
   FUNC 0x0035d460 undefined PlantAnimRig_Holonut
+  FUNC 0x000f4340 undefined INIT
 
 CLASS PlantAnimRig_Imitater 0x220
   FIELD 0x0 PlantAnimRig_ImitaterVTable * vtable
@@ -14461,6 +14647,7 @@ CLASS PlantAnimRig_Imitater 0x220
       PARAM 0 int param_1
   FUNC 0x0035dabc undefined SGetType
   FUNC 0x0035dbc0 undefined new
+  FUNC 0x000f4388 undefined INIT
 
 CLASS PlantAnimRig_Kernelpult 0x220
   FIELD 0x0 PlantAnimRig_KernelpultVTable * vtable
@@ -14486,6 +14673,7 @@ CLASS PlantAnimRig_Kernelpult 0x220
       PARAM 1 undefined4 * param_2
   FUNC 0x0035df7c undefined SGetType
   FUNC 0x0035e080 undefined new
+  FUNC 0x000f440c undefined INIT
 
 CLASS PlantAnimRig_MagnifyingGrass 0x220
   FIELD 0x0 PlantAnimRig_MagnifyingGrassVTable * vtable
@@ -14501,6 +14689,7 @@ CLASS PlantAnimRig_MagnifyingGrass 0x220
       PARAM 0 int param_1
   FUNC 0x0035e8c8 undefined SGetType
   FUNC 0x0035e9cc undefined new
+  FUNC 0x000f4454 undefined INIT
 
 CLASS PlantAnimRig_Peapod 0x250
   FIELD 0x0 PlantAnimRig_PeapodVTable * vtable
@@ -14521,6 +14710,7 @@ CLASS PlantAnimRig_Peapod 0x250
   FUNC 0x0035ef40 undefined new
   FUNC 0x0035f020 undefined PlantAnimRig_Peapod
   FUNC 0x0035f0e0 undefined RInit
+  FUNC 0x000f44d8 undefined INIT
 
 CLASS PlantAnimRig_PotatoMine 0x220
   FIELD 0x0 PlantAnimRig_PotatoMineVTable * vtable
@@ -14588,6 +14778,7 @@ CLASS PlantAnimRig_Scaredyshroom 0x220
   FUNC 0x003610c8 undefined new
   FUNC 0x0036110c undefined RInit
   FUNC 0x003611cc undefined PlantAnimRig_Scaredyshroom
+  FUNC 0x000f45b0 undefined INIT
 
 CLASS PlantAnimRig_Snapdragon 0x220
   FIELD 0x0 PlantAnimRig_SnapdragonVTable * vtable
@@ -14671,6 +14862,7 @@ CLASS PlantAnimRig_Sunflower 0x220
       PARAM 0 int param_1
   FUNC 0x00358a60 undefined SGetType
   FUNC 0x00358b70 undefined new
+  FUNC 0x000f4a5c undefined INIT
 
 CLASS PlantAnimRig_Tallnut 0x220
   FIELD 0x0 PlantAnimRig_TallnutVTable * vtable
@@ -14732,6 +14924,7 @@ CLASS PlantAnimRig_Wallnut 0x220
       PARAM 1 int param_2
   FUNC 0x0035d100 undefined SGetType
   FUNC 0x0035d210 undefined new
+  FUNC 0x000f4d94 undefined INIT
 
 CLASS PlantfoodUI 0x110
   FIELD 0x0 PlantfoodUIVTable * vtable
@@ -14783,6 +14976,7 @@ CLASS PlantfoodUI 0x110
   FUNC 0x001f1e68 undefined SGetType
   FUNC 0x003c7c8c undefined RInit
   FUNC 0x003c7d50 undefined PlantfoodUI
+  FUNC 0x000f88fc undefined INIT
 
 CLASS PowerupHolderUI 0xe8
   FIELD 0x0 PowerupHolderUIVTable * vtable
@@ -14820,6 +15014,7 @@ CLASS PowerupUI 0x108
   FUNC 0x004024fc undefined SGetType
   FUNC 0x00417938 undefined PowerupUI
   FUNC 0x00417ecc undefined snew
+  FUNC 0x000fb648 undefined INIT
 
 CLASS PowerupTimeUI 0x108
   FIELD 0x0 PowerupTimeUIVTable * vtable
@@ -14839,6 +15034,7 @@ CLASS PowerupTimeUI 0x108
       PARAM 1 int param_2
   FUNC 0x00402b60 undefined SGetType
   FUNC 0x00402c70 undefined new
+  FUNC 0x000fa30c undefined INIT
 
 CLASS SeedChooser 0x1b8
   FIELD 0x0 SeedChooserVTable * vtable
@@ -14907,6 +15103,7 @@ CLASS SeedChooser 0x1b8
   FUNC 0x00457b84 undefined RInit
   FUNC 0x00457c44 undefined SeedChooser
   FUNC 0x00458190 undefined snew
+  FUNC 0x000fd730 undefined INIT
 
 CLASS SeedPacket 0x108
   FIELD 0x0 SeedPacketVTable * vtable
@@ -14966,6 +15163,7 @@ CLASS SeedPacket 0x108
   FUNC 0x00125170 undefined SGetType
   FUNC 0x0045faf0 undefined RInit
   FUNC 0x0046018c undefined SeedPacket
+  FUNC 0x000fdc54 undefined INIT
 
 CLASS SeedPacket_Powerup 0x108
   FIELD 0x0 SeedPacket_PowerupVTable * vtable
@@ -15115,6 +15313,7 @@ CLASS StartGameButton 0xf8
       PARAM 0 int param_1
   FUNC 0x00280668 undefined new
   FUNC 0x004a278c undefined snew
+  FUNC 0x00100d30 undefined INIT
 
 CLASS SunBank 0x108
   FIELD 0x0 SunBankVTable * vtable
@@ -15145,6 +15344,7 @@ CLASS SunBank 0x108
   FUNC 0x004aa6c8 undefined new
   FUNC 0x004aa734 undefined RInit
   FUNC 0x004aa7f4 undefined SunBank
+  FUNC 0x00101660 undefined INIT
 
 CLASS TutorialDemoBarUI 0x100
   FIELD 0x0 TutorialDemoBarUIVTable * vtable
@@ -15166,6 +15366,7 @@ CLASS TutorialDemoBarUI 0x100
   FUNC 0x004bd890 undefined RInit
   FUNC 0x0040b28c undefined SGetType
   FUNC 0x004bd950 undefined TutorialDemoBarUI
+  FUNC 0x001025d0 undefined INIT
 
 CLASS WorldMap_CoinBank 0x110
   FIELD 0x0 WorldMap_CoinBankVTable * vtable
@@ -15202,7 +15403,7 @@ CLASS WorldMap_CoinBank 0x110
 
 CLASS DeviceImage 0xe0
   FIELD 0x0 DeviceImageVTable * vtable
-  VAR 0x00d0f1a4 undefined4 instance
+  VAR 0x00cca878 undefined4 instance
   VTABLE 0x00c57e58 MemoryImage DeviceImageVTable 0x100
     VFUNC 0 0x0073a0d0 undefined GetType
     VFUNC 1 0x0073a0dc bool IsAbstract
@@ -15400,6 +15601,7 @@ CLASS DeviceImage 0xe0
     VFUNC 63 0x0073a0cc undefined FUN_0074a0cc
   FUNC 0x00119dc0 undefined SGetType
   FUNC 0x00119ee0 undefined new
+  FUNC 0x00114214 undefined INIT
 
 CLASS Reflection::RClass 0x4
   VAR 0x00d28340 undefined4 instance
@@ -15574,4 +15776,9 @@ CLASS SandstormZombieSpawnerProps 0x40
   FUNC 0x001f2490 undefined new
   FUNC 0x0021f8ac undefined RInit
   FUNC 0x002209d0 undefined SandstormZombieSpawnerProps
+
+CLASS WwiseSoundBank <>
+  VAR 0x00d29188 undefined4 instance
+  FUNC 0x00115d44 undefined INIT
+  FUNC 0x00964f84 undefined new
 
